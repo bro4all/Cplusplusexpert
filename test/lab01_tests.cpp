@@ -36,6 +36,7 @@ TEST_F(Lab01Fixture, basicTest) {
 
     EXPECT_EQ("+",stream1->get_next_op());
     EXPECT_EQ("+",stream1->get_next_op());
+    EXPECT_TRUE(stream1->expression_complete());
 //todo: Get these tests to pass using the debugger
     EXPECT_EQ("1",stream2->get_next_int());
     EXPECT_EQ("2",stream2->get_next_int());
@@ -87,4 +88,14 @@ TEST_F(Lab01Fixture, Homework) {
     EXPECT_NE("2",stream1->get_next_int());
     EXPECT_TRUE(stream2->get_next_int()=="1");
 
+
+}
+TEST_F(Lab01Fixture,curiositytest){
+    EXPECT_EQ("1",stream1->get_next_int());
+    EXPECT_EQ("2",stream1->get_next_int());
+    EXPECT_EQ("3",stream1->get_next_int());
+
+    EXPECT_EQ("+",stream1->get_next_op());
+    EXPECT_EQ("+",stream1->get_next_op());
+    EXPECT_TRUE(stream1->expression_complete());
 }
