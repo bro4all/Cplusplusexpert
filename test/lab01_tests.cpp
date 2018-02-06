@@ -79,3 +79,12 @@ TEST_F(Lab01Fixture, testTest) {
 
     EXPECT_EQ("1",stream4.get_next_int());
 }
+
+TEST_F(Lab01Fixture, Homework) {
+    EXPECT_GT(stream1->get_next_int(),stream3->get_next_int());
+    EXPECT_FALSE(stream1->expression_complete());
+    EXPECT_EQ("2",stream1->get_next_int());
+    EXPECT_NE("2",stream1->get_next_int());
+    EXPECT_TRUE(stream2->get_next_int()=="1");
+
+}
