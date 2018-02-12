@@ -77,13 +77,38 @@ void stringVector::swap(unsigned pos1, unsigned pos2) {
 
 
 stringVector &stringVector::operator=(stringVector const &rhs) {
+    delete[] data;
+    length=rhs.length;
+    allocated_length=rhs.allocated_length;
+    this->data=new std::string[allocated_length];
+    for (int i=0;i<length;i++){
+        this->data[i]=rhs.data[i];
+    }
     //return ;
 }
 
 std::string &stringVector::operator[](unsigned position) {
+    if(position>length){
+        throw std::out_of_range("position out of range");}
+
+        return data[position-1];
+    }
+
+
     //return ;
-}
+
 
 void stringVector::sort() {
+    std::string str;
+    for(int i=(length-1);i>0;i--){
+        for(int j=0;j<i;j++){
+            if(data[j].compare(data[j+1])>0){
+                str=data[j];
+                data[j+1]=str;
+
+            }
+        }
+    }
+
 
 }
