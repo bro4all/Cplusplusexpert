@@ -1,6 +1,4 @@
-#include <iostream>
+#include<iostream>
+#include <stringVector.h>
 
-int main() {
-    std::cout << "Hello Thursday everyone!";
-    return 6;
 }

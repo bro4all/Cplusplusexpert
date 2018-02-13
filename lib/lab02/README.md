@@ -7,7 +7,7 @@
 For this lab you will be creating a auto-expanding dynamic-array. This array will explicitly hold std library strings.
 As with all labs you can create any PRIVATE data members/ methods you want, but the Public interface should remain the same.
 While tests will be provided, you will need to add your own test cases to ensure all corner cases are accounted for and avoided.
-This class will be used for future labs so it is important that it is tested thouroughly.
+This class will be used for future labs s4o it is important that it is tested thouroughly.
 
 **The following provides the expected behavior of the private data members and the public interface/API:**
 
@@ -33,7 +33,7 @@ This class will be used for future labs so it is important that it is tested tho
 
 **bool empty()** - returns true IFF the array is empty
 
-**void append(std::string data)** - append data to end of array, if capacity is zero set it to 1, otherwise double array capacity if this is over capacity
+**void append(std::string data)** - append data to end of array, double array capacity if this is over capacity
 
 **void swap(unsigned pos1, unsigned pos2)** - swap the string in position1 (pos1) of the array with the string in position2, throw an exception if either position is out of bounds
 

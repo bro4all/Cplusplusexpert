@@ -60,7 +60,19 @@ if (length>allocated_length){
     }
 
 
-}
+}/*void stringVector::reserve(unsigned new_size) {
+    std::string *temp;
+    temp = new std::string[new_size];
+    for(int i = 0; i < new_size && i < length; i++) {
+        temp[i] = data[i];
+    }
+    delete [] data;
+    data = temp;
+    if(new_size < length)
+    {
+        length = new_size;
+    }
+}*/
 
 bool stringVector::empty() {
     return(length==0)?true:false;//return ;

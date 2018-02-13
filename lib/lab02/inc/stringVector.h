@@ -23,6 +23,7 @@ public:
     stringVector &operator = (stringVector const &rhs);
     std::string& operator[](unsigned position);
     void sort();
+
 };
 
 
