@@ -22,11 +22,12 @@ unsigned stringVector::capacity() {
     //return ;
 }
 
-void stringVector::reserve(unsigned new_size)
+/*void stringVector::reserve(unsigned new_size)
 {
     std::string *temp = new std::string[new_size]; // Create a new array
 
-/*Copy the contents of the array*/
+Copy the contents of the array
+
     for(int i =0; i < new_size; i++){
         if(i < length){
             temp[i] = data[i];
@@ -40,11 +41,11 @@ void stringVector::reserve(unsigned new_size)
     if(length > new_size){
         length = new_size;
     }
-}
-/*void stringVector::reserve(unsigned new_size) {
+}*/
+void stringVector::reserve(unsigned new_size) {
     if (new_size == allocated_length) return;
     std::string *temp = new std::string[new_size];
-    if (new_size > length) {
+    if (new_size >allocated_length||new_size<allocated_length) {
 
         for (int i = 0; i < new_size && i < length; i++) {
             temp[i] = data[i];
@@ -52,13 +53,14 @@ void stringVector::reserve(unsigned new_size)
 
         delete data[];
         data = temp;
-
+        allocated_length=new_size;
+if (length>allocated_length){
+    length=new_size;
+}
     }
-    allocated_length=new_size;
-
-}*/
 
 
+}
 
 bool stringVector::empty() {
     return(length==0)?true:false;//return ;
@@ -67,7 +69,7 @@ bool stringVector::empty() {
 void stringVector::append(std::string new_data) {
 
         if (allocated_length == 0) {
-            data = new std::string[1];
+            data = new std::string[2];
         }
 
         if (length > allocated_length) {
