@@ -22,17 +22,41 @@ unsigned stringVector::capacity() {
     //return ;
 }
 
-void stringVector::reserve(unsigned new_size) {
-    if (new_size == allocated_length) return;
-    std::string* temp= new std::string[new_size];
-    for(int i=0;i<new_size && i<length;i++) {
-        temp[i] = data[i];
+void stringVector::reserve(unsigned new_size)
+{
+    std::string *temp = new std::string[new_size]; // Create a new array
+
+/*Copy the contents of the array*/
+    for(int i =0; i < new_size; i++){
+        if(i < length){
+            temp[i] = data[i];
+        }
+        else
+            break;
     }
-    delete[]data;
-    data=temp;
-
-
+    delete []data ;// Delete previous array
+    data = temp;
+    allocated_length = new_size;
+    if(length > new_size){
+        length = new_size;
+    }
 }
+/*void stringVector::reserve(unsigned new_size) {
+    if (new_size == allocated_length) return;
+    std::string *temp = new std::string[new_size];
+    if (new_size > length) {
+
+        for (int i = 0; i < new_size && i < length; i++) {
+            temp[i] = data[i];
+        }
+
+        delete data[];
+        data = temp;
+
+    }
+    allocated_length=new_size;
+
+}*/
 
 
 
@@ -41,9 +65,19 @@ bool stringVector::empty() {
 }
 
 void stringVector::append(std::string new_data) {
-    std::string*temp=nullptr;
-    if(length==allocated_length){
-        if(allocated_length==0){
+
+        if (allocated_length == 0) {
+            data = new std::string[1];
+        }
+
+        if (length > allocated_length) {
+            reserve(2 * allocated_length);
+        }
+        data[length] = new_data;
+        length++;
+    }
+
+       /* if(allocated_length==0){
             data=new std::string[1];
             allocated_length=1;
         }
@@ -55,12 +89,12 @@ void stringVector::append(std::string new_data) {
             allocated_length=2*allocated_length;
             if(data!=nullptr){
                 delete[]data;
-            data=temp;}
+                data=temp;}
         }
     }
     data[length]=new_data;
     length++;
-}
+}*/
 
 
 
