@@ -91,11 +91,29 @@ TEST_F(Lab01Fixture, Homework) {
 
 }
 TEST_F(Lab01Fixture,curiositytest){
-    EXPECT_EQ("1",stream1->get_next_int());
-    EXPECT_EQ("2",stream1->get_next_int());
-    EXPECT_EQ("3",stream1->get_next_int());
+    expressionstream stream4("5+3-1");
+    EXPECT_EQ("5",stream4.get_next_int());
+    EXPECT_EQ("3",stream4.get_next_int());
+    EXPECT_EQ("1",stream4.get_next_int());
+    EXPECT_NE("-",stream4.get_next_op());
+    EXPECT_NE("+",stream4.get_next_op());
+}
+TEST_F(Lab01Fixture, NotEqualTen) {
+    EXPECT_NE("10", stream1->get_next_int());
 
-    EXPECT_EQ("+",stream1->get_next_op());
-    EXPECT_EQ("+",stream1->get_next_op());
-    EXPECT_TRUE(stream1->expression_complete());
+
+}
+TEST_F(Lab01Fixture,NotSubtraction){
+    EXPECT_NE("-",stream2->get_next_op());
+
+}
+TEST_F(Lab01Fixture,GreaterThan){
+    EXPECT_GT(stream2,stream1);
+}
+TEST_F(Lab01Fixture,LessThan){
+    EXPECT_LT(stream1,stream3);
+}
+TEST_F(Lab01Fixture, testTest6){
+    expressionstream stream4("1+2*4");
+    EXPECT_EQ("1",stream4.get_next_int());
 }
