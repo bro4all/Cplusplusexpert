@@ -91,7 +91,7 @@ TEST_F(Lab01Fixture, Homework) {
 
 }
 TEST_F(Lab01Fixture,curiositytest){
-    expressionstream stream4("5+3-1");
+    lab1::expressionstream stream4("5+3-1");
     EXPECT_EQ("5",stream4.get_next_int());
     EXPECT_EQ("3",stream4.get_next_int());
     EXPECT_EQ("1",stream4.get_next_int());
@@ -114,6 +114,6 @@ TEST_F(Lab01Fixture,LessThan){
     EXPECT_LT(stream1,stream3);
 }
 TEST_F(Lab01Fixture, testTest6){
-    expressionstream stream4("1+2*4");
+    lab1::expressionstream stream4("1+2*4");
     EXPECT_EQ("1",stream4.get_next_int());
 }
