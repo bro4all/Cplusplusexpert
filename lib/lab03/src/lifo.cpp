@@ -3,7 +3,7 @@
 namespace lab3 {
     lifo::lifo() {
         lifo_storage.reserve(100);
-        index = -1//Reserve 100 spaces in lifo_storage
+        index = -1;//Reserve 100 spaces in lifo_storage
     }
 
     lifo::lifo(std::string input_string) {
@@ -39,7 +39,7 @@ namespace lab3 {
 
 
     bool lifo::is_empty() const {
-        if (index == -1) {
+        if (index == -1 || ) {
             return true;
         } else {
             return false;
@@ -80,4 +80,3 @@ namespace lab3 {
             index--;
     }
     }
-}

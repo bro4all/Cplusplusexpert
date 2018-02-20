@@ -46,7 +46,7 @@ namespace lab3{
 
     bool fifo::is_empty() const {
         //return false;
-        if(front_index == -1){
+        if(front_index == -1 || front_index==back_index){
             return true;
         }
         return false;
@@ -77,7 +77,7 @@ namespace lab3{
         fifo_storage[back_index]=input;
         back_index++;
         if(fifo_storage.capacity()<=back_index){
-            fifo_storage.reserve(fifo_storage.capacity()+20):
+            fifo_storage.reserve(fifo_storage.capacity()+20);
 
         }
     }
