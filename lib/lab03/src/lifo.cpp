@@ -8,18 +8,16 @@ namespace lab3 {
 
     lifo::lifo(std::string input_string) {
         lifo_storage.reserve(100);
-        lifo_storage[0] = input_string;
+        lifo_storage.append(input_string);
         index = 0;
     }
 
     lifo::lifo(const lifo &original) {
-        lifo_storage.reserve(original.lifo_storage.capacity());
-        index = original.index;
-        for (int i = 0; i <= index; i++) {
-            lifo_storage[i] = original.lifo_storage[i];
-        }
+        lifo_storage.reserve(100);
+        this->index = original.index;
 
     }
+
 
     lifo::~lifo() {
         index = -1;
@@ -39,7 +37,7 @@ namespace lab3 {
 
 
     bool lifo::is_empty() const {
-        if (index == -1 || ) {
+        if (index == -1 ||) {
             return true;
         } else {
             return false;
@@ -49,26 +47,24 @@ namespace lab3 {
 
     unsigned lifo::size() const {
         int temp;
-        if(index>-1) {
+        if (index > -1) {
             for (int i = 0; i <= index; i++) {
                 temp++;
             }
-        }
-        else{
-            temp=0;
+        } else {
+            temp = 0;
         }
         return temp;
 
     }
 
 
-
-
     std::string lifo::top() const {
         return lifo_storage[index]; //return std::__cxx11::string();
     }
 
-    void lifo::push(std::string input) {if(index == lifo_storage.capacity()-1){
+    void lifo::push(std::string input) {
+        if (index == lifo_storage.capacity() - 1) {
             lifo_storage.reserve(lifo_storage.capacity() + 20);
         }
         lifo_storage[++index] = input;
@@ -76,7 +72,7 @@ namespace lab3 {
     }
 
     void lifo::pop() {
-        if(index > -1)
+        if (index > -1)
             index--;
     }
-    }
+}
