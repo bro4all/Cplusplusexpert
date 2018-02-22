@@ -18,7 +18,7 @@ namespace lab3 {
         bool is_empty() const;  // Return true if the fifo is empty and false if it is not
         unsigned size() const;  // Return the size of the fifo
 
-        std::string top() const;           // Return the front string of the fifo.
+        std::string top();           // Return the front string of the fifo.
         void enqueue(std::string input);   // Add input string to the back of the fifo
         void dequeue();
         // Remove the front string from the fifo

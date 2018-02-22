@@ -27,9 +27,9 @@ namespace lab2 {
 
         void swap(unsigned pos1, unsigned pos2);
 
-        stringVector &operator=(stringVector const &rhs) const ;
+        stringVector& operator=(stringVector const &rhs);
 
-        std::string &stringVector::operator[](unsigned position)const ;
+        std::string& stringVector::operator[](unsigned position);
 
         void sort();
     };
