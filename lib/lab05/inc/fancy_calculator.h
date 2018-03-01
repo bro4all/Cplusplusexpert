@@ -4,6 +4,7 @@
 #include "stack.h"
 #include "queue.h"
 #include "expressionstream.h"
+#include <iostream>
 
 namespace lab5{
     class calculator{

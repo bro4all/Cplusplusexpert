@@ -2,6 +2,7 @@
 #define CMPE126S18_LABS_LIB_LAB05_INC_LINKED_LIST_H
 
 #include "node.h"
+#include <iostream>
 
 namespace lab5 {
     class linked_list {
