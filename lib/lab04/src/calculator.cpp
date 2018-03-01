@@ -93,11 +93,9 @@ namespace lab4 {
         if(operator_in=="+"||"-"){
             weight=1;
         }
-        else if (operator_in=="*"||"/"){
-            weight=2;
-        }
-        else if(operator_in=="^"){
-            weight=3;
+        else if (operator_in=="*"||"/") {
+            weight = 2;
+
         }
         else if(operator_in=="("||")"){
             weight=4;
