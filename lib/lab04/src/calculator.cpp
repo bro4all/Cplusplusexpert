@@ -2,21 +2,34 @@
 
 #include <string>
 #include "calculator.h"
+int operator_priority(std::string operator_in);
 bool is_number (std::string input_string);
 bool is_operator(std::string input_string);
 namespace lab4 {
     void calculator::parse_to_infix(std::string &input_expression) {
-        std::string::iterator position = input_expression.begin();
-        std::string::iterator end = input_expression.end();
-        for (position; position != end && *position == ' '; position++) {
-            if (is_number(std::string(position, position + 1))) {
-                infix_expression.enqueue(std::string(position, position + 1));
+        std::string temp = "";
+        int Blank = 0;
+        int i = 0;
+        int size = input_expression.size();
+        while (i < size) {
+            if (input_expression[i] == '') {
+                if (Blank == 0) {
+                    i++;
+
+                }
+                else{
+                    infix_expression.enqueue(temp);
+                    temp="";
+                    i++;
+                    Blank=0;
+                }
             }
-            if (is_operator(std::string(position, position + 1))) {
-                infix_expression.enqueue(std::string(position, position + 1));
-            } else {
-                throw "Not a number or operator";
+            else{
+                temp+=input_expression[i];
+                i++;
+                Blank++;
             }
+
         }
     }
 
@@ -24,23 +37,32 @@ namespace lab4 {
         //std::string::iterator position=input_expression.begin()
         // tiers, maybe a while loop instead of a for loop that decremeents
         lab3::lifo op_queue;
-        for(int i = 0; i<=infix_expression.size(); i++){ //Might try a counter
+        std::string temp;
+        for (int i = 0; i <= infix_expression.size(); i++) { //Might try a counter
             std::string temp = infix_expression.top(); //if we dequeue we don't put it in anything we just take that mem out
             bool is_number(std::string); //Some way to check
-            if(is_number(temp) == true) { // Need to find a way to see if the top is a number or a char
+            if (is_number(temp) == true) { // Need to find a way to see if the top is a number or a char
                 postfix_expression.enqueue(infix_expression.top());
-            }
-            else{
-                op_queue.push(temp); // Need a way to implement priority into this
-            }
-            //This will have the new postfix and we will put it in the calculate function
+                infix_expression.dequeue();
+            } else {
+                if (is_operator(temp)) {
+                    while (!op_queue.is_empty() && operator_priority(temp) <= operator_priority(op_queue.top())) {
+                        postfix_expression.enqueue(op_queue.top());
+                        op_queue.pop();
+                    }
+                }
+                op_queue.push(temp);
+            } // Need a way to implement priority into this
         }
+        //This will have the new postfix and we will put it in the calculate function
+
         //use postfix expression
-        for(int i=0; i<i<infix_expression.size(); i++){
+        for (int i = 0; i < i < infix_expression.size(); i++) {
             std::string get_operator(std::string input_expression);
         }
-
     }
+
+
 
     calculator::calculator() {
 
@@ -79,9 +101,7 @@ namespace lab4 {
     }
 
     int get_number(std::string input_string){
-        lab3::fifo::dequeue();
-
-
+        return stoi(input_string);
     }
 
     std::string get_operator(std::string input_string){
@@ -91,14 +111,11 @@ namespace lab4 {
     int operator_priority(std::string operator_in){
         int weight;
         if(operator_in=="+"||"-"){
-            weight=1;
+            weight=2;
         }
         else if (operator_in=="*"||"/") {
-            weight = 2;
+            weight = 3;
 
-        }
-        else if(operator_in=="("||")"){
-            weight=4;
         }
         return weight;
     }

@@ -1,78 +1,64 @@
 #include "lifo.h"
-
-namespace lab3 {
+namespace lab3{
     lifo::lifo() {
-        lifo_storage.reserve(100);
-        index = -1;//Reserve 100 spaces in lifo_storage
+        lifo_storage.reserve(100);//You would need to reserve 100 spaces because of the readme
+        index=0;//Set the index of the array = to 0
     }
-
     lifo::lifo(std::string input_string) {
         lifo_storage.reserve(100);
-        lifo_storage.append(input_string);
-        index = 0;
+        lifo_storage.append(input_string);// same as the first constructor but you are appending an input_string
+        index=1;
     }
-
     lifo::lifo(const lifo &original) {
-        lifo_storage.reserve(100);
-        this->index = original.index;
-
-    }
-
-
-    lifo::~lifo() {
-        index = -1;
-
-    }
-
-    lifo &lifo::operator=(const lifo &right) {
-        //return <#initializer#>;
-        lifo_storage.reserve(right.lifo_storage.capacity());
-        index = right.index;
-        for (int i = 0; i <= index; i++) {
-            lifo_storage[i] = right.lifo_storage[i];
+        index = original.index;//Copies the information from the private to &original. had to add const to the lab2 std::string &operator[](unsigned position) in order for this to work.
+        for(int i=0; i<index;i++){
+            lifo_storage[i]=original.lifo_storage[i];// Have to do an array to copy each array element onto original
         }
-
-        return *this;
     }
-
-
-    bool lifo::is_empty() const {
-        if (index == -1 ||) {
-            return true;
-        } else {
+    lifo::~lifo() {
+        lifo_storage.set_size(0);// same as fifo, but you just need to make index =0
+        index=0;
+    }
+    lifo &lifo::operator=(const lifo &right) {// Same as fifo, assignment operator
+        lifo_storage.reserve(right.lifo_storage.capacity());
+        index= right.index;
+        for(int i=0; i<= index; i++){
+            lifo_storage[i]=right.lifo_storage[i];
+        }
+        //return <#initializer#>;
+    }
+    bool lifo::is_empty() const {// It should return true unless the index is greater than or equal to 1
+        if(index>=1){
             return false;
         }
-        //return false;
+        else{
+            return true;
+        }
     }
-
     unsigned lifo::size() const {
-        int temp;
-        if (index > -1) {
-            for (int i = 0; i <= index; i++) {
-                temp++;
-            }
-        } else {
-            temp = 0;
+        if(is_empty()==false){ // Just to check if index is = to 0, if it is 0 then you return nothing which has the value of 0
+            return index;//Probably did extra steps in this function
         }
-        return temp;
-
+        else {
+            int nothing=0;
+            return nothing;
+        }
     }
-
-
     std::string lifo::top() const {
-        return lifo_storage[index]; //return std::__cxx11::string();
+        return lifo_storage[index]; // I do not know what std::__cxx11:string() means
+        //return std::__cxx11::string();
+        //The top of the stack should always be the index-1 because both index and the array starts at 0, but when you add an elem it adds to 0 but array goes to 1
     }
-
     void lifo::push(std::string input) {
-        if (index == lifo_storage.capacity() - 1) {
-            lifo_storage.reserve(lifo_storage.capacity() + 20);
-        }
-        lifo_storage[++index] = input;
-
+        ++index;// Need to add a space into the index first before appending the input string
+        lifo_storage[index]= input;
     }
-
     void lifo::pop() {
-        if (index > -1)
-            index--;
+        if(index == -1){//This makes sure that index is not = 0, remember index is a number above the elems in array
+            throw"ERROR, empty";
+        }
+        else{
+            --index;//takes away from the index
+        }
     }
 }
