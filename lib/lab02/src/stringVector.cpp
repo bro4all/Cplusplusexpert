@@ -1,24 +1,24 @@
-#include "../inc/stringVector.h"
+#include "stringVector.h"
 #include <iostream>
 namespace lab2 {
     int stringCompare(std::string str1, std::string str2);
 
     stringVector::stringVector() {
-        data = nullptr;
         length = 0;
         allocated_length = 0;
+        data = NULL;
     }
 
     stringVector::~stringVector() {
         delete[]data;
     }
 
-    unsigned stringVector::size() {
+    unsigned stringVector::size() const  {
         return length;
         //return ;
     }
 
-    unsigned stringVector::capacity() {
+    unsigned stringVector::capacity() const {
         return allocated_length;
         //return ;
     }
@@ -40,18 +40,38 @@ namespace lab2 {
 
 
     bool stringVector::empty() {
-        return (length == 0) ? true : false;//return ;
-    }
 
-    void stringVector::append(std::string new_data) {
-        if (length < allocated_length) {
-            data[length++] = new_data;
-        } else {
-            reserve(allocated_length == 0 ? 1 : 2 * allocated_length);
+        if (length == 0) {
+            return true;
+        }
+        else {
+            return false;
         }
 
     }
 
+    void stringVector::append(std::string new_data) {
+
+        if (allocated_length == 0) {
+            data = new std::string[1];
+            allocated_length = 1;
+        } else if (allocated_length == length) {
+            std::string *newArr = NULL;
+            newArr = new std::string[allocated_length * 2];
+
+            for (int i = 0; i < allocated_length; i++) {
+                newArr[i] = data[i];
+            }
+
+            allocated_length = allocated_length * 2;
+            delete[] data;
+            data = newArr;
+        }
+
+        data[length] = new_data;
+        length++;
+
+    }
 
     void stringVector::swap(unsigned pos1, unsigned pos2) {
         std::string temp; //a temporary string to hold the data and switch it
@@ -68,27 +88,41 @@ namespace lab2 {
     }
 
 
-    stringVector &stringVector::operator=(stringVector const &rhs)  {
-        if (this == &rhs) return *this;
-        delete[] data;
-        length = rhs.length;
-        allocated_length = rhs.allocated_length;
-        this->data = new std::string[allocated_length];
-        for (int i = 0; i < length; i++) {
-            this->data[i] = rhs.data[i];
+    stringVector &stringVector::operator=(stringVector const &rhs) {
+        if (this != &rhs) {
+            delete[] data;
+            length = 0;
+            allocated_length = 0;
+            data = NULL;
+            data = new std::string[rhs.capacity()];
+            length = rhs.size();
+            allocated_length = rhs.capacity();
+            for (int i = 0; i < length; i++) {
+                data[i] = rhs.data[i];
+            }
         }
         return *this;
-        //return ;
     }
 
-    std::string&stringVector::operator[](unsigned position) {
-        if (position > allocated_length) {
-            throw std::out_of_range("position out of range");
+    std::string &stringVector::operator[](unsigned position) {
+
+        if (position > length) {
+            throw "Position is out of bounds. ";
+
         }
 
         return data[position];
     }
 
+    std::string stringVector::operator[](unsigned position) const{
+
+        if (position > length) {
+            throw "Position is out of bounds. ";
+
+        }
+        std::string const return_string = data[position];
+        return return_string;
+    }
 
     //return ;
 
@@ -116,4 +150,10 @@ namespace lab2 {
         else
             return pos == str1.length() ? 0 : tolower(str1[pos]) - tolower(str2[pos]);
     }
+
+    void stringVector::set_size(unsigned new_size) {
+        if (allocated_length != new_size) reserve(new_size);
+        length = new_size;
+    }
+
 }

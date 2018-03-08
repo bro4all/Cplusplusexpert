@@ -15,21 +15,23 @@ namespace lab2 {
 
         virtual ~stringVector();
 
-        unsigned size();
+        unsigned size() const;
 
-        unsigned capacity();
+        unsigned capacity() const;
 
         void reserve(unsigned new_size);
 
-        bool empty();
+        bool empty() ;
 
         void append(std::string new_data);
 
         void swap(unsigned pos1, unsigned pos2);
+        void set_size(unsigned new_size);
 
         stringVector& operator=(stringVector const &rhs);
 
-        std::string& stringVector::operator[](unsigned position);
+        std::string& operator[](unsigned position);
+        std::string operator[](unsigned position)const;
 
         void sort();
     };

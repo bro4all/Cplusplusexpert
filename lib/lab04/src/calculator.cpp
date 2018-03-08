@@ -34,34 +34,59 @@ namespace lab4 {
     }
 
     void calculator::convert_to_postfix(lab3::fifo infix_expression) {
-        //std::string::iterator position=input_expression.begin()
-        // tiers, maybe a while loop instead of a for loop that decremeents
-        lab3::lifo op_queue;
-        std::string temp;
-        for (int i = 0; i <= infix_expression.size(); i++) { //Might try a counter
-            std::string temp = infix_expression.top(); //if we dequeue we don't put it in anything we just take that mem out
-            bool is_number(std::string); //Some way to check
-            if (is_number(temp) == true) { // Need to find a way to see if the top is a number or a char
+        lab3::lifo Stack;
+        while( !infix_expression.is_empty()) {
+            lab1::expressionstream steam(infix_expression.top());
+            if(steam.next_token_is_int()){
+                if(infix_expression.top() == "-") {
+                    int a = 0;
+                    if(Stack.top() == "("){
+                        a = 1;
+                    }
+                    while(!Stack.is_empty() && operator_priority(Stack.top()) >= operator_priority(infix_expression.top()) && a != 1){
+                        postfix_expression.enqueue(Stack.top());
+                        Stack.pop();
+                    }
+                    Stack.push(infix_expression.top());
+                    infix_expression.dequeue();
+                }
                 postfix_expression.enqueue(infix_expression.top());
                 infix_expression.dequeue();
-            } else {
-                if (is_operator(temp)) {
-                    while (!op_queue.is_empty() && operator_priority(temp) <= operator_priority(op_queue.top())) {
-                        postfix_expression.enqueue(op_queue.top());
-                        op_queue.pop();
-                    }
+            }
+            else if(steam.next_token_is_op()) {
+                int a = 0;
+                if(Stack.top() == "("){
+                    a = 1;
                 }
-                op_queue.push(temp);
-            } // Need a way to implement priority into this
+                while(!Stack.is_empty() && operator_priority(Stack.top()) >= operator_priority(infix_expression.top()) && a != 1){
+                    postfix_expression.enqueue(Stack.top());
+                    Stack.pop();
+                }
+                Stack.push(infix_expression.top());
+                infix_expression.dequeue();
+            }
+            else if(steam.next_token_is_paren_open()){
+                Stack.push(infix_expression.top());
+                infix_expression.dequeue();
+            }
+            else if (steam.next_token_is_paren_close()){
+                if(Stack.top() != "("){
+                    postfix_expression.enqueue(Stack.top());
+                    Stack.pop();
+                }
+                else if(Stack.top() == "("){
+                    infix_expression.dequeue();
+                    Stack.pop();
+                }
+            }
         }
-        //This will have the new postfix and we will put it in the calculate function
-
-        //use postfix expression
-        for (int i = 0; i < i < infix_expression.size(); i++) {
-            std::string get_operator(std::string input_expression);
+        if(infix_expression.is_empty()) {
+            while (!Stack.is_empty()) {
+                postfix_expression.enqueue(Stack.top());
+                Stack.pop();
+            }
         }
     }
-
 
 
     calculator::calculator() {
@@ -77,8 +102,55 @@ namespace lab4 {
         return stream;
     }
 
-    int lab4::calculator::calculate() {
-        return 0;
+    int lab4::calculator::calculate() { lab3::lifo cal;
+        int all = 0;
+        int number1 = 0;
+        int number2 = 0;
+        std::string aa;
+        lab3::fifo copy;
+        while(!postfix_expression.is_empty()){
+            lab1::expressionstream temp(postfix_expression.top());
+            copy.enqueue(postfix_expression.top());
+            if(temp.next_token_is_int()) {
+                if (postfix_expression.top() == "-") {
+                    number2 = stoi(cal.top());
+                    cal.pop();
+                    number1 = stoi(cal.top());
+                    cal.pop();
+                    if (postfix_expression.top() == "-")
+                        all = number1 - number2;
+                    aa = std::to_string(all);
+                    postfix_expression.dequeue();
+                    cal.push(aa);
+                } else {
+                    cal.push(postfix_expression.top());
+                    postfix_expression.dequeue();
+                }
+            }
+            else if(temp.next_token_is_op()){
+                number2 = stoi(cal.top());
+                cal.pop();
+                number1 = stoi(cal.top());
+                cal.pop();
+                if(postfix_expression.top() == "+"){
+                    all = number1 + number2;
+                }
+                else if(postfix_expression.top() == "-"){
+                    all = number1 - number2;
+                }
+                else if(postfix_expression.top() == "*"){
+                    all = number1 * number2;
+                }
+                else if(postfix_expression.top() == "/"){
+                    all = number1 / number2;
+                }
+                aa = std::to_string(all);
+                postfix_expression.dequeue();
+                cal.push(aa);
+            }
+        }
+        postfix_expression = copy;
+        return all;
     }
 
     std::ostream &operator<<(std::ostream &stream, calculator &RHS) {
