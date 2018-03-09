@@ -99,8 +99,22 @@ namespace lab4 {
     }
 
     std::istream &operator>>(std::istream &stream, calculator &RHS) {
+        std::string temp;
+        std::string expression;
+        while (stream >> temp) {
+            expression.append(temp);
+        }
+        while (!RHS.infix_expression.is_empty()) {
+            RHS.infix_expression.dequeue();
+        }
+        while (!RHS.postfix_expression.is_empty()) {
+            RHS.postfix_expression.dequeue();
+        }
+        RHS.parse_to_infix(expression);
+        RHS.convert_to_postfix(RHS.infix_expression);
         return stream;
     }
+
 
     int lab4::calculator::calculate() { lab3::lifo cal;
         int all = 0;
@@ -154,9 +168,20 @@ namespace lab4 {
     }
 
     std::ostream &operator<<(std::ostream &stream, calculator &RHS) {
+        lab3::fifo infix_copy(RHS.infix_expression);
+        stream << "Infix: ";
+        while (!infix_copy.is_empty()) {
+            stream << infix_copy.top() << ",";
+            infix_copy.dequeue();
+        }
+        lab3::fifo postfix_copy(RHS.postfix_expression);
+        stream << "\nPostfix: ";
+        while (!postfix_copy.is_empty()) {
+            stream << postfix_copy.top() << (postfix_copy.size() == 1 ? "" : ",");
+            postfix_copy.dequeue();
+        }
         return stream;
     }
-
 
     // AUXILIARY FUNCTIONS
     bool is_number (std::string input_string){
