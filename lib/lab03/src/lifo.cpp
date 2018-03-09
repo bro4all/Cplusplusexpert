@@ -36,8 +36,8 @@ namespace lab3{
         }
     }
     unsigned lifo::size() const {
-        if(is_empty()==false){ // Just to check if index is = to 0, if it is 0 then you return nothing which has the value of 0
-            return index;//Probably did extra steps in this function
+        if(is_empty()==false){ 
+            return index;
         }
         else {
             int nothing=0;
@@ -45,20 +45,18 @@ namespace lab3{
         }
     }
     std::string lifo::top() const {
-        return lifo_storage[index]; // I do not know what std::__cxx11:string() means
-        //return std::__cxx11::string();
-        //The top of the stack should always be the index-1 because both index and the array starts at 0, but when you add an elem it adds to 0 but array goes to 1
+        return lifo_storage[index];
     }
     void lifo::push(std::string input) {
-        ++index;// Need to add a space into the index first before appending the input string
+        ++index;
         lifo_storage[index]= input;
     }
     void lifo::pop() {
-        if(index == -1){//This makes sure that index is not = 0, remember index is a number above the elems in array
+        if(index == -1){
             throw"ERROR, empty";
         }
         else{
-            --index;//takes away from the index
+            --index;
         }
     }
 }

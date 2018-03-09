@@ -39,7 +39,7 @@ namespace lab5 {
         node *head = head;
         node *tail;
         if (head == nullptr) {
-            if (tail = nullptr) {
+            if (tail == nullptr) {
                 return true;
             }
             return false;
