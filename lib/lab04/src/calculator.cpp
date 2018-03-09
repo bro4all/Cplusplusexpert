@@ -104,8 +104,8 @@ namespace lab4 {
 
     int lab4::calculator::calculate() { lab3::lifo cal;
         int all = 0;
-        int number1 = 0;
-        int number2 = 0;
+        int N1= 0;
+        int N2 = 0;
         std::string aa;
         lab3::fifo copy;
         while(!postfix_expression.is_empty()){
@@ -113,12 +113,12 @@ namespace lab4 {
             copy.enqueue(postfix_expression.top());
             if(temp.next_token_is_int()) {
                 if (postfix_expression.top() == "-") {
-                    number2 = stoi(cal.top());
+                    N2 = stoi(cal.top());
                     cal.pop();
-                    number1 = stoi(cal.top());
+                    N1 = stoi(cal.top());
                     cal.pop();
                     if (postfix_expression.top() == "-")
-                        all = number1 - number2;
+                        all = N1-N2;
                     aa = std::to_string(all);
                     postfix_expression.dequeue();
                     cal.push(aa);
@@ -128,21 +128,21 @@ namespace lab4 {
                 }
             }
             else if(temp.next_token_is_op()){
-                number2 = stoi(cal.top());
+                N2 = stoi(cal.top());
                 cal.pop();
-                number1 = stoi(cal.top());
+                N1 = stoi(cal.top());
                 cal.pop();
                 if(postfix_expression.top() == "+"){
-                    all = number1 + number2;
+                    all = N1+N2;
                 }
                 else if(postfix_expression.top() == "-"){
-                    all = number1 - number2;
+                    all = N1-N2;
                 }
                 else if(postfix_expression.top() == "*"){
-                    all = number1 * number2;
+                    all = N1*N2;
                 }
                 else if(postfix_expression.top() == "/"){
-                    all = number1 / number2;
+                    all = N1/N2;
                 }
                 aa = std::to_string(all);
                 postfix_expression.dequeue();
