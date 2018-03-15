@@ -2,6 +2,7 @@
 
 #include <string>
 #include "calculator.h"
+#include <iostream>
 int operator_priority(std::string operator_in);
 bool is_number (std::string input_string);
 bool is_operator(std::string input_string);
@@ -97,22 +98,15 @@ namespace lab4 {
         parse_to_infix(input_expression);
         convert_to_postfix(infix_expression);
     }
-
     std::istream &operator>>(std::istream &stream, calculator &RHS) {
-        std::string temp;
-        std::string expression;
-        while (stream >> temp) {
-            expression.append(temp);
+        std::string temp= "";
+        lab3::fifo infix_expression;
+        while(stream.peek()!= EOF){
+            temp = stream.get();
         }
-        while (!RHS.infix_expression.is_empty()) {
-            RHS.infix_expression.dequeue();
-        }
-        while (!RHS.postfix_expression.is_empty()) {
-            RHS.postfix_expression.dequeue();
-        }
-        RHS.parse_to_infix(expression);
-        RHS.convert_to_postfix(RHS.infix_expression);
-        return stream;
+        RHS.parse_to_infix(temp);
+        RHS.convert_to_postfix(infix_expression);
+        return stream; //store an expression from stdio
     }
 
 
