@@ -175,7 +175,17 @@ namespace lab4 {
             stream << RHS.infix_expression.top();
             stream << std::string(", ");
             RHS.infix_expression.dequeue();
-        
+        }
+        stream << std::string("\n");
+        stream << std::string("Postfix: ");
+        for (int i = 0; i < postfixSize; i++) {
+            stream << RHS.postfix_expression.top();
+            stream << std::string(", ");
+            RHS.postfix_expression.dequeue();
+        }
+        stream << std::string("\n");
+        return stream;
+    }
 
     bool is_operator(std::string input_string){
         if (input_string=="+"||"-"||"*"||"/"||"("||")"){
