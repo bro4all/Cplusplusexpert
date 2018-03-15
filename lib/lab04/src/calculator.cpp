@@ -168,28 +168,14 @@ namespace lab4 {
     }
 
     std::ostream &operator<<(std::ostream &stream, calculator &RHS) {
-        lab3::fifo infix_copy(RHS.infix_expression);
-        stream << "Infix: ";
-        while (!infix_copy.is_empty()) {
-            stream << infix_copy.top() << ",";
-            infix_copy.dequeue();
-        }
-        lab3::fifo postfix_copy(RHS.postfix_expression);
-        stream << "\nPostfix: ";
-        while (!postfix_copy.is_empty()) {
-            stream << postfix_copy.top() << (postfix_copy.size() == 1 ? "" : ",");
-            postfix_copy.dequeue();
-        }
-        return stream;
-    }
-
-    // AUXILIARY FUNCTIONS
-    bool is_number (std::string input_string){
-    if(input_string>="0"&&input_string<="9"){
-        return true;
-    }
-
-}
+        unsigned infixSize = RHS.infix_expression.size();
+        unsigned postfixSize = RHS.postfix_expression.size();
+        stream << std::string("Infix: ");
+        for (int i = 0; i < infixSize; i++) {
+            stream << RHS.infix_expression.top();
+            stream << std::string(", ");
+            RHS.infix_expression.dequeue();
+        
 
     bool is_operator(std::string input_string){
         if (input_string=="+"||"-"||"*"||"/"||"("||")"){

@@ -91,7 +91,11 @@ namespace lab5 {
         }
 
         void linked_list::remove(unsigned location) {
-            node*
+            node* temp= nullptr;
+            temp=head;
+            while (temp->next!=nullptr){
+
+            }
         }
 
         std::ostream &operator<<(std::ostream &stream, linked_list &RHS) {
