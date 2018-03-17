@@ -1,4 +1,6 @@
 #include <linked_list.h>
+#include <iostream>
+
 namespace lab5 {
     linked_list::linked_list() {
         head = nullptr;
@@ -59,7 +61,7 @@ namespace lab5 {
                 temp = temp->next;
             }
         }
-        return 0;
+        return size;
     }
 
     void linked_list::insert(const std::string input, unsigned int location) {
@@ -82,7 +84,6 @@ namespace lab5 {
     }
 
     void linked_list::append(const std::string input) {
-        {
             node *tail = head;
             while (tail->next != nullptr) {
                 tail = tail->next;
@@ -90,24 +91,51 @@ namespace lab5 {
             tail->next = new node(input);
         }
 
-        void linked_list::remove(unsigned location) {
-            node* temp= nullptr;
-            temp=head;
-            while (temp->next!=nullptr){
 
-            }
-        }
-
-        std::ostream &operator<<(std::ostream &stream, linked_list &RHS) {
-            return stream;
-        }
-
-        std::istream &operator>>(std::istream &stream, linked_list &RHS) {
-            return stream;
-        }
 
         void linked_list::sort() {
 
         }
+
+    void linked_list::remove(unsigned int location) {
+        node *prev = NULL;
+        node* current = head;
+        for(int i = 0; i < location; i++){
+            prev = current;
+            current = current->next;
+        }
+        if(prev){
+            prev->next = current->next;
+            current = NULL;
+            tail = prev;
+        }
+        if(location>listSize()){
+            throw 0;
+        }
+        else if(!prev){
+            head = current->next;
+        }
+
+    }
+
+    std::ostream &operator<<(std::ostream &stream, linked_list &RHS) {
+        node *current = RHS.head;
+        stream<<std::endl;
+        while(current != NULL){
+            stream<<current->data<<" ";
+            current = current->next;
+        }
+        stream<<std::endl;
+        return stream;
+    }
+
+    std::istream &operator>>(std::istream &stream, linked_list &RHS) {
+        return <#initializer#>;
+    }
+
+    std::string linked_list::get_value_at(unsigned location) const {
+        node* current=head;
+
+        return std::string();
     }
 }
