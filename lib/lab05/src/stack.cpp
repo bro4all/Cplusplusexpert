@@ -5,14 +5,22 @@ namespace lab5{
     }
 
     stack::stack(std::string &data) {
-
+storage_structure.insert(data.0);
     }
 
     stack::stack(const stack &original) {
-
+stack temp;
+        temp=original;
+        for(int i=0; i<temp.queueSize();i++){
+            storage_structure.append(temp.top());
+            temp.pop();
+        }
     }
 
     stack::~stack() {
+        for(int i=0;i<storage_structure.listSize();i++){
+            storage_structure.remove(i);
+        }
 
     }
 

@@ -40,26 +40,36 @@ queue temp;
     }
 
     unsigned queue::queueSize() const {
-        return 0;
+
+        return storage_structure.listSize();
     }
 
     std::string queue::top() const {
-        //return std::__cxx11::string();
+        return storage_structure.get_value_at(0);
     }
 
     void queue::enqueue(const std::string &data) {
-
+storage_structure.append(data);
     }
 
     void queue::dequeue() {
+        storage_structure.remove(0);
 
     }
 
     std::ostream& operator<<(std::ostream &stream, queue &RHS) {
+        stream << std::string("Queue: ");
+        for(int i=0; i<RHS.queueSize(); i++){
+            stream << RHS.storage_structure.get_value_at(i);
+            stream << " ";
+        }
         return stream;
     }
 
     std::istream& operator>>(std::istream &stream, queue &RHS) {
+        std::string temp;
+        getline(stream, temp);
+        RHS.storage_structure.append(temp);
         return stream;
     }
 }
