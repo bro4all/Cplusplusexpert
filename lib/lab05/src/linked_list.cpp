@@ -130,16 +130,23 @@ namespace lab5 {
     }
 
     std::istream &operator>>(std::istream &stream, linked_list &RHS) {
-        return <#initializer#>;
+        std::string temp;
+        stream>>temp;
+        RHS.append(temp);
+        return stream;
+
     }
 
     std::string linked_list::get_value_at(unsigned location) const {
+        std::string value;
         node* current=head;
+        for(int i=0:i<location;i++;){
+            current=current->next;
+            value=current->data;
 
-        return std::string();
+        }
+
+        return std::string(value);
     }
 
-    std::string linked_list::get_value_at(unsigned location) {
-
-    }
 }
