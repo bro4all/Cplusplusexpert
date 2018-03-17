@@ -138,4 +138,8 @@ namespace lab5 {
 
         return std::string();
     }
+
+    std::string linked_list::get_value_at(unsigned location) {
+
+    }
 }
