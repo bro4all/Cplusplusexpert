@@ -94,7 +94,25 @@ namespace lab5 {
 
 
         void linked_list::sort() {
-
+            node *h = head, *i, *j,;
+            for(i = h; i!=NULL && i->next!=NULL; i=i->next)
+            {
+                node *min;
+                min = i;
+                for(j = i->next; j!=NULL ; j=j->next)
+                {
+                    if(j->data < min->data)
+                        min=j;
+                }
+                if(min!=i)
+                {
+                    std::string temp;
+                    temp = min->data;
+                    min->data = i->data;
+                    i->data = temp;
+                }
+            }
+            head = h;
         }
 
     void linked_list::remove(unsigned int location) {

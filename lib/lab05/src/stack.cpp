@@ -5,7 +5,7 @@ namespace lab5{
     }
 
     stack::stack(std::string &data) {
-storage_structure.insert(data.0);
+storage_structure.insert(data,0);
     }
 
     stack::stack(const stack &original) {
@@ -69,6 +69,9 @@ stack temp;
     }
 
     std::istream& operator>>(std::istream &stream, stack &RHS) {
+        std::string temp;
+        getline(stream, temp);
+        RHS.storage_structure.insert(temp, 0);
         return stream;
     }
 }
