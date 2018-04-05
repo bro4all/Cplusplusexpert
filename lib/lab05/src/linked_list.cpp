@@ -33,20 +33,28 @@ namespace lab5 {
     }
 
     linked_list &lab5::linked_list::operator=(const linked_list &RHS) {
-        //return <#initializer#>;
+        if(this == &RHS){
+            return *this;
+        }
+        head = new node (RHS.head->data);
+        tail = new node (RHS.tail->data);
+        node *temp = RHS.head;
+        node *current = head;
+        while (temp!=NULL) {
+            temp = temp->next;
+            current->next = new node (temp->data);
+            current = current->next;
+        }
+        return *this;
     }
 
 
     bool linked_list::isEmpty() const {
-        node *head = head;
-        node *tail;
         if (head == nullptr) {
             if (tail == nullptr) {
                 return true;
             }
-            return false;
         }
-        return false;
     }
 
 

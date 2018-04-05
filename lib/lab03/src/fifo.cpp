@@ -24,13 +24,15 @@ namespace lab3{
         front_index =-1;//
     }
     fifo &fifo::operator=(const fifo &right) {
-        fifo_storage.reserve(right.fifo_storage.capacity());
-        front_index = right.front_index;
-        back_index = right.back_index;
-        for(int i=0;i<=fifo_storage.size();i++){
-            fifo_storage[i]=right.fifo_storage[i];
+        this->front_index = right.front_index;
+        this->back_index = right.back_index;
+        for (int i = 0; i < right.fifo_storage.size(); i++) {
+            this->fifo_storage[i] = right.fifo_storage[i];
         }
+        return *this;
+        //return <#initializer#>;
     }
+
     bool fifo::is_empty() const {
         if(front_index>=back_index){
             return true;
@@ -40,19 +42,22 @@ namespace lab3{
         }
     }
     unsigned fifo::size() const {
-        if(front_index<back_index){
+        if (front_index < back_index) {
             int count;
-            count = back_index-(front_index) ;
+            count = back_index - (front_index);
             return count;
         }
-        if(front_index>=back_index){
+
+       else  if(front_index>=back_index){
             int temp = back_index;
             unsigned back_index=front_index;
             unsigned front_index = temp;
             return back_index-front_index;
         }
-        //return 0;
+        return 0;
+
     }
+
     std::string fifo::top() const {
         return fifo_storage[front_index];
     }
