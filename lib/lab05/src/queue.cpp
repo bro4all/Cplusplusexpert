@@ -12,7 +12,7 @@ storage_structure.append(data);
 queue temp;
         temp=original;
         for(int i=0;i<original.queueSize();i++){
-            storage_structure.append((temp.top());
+            storage_structure.append(temp.top());
             temp.dequeue();
 
         }

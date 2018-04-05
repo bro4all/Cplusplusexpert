@@ -18,3 +18,4 @@ namespace lab3 {
         void pop();                     // Remove the top string from the lifo
     };
 }
+#endif

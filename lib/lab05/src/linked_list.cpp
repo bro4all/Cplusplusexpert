@@ -94,7 +94,7 @@ namespace lab5 {
 
 
         void linked_list::sort() {
-            node *h = head, *i, *j,;
+            node *h = head, *i, *j;
             for(i = h; i!=NULL && i->next!=NULL; i=i->next)
             {
                 node *min;
@@ -158,7 +158,7 @@ namespace lab5 {
     std::string linked_list::get_value_at(unsigned location) const {
         std::string value;
         node* current=head;
-        for(int i=0:i<location;i++;){
+        for(int i=0;i<location;i++){
             current=current->next;
             value=current->data;
 
