@@ -92,12 +92,18 @@ namespace lab5 {
     }
 
     void linked_list::append(const std::string input) {
-            node *tail = head;
-            while (tail->next != nullptr) {
-                tail = tail->next;
-            }
-            tail->next = new node(input);
+        node *temp = new node(input);
+        temp->data = input;
+        if(head == NULL){
+            head = temp;
+            tail = temp;
+            tail->next = NULL;
         }
+        else{
+            tail->next=temp;
+            tail=tail->next;
+        }
+    }
 
 
 
@@ -125,22 +131,21 @@ namespace lab5 {
 
     void linked_list::remove(unsigned int location) {
         node *prev = NULL;
-        node* current = head;
-        for(int i = 0; i < location; i++){
-            prev = current;
-            current = current->next;
-        }
-        if(prev){
-            prev->next = current->next;
-            current = NULL;
-            tail = prev;
-        }
-        if(location>listSize()){
-            throw 0;
-        }
-        else if(!prev){
-            head = current->next;
-        }
+        node *current = head;
+            for (int i = 0; i < location && current->next != nullptr; i++) {
+                prev = current;
+                current = current->next;
+            }
+            if (prev) {
+                prev->next = current->next;
+                current = NULL;
+                tail = prev;
+            }
+            if (location > listSize()) {
+                throw 0;
+            } else if (!prev) {
+                head = current->next;
+            }
 
     }
 

@@ -28,13 +28,12 @@ namespace lab2 {
         std::string *temp = new std::string[new_size];
         for (int i = 0; i < new_size && i < length; i++) {
             temp[i] = data[i];
-
         }
-        if (allocated_length < length) {
+        allocated_length = new_size;
+        delete[] data;
+        data = temp;
+        if (length > allocated_length) {
             length = new_size;
-            allocated_length = new_size;
-            delete[] data;
-            data = temp;
         }
     }
 
@@ -108,6 +107,8 @@ namespace lab2 {
 
         if (position > length) {
             throw "Position is out of bounds. ";
+
+
 
         }
 
