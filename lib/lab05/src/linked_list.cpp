@@ -33,16 +33,16 @@ namespace lab5 {
     }
 
     linked_list &lab5::linked_list::operator=(const linked_list &RHS) {
-        if(this == &RHS){
+        if (this == &RHS) {
             return *this;
         }
-        head = new node (RHS.head->data);
-        tail = new node (RHS.tail->data);
+        head = new node(RHS.head->data);
+        tail = new node(RHS.tail->data);
         node *temp = RHS.head;
         node *current = head;
-        while (temp!=NULL) {
+        while (temp != NULL) {
             temp = temp->next;
-            current->next = new node (temp->data);
+            current->next = new node(temp->data);
             current = current->next;
         }
         return *this;
@@ -54,6 +54,8 @@ namespace lab5 {
             if (tail == nullptr) {
                 return true;
             }
+        } else {
+            return false;
         }
     }
 
@@ -73,23 +75,28 @@ namespace lab5 {
     }
 
     void linked_list::insert(const std::string input, unsigned int location) {
-        node *previous = NULL;
-        node *current;
+        node *previous;
+        node *current = head;
         node *temporary = new node(input);
         current = head;
-        for (int i = 0; i < location; ++i) {
-            previous = temporary;
-            current = current->next;
+        if (isEmpty()) append(input);
+        else if (location == 0){
+                node *temp = new node(input);
+                temp->next = head;
+                head = temp;
         }
-        if (previous) {
-            previous->next = temporary;
-            temporary->next = current;
-        } else {
-            head = temporary;
-            temporary->next = current;
+
+        else {
+            for (int i = 0; i < location; ++i) {
+                previous = current;
+                current = current->next;
+            }
+                temporary->next=current;
+            previous->next=temporary;
         }
-        delete temporary;
     }
+
+
 
     void linked_list::append(const std::string input) {
         node *temp = new node(input);

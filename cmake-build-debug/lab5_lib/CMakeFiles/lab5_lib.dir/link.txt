@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc liblab5_lib.a  CMakeFiles/lab5_lib.dir/src/linked_list.cpp.o CMakeFiles/lab5_lib.dir/src/stack.cpp.o CMakeFiles/lab5_lib.dir/src/queue.cpp.o CMakeFiles/lab5_lib.dir/src/fancy_calculator.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib liblab5_lib.a

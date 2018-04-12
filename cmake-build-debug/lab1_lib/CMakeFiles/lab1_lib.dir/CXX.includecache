@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../lib/lab01/inc/expressionstream.h
+string
+-
+
+/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab01/src/expressionstream.cpp
+expressionstream.h
+/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab01/src/expressionstream.h
+

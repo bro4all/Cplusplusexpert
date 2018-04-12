@@ -1,0 +1,840 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="cmpe126s18_labs"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\test\;CMake Files\test\gtest-1.7.0\;CMake Files\test\gtest-1.7.0\cmake\;CMake Files\lib\;CMake Files\lib\lab01\;CMake Files\lib\lab02\;CMake Files\lib\lab03\;CMake Files\lib\lab04\;CMake Files\lib\lab05\;CMake Files\lib\lab06\;CMake Files\lib\lab07\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="labs_main">
+				<Option output="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/labs_main" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_USE_OWN_TR1_TUPLE"/>
+					<Add option="-D__GLIBCXX__"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab01/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab02/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab03/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab04/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab05/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab06/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab07/inc"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/Makefile&quot;  VERBOSE=1 labs_main"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="labs_main/fast">
+				<Option output="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/labs_main" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_USE_OWN_TR1_TUPLE"/>
+					<Add option="-D__GLIBCXX__"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab01/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab02/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab03/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab04/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab05/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab06/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab07/inc"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/Makefile&quot;  VERBOSE=1 labs_main/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lab1_lib">
+				<Option output="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab1_lib/liblab1_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab1_lib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_USE_OWN_TR1_TUPLE"/>
+					<Add option="-D__GLIBCXX__"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab01/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab02/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab03/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab04/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab05/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab06/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab07/inc"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab1_lib/Makefile&quot;  VERBOSE=1 lab1_lib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab1_lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab1_lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab1_lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lab1_lib/fast">
+				<Option output="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab1_lib/liblab1_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab1_lib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_USE_OWN_TR1_TUPLE"/>
+					<Add option="-D__GLIBCXX__"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab01/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab02/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab03/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab04/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab05/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab06/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab07/inc"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab1_lib/Makefile&quot;  VERBOSE=1 lab1_lib/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab1_lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab1_lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab1_lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lab2_lib">
+				<Option output="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab2_lib/liblab2_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab2_lib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_USE_OWN_TR1_TUPLE"/>
+					<Add option="-D__GLIBCXX__"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab01/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab02/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab03/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab04/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab05/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab06/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab07/inc"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab2_lib/Makefile&quot;  VERBOSE=1 lab2_lib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab2_lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab2_lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab2_lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lab2_lib/fast">
+				<Option output="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab2_lib/liblab2_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab2_lib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_USE_OWN_TR1_TUPLE"/>
+					<Add option="-D__GLIBCXX__"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab01/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab02/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab03/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab04/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab05/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab06/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab07/inc"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab2_lib/Makefile&quot;  VERBOSE=1 lab2_lib/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab2_lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab2_lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab2_lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lab3_lib">
+				<Option output="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab3_lib/liblab3_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab3_lib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_USE_OWN_TR1_TUPLE"/>
+					<Add option="-D__GLIBCXX__"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab01/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab02/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab03/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab04/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab05/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab06/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab07/inc"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab3_lib/Makefile&quot;  VERBOSE=1 lab3_lib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab3_lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab3_lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab3_lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lab3_lib/fast">
+				<Option output="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab3_lib/liblab3_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab3_lib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_USE_OWN_TR1_TUPLE"/>
+					<Add option="-D__GLIBCXX__"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab01/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab02/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab03/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab04/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab05/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab06/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab07/inc"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab3_lib/Makefile&quot;  VERBOSE=1 lab3_lib/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab3_lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab3_lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab3_lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lab4_lib">
+				<Option output="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab4_lib/liblab4_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab4_lib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_USE_OWN_TR1_TUPLE"/>
+					<Add option="-D__GLIBCXX__"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab01/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab02/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab03/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab04/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab05/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab06/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab07/inc"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab4_lib/Makefile&quot;  VERBOSE=1 lab4_lib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab4_lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab4_lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab4_lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lab4_lib/fast">
+				<Option output="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab4_lib/liblab4_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab4_lib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_USE_OWN_TR1_TUPLE"/>
+					<Add option="-D__GLIBCXX__"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab01/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab02/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab03/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab04/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab05/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab06/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab07/inc"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab4_lib/Makefile&quot;  VERBOSE=1 lab4_lib/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab4_lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab4_lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab4_lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lab5_lib">
+				<Option output="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab5_lib/liblab5_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab5_lib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_USE_OWN_TR1_TUPLE"/>
+					<Add option="-D__GLIBCXX__"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab01/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab02/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab03/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab04/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab05/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab06/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab07/inc"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab5_lib/Makefile&quot;  VERBOSE=1 lab5_lib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab5_lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab5_lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab5_lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lab5_lib/fast">
+				<Option output="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab5_lib/liblab5_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab5_lib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_USE_OWN_TR1_TUPLE"/>
+					<Add option="-D__GLIBCXX__"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab01/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab02/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab03/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab04/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab05/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab06/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab07/inc"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab5_lib/Makefile&quot;  VERBOSE=1 lab5_lib/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab5_lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab5_lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab5_lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lab6_lib">
+				<Option output="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab6_lib/liblab6_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab6_lib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_USE_OWN_TR1_TUPLE"/>
+					<Add option="-D__GLIBCXX__"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab01/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab02/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab03/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab04/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab05/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab06/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab07/inc"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab6_lib/Makefile&quot;  VERBOSE=1 lab6_lib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab6_lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab6_lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab6_lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lab6_lib/fast">
+				<Option output="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab6_lib/liblab6_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab6_lib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_USE_OWN_TR1_TUPLE"/>
+					<Add option="-D__GLIBCXX__"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab01/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab02/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab03/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab04/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab05/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab06/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab07/inc"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab6_lib/Makefile&quot;  VERBOSE=1 lab6_lib/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab6_lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab6_lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab6_lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lab7_lib">
+				<Option output="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab7_lib/liblab7_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab7_lib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_USE_OWN_TR1_TUPLE"/>
+					<Add option="-D__GLIBCXX__"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab01/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab02/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab03/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab04/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab05/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab06/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab07/inc"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab7_lib/Makefile&quot;  VERBOSE=1 lab7_lib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab7_lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab7_lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab7_lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lab7_lib/fast">
+				<Option output="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab7_lib/liblab7_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab7_lib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_USE_OWN_TR1_TUPLE"/>
+					<Add option="-D__GLIBCXX__"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab01/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab02/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab03/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab04/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab05/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab06/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab07/inc"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab7_lib/Makefile&quot;  VERBOSE=1 lab7_lib/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab7_lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab7_lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/lab7_lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="runBasicTests">
+				<Option output="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/test/runBasicTests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_USE_OWN_TR1_TUPLE"/>
+					<Add option="-D__GLIBCXX__"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab01/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab02/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab03/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab04/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab05/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab06/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab07/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/test/gtest-1.7.0/include"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/test/gtest-1.7.0"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 runBasicTests"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="runBasicTests/fast">
+				<Option output="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/test/runBasicTests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_USE_OWN_TR1_TUPLE"/>
+					<Add option="-D__GLIBCXX__"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab01/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab02/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab03/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab04/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab05/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab06/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab07/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/test/gtest-1.7.0/include"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/test/gtest-1.7.0"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 runBasicTests/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main">
+				<Option output="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/test/gtest-1.7.0/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/test/gtest-1.7.0"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_USE_OWN_TR1_TUPLE"/>
+					<Add option="-D__GLIBCXX__"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab01/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab02/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab03/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab04/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab05/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab06/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab07/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/test/gtest-1.7.0/include"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/test/gtest-1.7.0"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/test/gtest-1.7.0/Makefile&quot;  VERBOSE=1 gtest_main"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/test/gtest-1.7.0/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/test/gtest-1.7.0/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/test/gtest-1.7.0/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main/fast">
+				<Option output="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/test/gtest-1.7.0/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/test/gtest-1.7.0"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_USE_OWN_TR1_TUPLE"/>
+					<Add option="-D__GLIBCXX__"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab01/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab02/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab03/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab04/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab05/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab06/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab07/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/test/gtest-1.7.0/include"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/test/gtest-1.7.0"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/test/gtest-1.7.0/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/test/gtest-1.7.0/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/test/gtest-1.7.0/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/test/gtest-1.7.0/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest">
+				<Option output="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/test/gtest-1.7.0/libgtest.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/test/gtest-1.7.0"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_USE_OWN_TR1_TUPLE"/>
+					<Add option="-D__GLIBCXX__"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab01/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab02/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab03/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab04/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab05/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab06/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab07/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/test/gtest-1.7.0/include"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/test/gtest-1.7.0"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/test/gtest-1.7.0/Makefile&quot;  VERBOSE=1 gtest"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/test/gtest-1.7.0/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/test/gtest-1.7.0/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/test/gtest-1.7.0/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest/fast">
+				<Option output="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/test/gtest-1.7.0/libgtest.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/test/gtest-1.7.0"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_USE_OWN_TR1_TUPLE"/>
+					<Add option="-D__GLIBCXX__"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab01/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab02/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab03/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab04/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab05/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab06/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab07/inc"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/test/gtest-1.7.0/include"/>
+					<Add directory="/Users/Bro4all/CLionProjects/cmpe126s18_labs/test/gtest-1.7.0"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/test/gtest-1.7.0/Makefile&quot;  VERBOSE=1 gtest/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/test/gtest-1.7.0/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/test/gtest-1.7.0/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/test/gtest-1.7.0/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab01/inc/expressionstream.h">
+			<Option target="lab1_lib"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab01/src/expressionstream.cpp">
+			<Option target="lab1_lib"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab02/inc/stringVector.h">
+			<Option target="lab2_lib"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab02/src/stringVector.cpp">
+			<Option target="lab2_lib"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab03/inc/fifo.h">
+			<Option target="lab3_lib"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab03/inc/lifo.h">
+			<Option target="lab3_lib"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab03/src/fifo.cpp">
+			<Option target="lab3_lib"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab03/src/lifo.cpp">
+			<Option target="lab3_lib"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab04/inc/calculator.h">
+			<Option target="lab4_lib"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab04/src/calculator.cpp">
+			<Option target="lab4_lib"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab05/inc/fancy_calculator.h">
+			<Option target="lab5_lib"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab05/inc/linked_list.h">
+			<Option target="lab5_lib"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab05/inc/node.h">
+			<Option target="lab5_lib"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab05/inc/queue.h">
+			<Option target="lab5_lib"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab05/inc/stack.h">
+			<Option target="lab5_lib"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab05/src/fancy_calculator.cpp">
+			<Option target="lab5_lib"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab05/src/linked_list.cpp">
+			<Option target="lab5_lib"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab05/src/queue.cpp">
+			<Option target="lab5_lib"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab05/src/stack.cpp">
+			<Option target="lab5_lib"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab06/inc/doubly_linked_list.h">
+			<Option target="lab6_lib"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab06/inc/node.h">
+			<Option target="lab6_lib"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab06/src/doubly_linked_list.cpp">
+			<Option target="lab6_lib"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/main.cpp">
+			<Option target="labs_main"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/test/gtest-1.7.0/src/gtest-all.cc">
+			<Option target="gtest"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/test/gtest-1.7.0/src/gtest_main.cc">
+			<Option target="gtest_main"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/test/lab01_tests.cpp">
+			<Option target="runBasicTests"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/test/lab02_tests.cpp">
+			<Option target="runBasicTests"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/test/lab03_tests.cpp">
+			<Option target="runBasicTests"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/test/lab04_tests.cpp">
+			<Option target="runBasicTests"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/test/lab05_tests.cpp">
+			<Option target="runBasicTests"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/test/lab06_tests.cpp">
+			<Option target="runBasicTests"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/test/gtest-1.7.0/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\gtest-1.7.0\"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/test/gtest-1.7.0/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\test\gtest-1.7.0\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab01/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\lab01\"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab02/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\lab02\"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab03/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\lab03\"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab04/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\lab04\"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab05/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\lab05\"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab06/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\lab06\"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab07/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\lab07\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -2,6 +2,8 @@
 #include <iostream>
 
 namespace lab7 {
+    void InsertElementInBinaryTree(node *root, node *element);
+
     void clear(node *to_clear);
 
     // Construct an empty tree
@@ -16,8 +18,20 @@ namespace lab7 {
 
     // Insert
     void tree::insert(int value) {
+        node *temproot = root;
+        node *current = new node(value);
+        if (root == nullptr) {
+            root = current;
+            delete current;
+        }
+        else{
+            InsertElementInBinaryTree(temproot, current);
+    }
+        tree_size++;
+
 
     }
+
 
     // Remove key
     bool tree::remove(int key) {
@@ -116,4 +130,27 @@ namespace lab7 {
     }
 
 
+    void InsertElementInBinaryTree(node *root, node *element) {
+        if (root) {
+            if (root->left == NULL)
+                root->left = element;
+            else if (root->right == NULL)
+                root->right = element;
+            InsertElementInBinaryTree(root->left, element);
+            InsertElementInBinaryTree(root->right, element);
+            if (root->data > element->data) {
+                if (root->left == NULL)
+                {
+                    root->left = element;
+                } else {
+                    InsertElementInBinaryTree(root->left, element);
+                }
+            } else {
+                if (root->right == NULL) {
+                    root->right = element;
+                } else {
+                    InsertElementInBinaryTree(root->right, element);
+                }
+        }
+    }
 }

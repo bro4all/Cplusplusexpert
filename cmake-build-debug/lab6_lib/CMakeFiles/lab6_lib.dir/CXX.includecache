@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab06/inc/doubly_linked_list.h
+node.h
+/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab06/inc/node.h
+vector
+-
+iostream
+-
+
+/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab06/inc/node.h
+
+/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab06/src/doubly_linked_list.cpp
+../inc/doubly_linked_list.h
+/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab06/inc/doubly_linked_list.h
+

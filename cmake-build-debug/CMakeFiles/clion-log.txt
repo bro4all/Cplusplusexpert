@@ -1,0 +1,7 @@
+/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/Bro4all/CLionProjects/cmpe126s18_labs
+You have called ADD_LIBRARY for library lab7_lib without any source files. This typically indicates a problem with your CMakeLists.txt file
+-- Configuring done
+CMake Error: Cannot determine link language for target "lab7_lib".
+CMake Error: CMake can not determine linker language for target: lab7_lib
+-- Generating done
+-- Build files have been written to: /Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug

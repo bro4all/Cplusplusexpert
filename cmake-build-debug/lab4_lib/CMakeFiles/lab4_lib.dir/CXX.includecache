@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../lib/lab01/inc/expressionstream.h
+string
+-
+
+../lib/lab02/inc/stringVector.h
+string
+-
+
+../lib/lab03/inc/fifo.h
+stringVector.h
+../lib/lab03/inc/stringVector.h
+
+../lib/lab03/inc/lifo.h
+stringVector.h
+../lib/lab03/inc/stringVector.h
+
+../lib/lab04/inc/calculator.h
+lifo.h
+../lib/lab04/inc/lifo.h
+fifo.h
+../lib/lab04/inc/fifo.h
+expressionstream.h
+../lib/lab04/inc/expressionstream.h
+
+/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab04/src/calculator.cpp
+expressionstream.h
+/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab04/src/expressionstream.h
+string
+-
+calculator.h
+/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab04/src/calculator.h
+sstream
+-
+

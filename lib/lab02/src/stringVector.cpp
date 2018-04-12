@@ -156,5 +156,8 @@ namespace lab2 {
         if (allocated_length != new_size) reserve(new_size);
         length = new_size;
     }
+    void changelenght(){
+
+    }
 
 }

@@ -48,13 +48,31 @@ namespace lab6 {
     }
 
     unsigned doubly_linked_list::size() {
+node* temp=head;
+unsigned size;
+if (temp->next= nullptr){
+            throw" list is empty";
+        }
+        else {
+    while (temp->next != nullptr) {
+        size++;
+        temp = temp->next;
 
+    }
+    return size;
+}
     }
 
     bool doubly_linked_list::is_empty() {
-
-
-    }
+        if(head->next= nullptr){
+            if(tail= nullptr){
+                return  true;
+            }
+        }
+        else{
+            return false;
+        }
+        }
 
     void doubly_linked_list::append(int input) {
         node *tail = head;
@@ -168,7 +186,130 @@ namespace lab6 {
     }
 
     void doubly_linked_list::swap(unsigned position_1, unsigned position_2) {
+        if (position_1>size()||position_2>size()){
+            throw "nodes do not exsist";
+        }
+        else {
+            node *curr1, *curr2, *prev1 = nullptr, *prev2 = nullptr, *temp1 = nullptr, *temp2 = nullptr;
+            curr1 = head;
+            curr2 = head;
+            for (int i = 1; i < position_1; i++) {
+                curr1 = curr1->next;
+            }
+            prev1 = curr1->prev;
+            temp1 = curr1->next;
+            for (int i = 1; i < position_1; i++) {
+                curr1 = curr1->next;
+            }
+            prev1 = curr1->prev;
+            temp1 = curr1->next;
+
+            if (prev1 != nullptr && curr2 != tail && curr2->next != curr1 && curr1->next != curr2) {
+                prev2->next = curr1;
+                curr1->next = temp2;
+                curr1->prev = prev2;
+                temp2->prev = curr1;
+                curr2->prev = nullptr;
+                curr2->next = temp1;
+                temp1->prev = curr2;
+                head = curr2;
+            } else if ((temp1 != nullptr && !prev2) && curr1 != tail &&curr2->next != curr1 && curr1->next != curr2
+                       ) {
+                prev1->next = temp2;
+                curr2->next = temp1;
+                curr2->prev = prev1;
+                temp1->prev = curr2;
+                curr1->prev = nullptr;
+                temp1->next = temp2;
+                temp2->prev = curr1;
+                head = curr1;
+            }
+
+        else if(curr1 == head && curr2 == tail){
+            if(curr1->next == curr2){
+                curr1->next = nullptr;
+                curr2->prev = nullptr;
+                curr1->prev = curr2;
+                curr2->next = curr1;
+                head = curr2;
+                tail = curr1;
+            }
+            else {
+                curr1->next = nullptr;
+                curr1->prev = prev2;
+                curr2->next = temp1;
+                curr2->prev = nullptr;
+                prev2->next = curr1;
+                temp1->prev = curr2;
+                head = curr2;
+                tail = curr1;
+            }
+        }
+        else if(curr2 == head && curr1 == tail){
+            if(curr2->next == curr1){
+                curr2->next = nullptr;
+                curr1->prev = nullptr;
+                curr2->prev = curr1;
+                curr1->next = curr2;
+                head = curr1;
+                tail = curr2;
+            }
+            else {
+                curr2->next = nullptr;
+                curr2->prev = prev1;
+                curr1->next = temp2;
+                curr1->prev = nullptr;
+                prev1->next = curr2;
+                temp2->prev = curr1;
+                head = curr1;
+                tail = curr2;
+            }
+        }
+        else if(curr1 == head && curr1->next == curr2){
+            curr1->next = temp2;
+            curr1->prev = curr2;
+            curr2->prev = nullptr;
+            curr2->next = curr1;
+            prev2->prev = curr1;
+            head = curr2;
+        }
+        else if(curr2 == head && curr2->next == curr1){
+            curr1->prev = nullptr;
+            curr1->next = curr2;
+            curr2->prev = curr1;
+            curr2->next = temp1;
+            temp1->prev = curr2;
+            head = curr1;
+        }
+        else if(curr1==tail->prev && curr2 == tail){
+            curr1->next = nullptr;
+            curr1->prev = curr2;
+            curr2->next = curr1;
+            curr2->prev = prev1;
+            prev1->next = curr2;
+            tail = curr1;
+        }
+        else if(curr2==tail->prev && curr1 == tail){
+            curr2->next = nullptr;
+            curr2->prev = curr1;
+            curr1->next = curr2;
+            curr1->prev = prev2;
+            prev2->next = curr1;
+            tail = curr2;
+        }
+        else {
+            prev1->next = curr2;
+            curr2->prev = prev1;
+            curr2->next = temp1;
+            temp1->prev = curr2;
+            prev2->next = curr1;
+            curr1->prev = prev2;
+            curr1->next = temp2;
+            temp2->prev = curr1;
+        }
     }
+}
+
 
     void doubly_linked_list::swap_set(unsigned location_1_start, unsigned location_1_end, unsigned location_2_start,
                                       unsigned location_2_end) {
@@ -408,21 +549,17 @@ namespace lab6 {
         }
 
         node *sorted = NULL;
-        // Traverse the given doubly linked list and
-        // insert every node to 'sorted'
-        node *current = head;
         while (current != NULL) {
-            // Store next for next iteration
+
             node *next = current->next;
-            // removing all the links so as to create 'current'
-            // as a new node for insertion
+
             current->prev = current->next = NULL;
-            // insert current in 'sorted' doubly linked list
+
             sort();
-            // Update current
+
             current = next;
         }
-        // Update head_ref to point to sorted doubly linked list
+
         head = sorted;
 
     }

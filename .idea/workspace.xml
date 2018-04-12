@@ -1,0 +1,1286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
+    <generated>
+      <config projectName="cmpe126s18_labs" targetName="lab3_lib" />
+      <config projectName="cmpe126s18_labs" targetName="gtest" />
+      <config projectName="cmpe126s18_labs" targetName="gtest_main" />
+      <config projectName="cmpe126s18_labs" targetName="lab4_lib" />
+      <config projectName="cmpe126s18_labs" targetName="runBasicTests" />
+      <config projectName="cmpe126s18_labs" targetName="lab2_lib" />
+      <config projectName="cmpe126s18_labs" targetName="labs_main" />
+      <config projectName="cmpe126s18_labs" targetName="lab1_lib" />
+      <config projectName="cmpe126s18_labs" targetName="lab6_lib" />
+      <config projectName="cmpe126s18_labs" targetName="lab5_lib" />
+      <config projectName="cmpe126s18_labs" targetName="lab7_lib" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2fbadca7-5491-4f36-918a-868f6c66cb69" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/lab07/inc/node.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/lab08/inc/hash_table.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/lab08/src/hash_table.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/lab08/src/sorts.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/lab09/inc/dict_entry.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/lab09/inc/huffman.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/lab09/inc/huffman_dictionary.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/lab09/inc/huffman_tree.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/lab09/inc/node.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/lab09/src/huffman.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/lab09/src/huffman_dictionary.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/lab09/src/huffman_tree.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/lab07_tests.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/lab02/src/stringVector.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/lab02/src/stringVector.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/lab04/src/calculator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/lab04/src/calculator.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/lab05/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lib/lab05/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/lab05/src/linked_list.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/lab05/src/linked_list.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/lab06/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lib/lab06/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/lab06/inc/node.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/lab06/inc/node.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/lab06/src/doubly_linked_list.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/lab06/src/doubly_linked_list.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/lab07/src/tree.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/lab07/src/tree.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/lab08/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/lab08/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/lab08/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lib/lab08/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/lab09/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/lab09/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/lab09/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lib/lab09/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/lab10/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/lab10/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lib/lab10/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/lab10/src/fifo.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/lab10/src/lifo.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/gtest-1.7.0/build-aux/config.guess" beforeDir="false" afterPath="$PROJECT_DIR$/test/gtest-1.7.0/build-aux/config.guess" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="lifo.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/lab03/src/lifo.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="53" selection-start-line="53" selection-end-line="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lab07_tests.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/lab07_tests.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="node.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/lab07/inc/node.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tree.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/lab07/inc/tree.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tree.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/lab07/src/tree.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="172">
+              <caret line="142" column="16" selection-start-line="142" selection-start-column="16" selection-end-line="142" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/lib/lab01/src/expressionstream.cpp" />
+        <option value="$PROJECT_DIR$/lib/lab02/README.md" />
+        <option value="$PROJECT_DIR$/test/lab01_tests.cpp" />
+        <option value="$PROJECT_DIR$/test/lab03_tests.cpp" />
+        <option value="$PROJECT_DIR$/lib/lab02/inc/stringVector.h" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/lib/lab06/inc/node.h" />
+        <option value="$PROJECT_DIR$/lib/lab05/inc/linked_list.h" />
+        <option value="$PROJECT_DIR$/lib/lab05/src/queue.cpp" />
+        <option value="$PROJECT_DIR$/lib/lab05/inc/stack.h" />
+        <option value="$PROJECT_DIR$/lib/lab05/src/stack.cpp" />
+        <option value="$PROJECT_DIR$/lib/lab05/src/fancy_calculator.cpp" />
+        <option value="$PROJECT_DIR$/lib/lab04/inc/calculator.h" />
+        <option value="$PROJECT_DIR$/test/lab02_tests.cpp" />
+        <option value="$PROJECT_DIR$/lib/lab03/src/fifo.cpp" />
+        <option value="$PROJECT_DIR$/lib/lab03/src/lifo.cpp" />
+        <option value="$PROJECT_DIR$/lib/lab03/inc/fifo.h" />
+        <option value="$PROJECT_DIR$/lib/lab03/inc/lifo.h" />
+        <option value="$PROJECT_DIR$/lib/lab06/src/doubly_linked_list.cpp" />
+        <option value="$PROJECT_DIR$/lib/lab04/src/calculator.cpp" />
+        <option value="$PROJECT_DIR$/lib/lab05/src/linked_list.cpp" />
+        <option value="$PROJECT_DIR$/lib/lab02/src/stringVector.cpp" />
+        <option value="$PROJECT_DIR$/test/lab07_tests.cpp" />
+        <option value="$PROJECT_DIR$/lib/lab07/src/tree.cpp" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="720" />
+    <option name="y" value="23" />
+    <option name="width" value="720" />
+    <option name="height" value="812" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="cmpe126s18_labs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmpe126s18_labs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmpe126s18_labs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmpe126s18_labs" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmpe126s18_labs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmpe126s18_labs" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="lab01" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmpe126s18_labs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmpe126s18_labs" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="lab01" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmpe126s18_labs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmpe126s18_labs" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="lab02" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmpe126s18_labs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmpe126s18_labs" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="lab02" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmpe126s18_labs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmpe126s18_labs" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="lab03" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmpe126s18_labs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmpe126s18_labs" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="lab03" type="462c0819:PsiDirectoryNode" />
+              <item name="inc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmpe126s18_labs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmpe126s18_labs" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="lab03" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmpe126s18_labs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmpe126s18_labs" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="lab04" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmpe126s18_labs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmpe126s18_labs" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="lab04" type="462c0819:PsiDirectoryNode" />
+              <item name="inc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmpe126s18_labs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmpe126s18_labs" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="lab04" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmpe126s18_labs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmpe126s18_labs" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="lab05" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmpe126s18_labs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmpe126s18_labs" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="lab05" type="462c0819:PsiDirectoryNode" />
+              <item name="inc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmpe126s18_labs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmpe126s18_labs" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="lab05" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmpe126s18_labs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmpe126s18_labs" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="lab06" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmpe126s18_labs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmpe126s18_labs" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="lab06" type="462c0819:PsiDirectoryNode" />
+              <item name="inc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmpe126s18_labs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmpe126s18_labs" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="lab06" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmpe126s18_labs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmpe126s18_labs" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="lab07" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmpe126s18_labs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmpe126s18_labs" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="lab07" type="462c0819:PsiDirectoryNode" />
+              <item name="inc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmpe126s18_labs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmpe126s18_labs" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="lab07" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmpe126s18_labs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmpe126s18_labs" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Google Test.All in lab07_tests.cpp">
+    <configuration name="All in lab05_tests.cpp" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cmpe126s18_labs" TARGET_NAME="runBasicTests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cmpe126s18_labs" RUN_TARGET_NAME="runBasicTests" TEST_PATTERN="Lab05Fixture.*:Lab05Fixture/*.*:*/Lab05Fixture.*/*:*/Lab05Fixture/*.*:crashTest.*:crashTest/*.*:*/crashTest.*/*:*/crashTest/*.*" TEST_MODE="PATTERN" />
+    <configuration name="All in lab06_tests.cpp" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cmpe126s18_labs" TARGET_NAME="runBasicTests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cmpe126s18_labs" RUN_TARGET_NAME="runBasicTests" TEST_PATTERN="Lab06Fixture.*:Lab06Fixture/*.*:*/Lab06Fixture.*/*:*/Lab06Fixture/*.*" TEST_MODE="PATTERN" />
+    <configuration name="All in lab07_tests.cpp" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" TEST_PATTERN="Lab07Fixture.*:Lab07Fixture/*.*:*/Lab07Fixture.*/*:*/Lab07Fixture/*.*" TEST_MODE="PATTERN" />
+    <configuration name="Lab03Fixture.lifo_push_pop_top_test" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cmpe126s18_labs" TARGET_NAME="runBasicTests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cmpe126s18_labs" RUN_TARGET_NAME="runBasicTests" TEST_CLASS="Lab03Fixture" TEST_METHOD="lifo_push_pop_top_test" TEST_MODE="SUITE_TEST" />
+    <configuration name="crashTest.lab5_constructor_destructor_Test" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cmpe126s18_labs" TARGET_NAME="runBasicTests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cmpe126s18_labs" RUN_TARGET_NAME="runBasicTests" TEST_CLASS="crashTest" TEST_METHOD="lab5_constructor_destructor_Test" TEST_MODE="SUITE_TEST" />
+    <configuration name="runBasicTests" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cmpe126s18_labs" TARGET_NAME="runBasicTests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cmpe126s18_labs" RUN_TARGET_NAME="runBasicTests" TEST_MODE="SUITE_TEST" />
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cmpe126s18_labs" RUN_TARGET_NAME="labs_main" EXPLICIT_BUILD_TARGET_NAME="all" />
+    <configuration name="gtest" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cmpe126s18_labs" TARGET_NAME="gtest" CONFIG_NAME="Debug" />
+    <configuration name="gtest_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cmpe126s18_labs" TARGET_NAME="gtest_main" CONFIG_NAME="Debug" />
+    <configuration name="lab1_lib" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cmpe126s18_labs" TARGET_NAME="lab1_lib" CONFIG_NAME="Debug" />
+    <configuration name="lab2_lib" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cmpe126s18_labs" TARGET_NAME="lab2_lib" CONFIG_NAME="Debug" />
+    <configuration name="lab3_lib" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cmpe126s18_labs" TARGET_NAME="lab3_lib" CONFIG_NAME="Debug" />
+    <configuration name="lab4_lib" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cmpe126s18_labs" TARGET_NAME="lab4_lib" CONFIG_NAME="Debug" />
+    <configuration name="lab5_lib" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cmpe126s18_labs" TARGET_NAME="lab5_lib" CONFIG_NAME="Debug" />
+    <configuration name="lab6_lib" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cmpe126s18_labs" TARGET_NAME="lab6_lib" CONFIG_NAME="Debug" />
+    <configuration name="lab7_lib" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cmpe126s18_labs" TARGET_NAME="lab7_lib" CONFIG_NAME="Debug" />
+    <configuration name="labs_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cmpe126s18_labs" TARGET_NAME="labs_main" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cmpe126s18_labs" RUN_TARGET_NAME="labs_main" />
+    <list>
+      <item itemvalue="Application.Build All" />
+      <item itemvalue="Application.labs_main" />
+      <item itemvalue="Application.lab1_lib" />
+      <item itemvalue="Application.lab2_lib" />
+      <item itemvalue="Application.lab3_lib" />
+      <item itemvalue="Application.lab4_lib" />
+      <item itemvalue="Application.lab5_lib" />
+      <item itemvalue="Application.lab6_lib" />
+      <item itemvalue="Application.lab7_lib" />
+      <item itemvalue="Google Test.runBasicTests" />
+      <item itemvalue="Application.gtest" />
+      <item itemvalue="Application.gtest_main" />
+      <item itemvalue="Google Test.All in lab05_tests.cpp" />
+      <item itemvalue="Google Test.Lab03Fixture.lifo_push_pop_top_test" />
+      <item itemvalue="Google Test.All in lab06_tests.cpp" />
+      <item itemvalue="Google Test.crashTest.lab5_constructor_destructor_Test" />
+      <item itemvalue="Google Test.All in lab07_tests.cpp" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Google Test.All in lab07_tests.cpp" />
+        <item itemvalue="Google Test.crashTest.lab5_constructor_destructor_Test" />
+        <item itemvalue="Google Test.All in lab05_tests.cpp" />
+        <item itemvalue="Google Test.All in lab06_tests.cpp" />
+        <item itemvalue="Google Test.Lab03Fixture.lifo_push_pop_top_test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2fbadca7-5491-4f36-918a-868f6c66cb69" name="Default" comment="" />
+      <created>1517531464564</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1517531464564</updated>
+      <workItem from="1517531465780" duration="22000" />
+      <workItem from="1517531773778" duration="13202000" />
+      <workItem from="1518133259495" duration="5118000" />
+      <workItem from="1518141693677" duration="10079000" />
+      <workItem from="1518322538599" duration="766000" />
+      <workItem from="1518328530909" duration="20527000" />
+      <workItem from="1518566513293" duration="5694000" />
+      <workItem from="1518736101004" duration="10930000" />
+      <workItem from="1519106151626" duration="8484000" />
+      <workItem from="1519251679265" duration="746000" />
+      <workItem from="1519286745478" duration="4610000" />
+      <workItem from="1519532527234" duration="18663000" />
+      <workItem from="1520067503037" duration="5083000" />
+      <workItem from="1520318234169" duration="235000" />
+      <workItem from="1520373907475" duration="823000" />
+      <workItem from="1520530969367" duration="270000" />
+      <workItem from="1520531275452" duration="10582000" />
+      <workItem from="1521091828795" duration="15400000" />
+      <workItem from="1521739361858" duration="488000" />
+      <workItem from="1521754926342" duration="2870000" />
+      <workItem from="1522649578923" duration="130000" />
+      <workItem from="1522649735636" duration="347000" />
+      <workItem from="1522777731511" duration="388000" />
+      <workItem from="1522780722009" duration="541000" />
+      <workItem from="1522786883195" duration="527000" />
+      <workItem from="1522902531976" duration="7091000" />
+      <workItem from="1522962700277" duration="15583000" />
+      <workItem from="1523319828771" duration="8221000" />
+      <workItem from="1523393005085" duration="3475000" />
+      <workItem from="1523511769515" duration="7220000" />
+    </task>
+    <task id="LOCAL-00001" summary="I added 5 tests that passes correct.&#10;1. Test if the first value of stream1&gt; the first value of stream 3&#10;2.the expression is not down yet so I should expect false due to the nature of the function written.&#10;3.I expect that the second value of stream 1 is 2&#10;4.I expect that the thirds value of stream 1 is not equal to 2&#10;5 I expect that the first value of stream 2 is equal to 1">
+      <created>1517886022877</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1517886022877</updated>
+    </task>
+    <task id="LOCAL-00002" summary="I added 5 tests that passes correct.&#10;1. Test if the first value of stream1&gt; the first value of stream 3&#10;2.the expression is not down yet so I should expect false due to the nature of the function written.&#10;3.I expect that the second value of stream 1 is 2&#10;4.I expect that the thirds value of stream 1 is not equal to 2&#10;5 I expect that the first value of stream 2 is equal to 1&#10;.&#10;On 02/06/2018&#10;I created another test and I wanted to test expecte_true test and how it works.">
+      <created>1517942348928</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1517942348928</updated>
+    </task>
+    <task id="LOCAL-00003" summary="First commit">
+      <created>1518312443757</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1518312443757</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Finished last 2 functions">
+      <created>1518403354576</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1518403354576</updated>
+    </task>
+    <task id="LOCAL-00005" summary="made 6 tests">
+      <created>1518494334013</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1518494334013</updated>
+    </task>
+    <task id="LOCAL-00006" summary="2 tests only failing">
+      <created>1518498475773</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1518498475774</updated>
+    </task>
+    <task id="LOCAL-00007" summary="re wrote append and reserve with commenting the old ones">
+      <created>1518555996648</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1518555996648</updated>
+    </task>
+    <task id="LOCAL-00008" summary="did some more work">
+      <created>1518557460273</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1518557460273</updated>
+    </task>
+    <task id="LOCAL-00009" summary="new reserve function">
+      <created>1518560444680</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1518560444680</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Last commit">
+      <created>1518720958548</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1518720958549</updated>
+    </task>
+    <task id="LOCAL-00011" summary="rewrote reserve and append">
+      <created>1518726651851</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1518726651851</updated>
+    </task>
+    <task id="LOCAL-00012" summary="finished 2 codes.">
+      <created>1518927892534</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1518927892534</updated>
+    </task>
+    <task id="LOCAL-00013" summary="finished 2 codes.">
+      <created>1519111311252</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1519111311252</updated>
+    </task>
+    <task id="LOCAL-00014" summary="finished 2 codes.">
+      <created>1519155836788</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1519155836788</updated>
+    </task>
+    <task id="LOCAL-00015" summary="finished 2 codes.">
+      <created>1519164447936</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1519164447937</updated>
+    </task>
+    <task id="LOCAL-00016" summary="finished 2 codes.">
+      <created>1519286794118</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1519286794118</updated>
+    </task>
+    <task id="LOCAL-00017" summary="finished 2 codes.">
+      <created>1519720435622</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1519720435622</updated>
+    </task>
+    <task id="LOCAL-00018" summary="02/27/2018">
+      <created>1519774676126</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1519774676126</updated>
+    </task>
+    <task id="LOCAL-00019" summary="fixed fifo and lifo, maybe">
+      <created>1519945466720</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1519945466720</updated>
+    </task>
+    <task id="LOCAL-00020" summary="fixed the rest">
+      <created>1519949027983</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1519949027984</updated>
+    </task>
+    <task id="LOCAL-00021" summary="03/08/2017">
+      <created>1520547596856</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1520547596856</updated>
+    </task>
+    <task id="LOCAL-00022" summary="03/08/2017">
+      <created>1520547632897</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1520547632898</updated>
+    </task>
+    <task id="LOCAL-00023" summary="03/08/2017">
+      <created>1520585799822</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1520585799823</updated>
+    </task>
+    <task id="LOCAL-00024" summary="03/08/2017">
+      <created>1520585849706</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1520585849706</updated>
+    </task>
+    <task id="LOCAL-00025" summary="03/08/2017">
+      <created>1520619026156</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1520619026156</updated>
+    </task>
+    <task id="LOCAL-00026" summary="i stream ostream">
+      <created>1520632222768</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1520632222768</updated>
+    </task>
+    <task id="LOCAL-00027" summary="i stream ostream">
+      <created>1521147326441</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1521147326441</updated>
+    </task>
+    <task id="LOCAL-00028" summary="i stream ostream">
+      <created>1521147342065</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1521147342065</updated>
+    </task>
+    <task id="LOCAL-00029" summary="i stream ostream">
+      <created>1521147496160</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1521147496160</updated>
+    </task>
+    <task id="LOCAL-00030" summary="i stream ostream">
+      <created>1521264226558</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1521264226558</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Merge branch 'master' of https://bitbucket.org/cmpe126s18/cmpe126s18_labs&#10;&#10;# Conflicts:&#10;#&#9;lib/lab05/inc/linked_list.h">
+      <created>1521265949823</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1521265949823</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Merge branch 'master' of https://bitbucket.org/cmpe126s18/cmpe126s18_labs&#10;&#10;# Conflicts:&#10;#&#9;lib/lab05/inc/linked_list.h">
+      <created>1521266694341</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1521266694341</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Merge branch 'master' of https://bitbucket.org/cmpe126s18/cmpe126s18_labs&#10;&#10;# Conflicts:&#10;#&#9;lib/lab05/inc/linked_list.h">
+      <created>1521267130956</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1521267130956</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Merge branch 'master' of https://bitbucket.org/cmpe126s18/cmpe126s18_labs&#10;&#10;# Conflicts:&#10;#&#9;lib/lab05/inc/linked_list.h">
+      <created>1521267358903</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1521267358903</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Merge branch 'master' of https://bitbucket.org/cmpe126s18/cmpe126s18_labs&#10;&#10;# Conflicts:&#10;#&#9;lib/lab05/inc/linked_list.h">
+      <created>1521525391126</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1521525391126</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Merge branch 'master' of https://bitbucket.org/cmpe126s18/cmpe126s18_labs&#10;&#10;# Conflicts:&#10;#&#9;lib/lab05/src/stack.cpp&#10;#&#9;test/lab02_tests.cpp&#10;#&#9;test/lab03_tests.cpp">
+      <created>1522903904526</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1522903904526</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Merge branch 'master' of https://bitbucket.org/cmpe126s18/cmpe126s18_labs&#10;&#10;# Conflicts:&#10;#&#9;CMakeLists.txt&#10;#&#9;lib/lab07/README.md&#10;#&#9;lib/lab07/inc/tree.h&#10;#&#9;lib/lab07/src/tree.cpp">
+      <created>1522960457830</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1522960457830</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Merge branch 'master' of https://bitbucket.org/cmpe126s18/cmpe126s18_labs&#10;&#10;# Conflicts:&#10;#&#9;CMakeLists.txt&#10;#&#9;lib/lab07/README.md&#10;#&#9;lib/lab07/inc/tree.h&#10;#&#9;lib/lab07/src/tree.cpp">
+      <created>1522960787782</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1522960787782</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Merge branch 'master' of https://bitbucket.org/cmpe126s18/cmpe126s18_labs&#10;&#10;# Conflicts:&#10;#&#9;CMakeLists.txt&#10;#&#9;lib/lab07/README.md&#10;#&#9;lib/lab07/inc/tree.h&#10;#&#9;lib/lab07/src/tree.cpp">
+      <created>1522969834782</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1522969834782</updated>
+    </task>
+    <task id="LOCAL-00040" summary="nothing is passing because of an error that I don't know how to deal with">
+      <created>1523321669901</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1523321669901</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="All_in_lab05_tests_cpp - 2018.04.11 at 22h 44m 01s.xml">
+      <configuration name="All in lab05_tests.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="All_in_lab03_tests_cpp - 2018.04.12 at 11h 52m 18s.xml">
+      <configuration name="All in lab03_tests.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="All_in_lab02_tests_cpp - 2018.04.12 at 12h 08m 23s.xml">
+      <configuration name="All in lab02_tests.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="All_in_lab02_tests_cpp - 2018.04.12 at 12h 09m 25s.xml">
+      <configuration name="All in lab02_tests.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="All_in_lab02_tests_cpp - 2018.04.12 at 13h 05m 03s.xml">
+      <configuration name="All in lab02_tests.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Lab03Fixture_lifo_push_pop_top_test - 2018.04.12 at 13h 05m 04s.xml">
+      <configuration name="Lab03Fixture.lifo_push_pop_top_test" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="All_in_lab06_tests_cpp - 2018.04.12 at 14h 37m 07s.xml">
+      <configuration name="All in lab06_tests.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="All_in_lab05_tests_cpp - 2018.04.12 at 14h 43m 43s.xml">
+      <configuration name="All in lab05_tests.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="crashTest_lab5_constructor_destructor_Test - 2018.04.12 at 14h 44m 00s.xml">
+      <configuration name="crashTest.lab5_constructor_destructor_Test" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="crashTest_lab5_constructor_destructor_Test - 2018.04.12 at 14h 46m 47s.xml">
+      <configuration name="crashTest.lab5_constructor_destructor_Test" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="178115000" />
+  </component>
+  <component name="TodoView" selected-index="1">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="720" y="23" width="720" height="812" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.44921315" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49964765" weight="0.3244382" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49541932" weight="0.3888112" />
+      <window_info anchor="bottom" id="CMake" order="7" sideWeight="0.49499285" visible="true" weight="0.32587412" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="7" sideWeight="0.50500715" side_tool="true" visible="true" weight="0.32587412" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4989429" weight="0.33566433" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49753347" weight="0.38041958" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.24947146" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32357043" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49753347" weight="0.3958042" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286517" />
+    </layout>
+    <layout-to-restore>
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.32635984" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20718816" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.24947146" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32496512" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49753347" weight="0.47140864" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49753347" weight="0.39664805" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32357043" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5024665" side_tool="true" weight="0.39330545" />
+      <window_info anchor="bottom" id="Version Control" order="10" visible="true" weight="0.049157303" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32914925" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.4982382" weight="0.32914925" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="I added 5 tests that passes correct.&#10;1. Test if the first value of stream1&gt; the first value of stream 3&#10;2.the expression is not down yet so I should expect false due to the nature of the function written.&#10;3.I expect that the second value of stream 1 is 2&#10;4.I expect that the thirds value of stream 1 is not equal to 2&#10;5 I expect that the first value of stream 2 is equal to 1" />
+    <MESSAGE value="I added 5 tests that passes correct.&#10;1. Test if the first value of stream1&gt; the first value of stream 3&#10;2.the expression is not down yet so I should expect false due to the nature of the function written.&#10;3.I expect that the second value of stream 1 is 2&#10;4.I expect that the thirds value of stream 1 is not equal to 2&#10;5 I expect that the first value of stream 2 is equal to 1&#10;.&#10;On 02/06/2018&#10;I created another test and I wanted to test expecte_true test and how it works." />
+    <MESSAGE value="First commit" />
+    <MESSAGE value="Finished last 2 functions" />
+    <MESSAGE value="made 6 tests" />
+    <MESSAGE value="2 tests only failing" />
+    <MESSAGE value="re wrote append and reserve with commenting the old ones" />
+    <MESSAGE value="did some more work" />
+    <MESSAGE value="new reserve function" />
+    <MESSAGE value="Last commit" />
+    <MESSAGE value="rewrote reserve and append" />
+    <MESSAGE value="finished 2 codes." />
+    <MESSAGE value="02/27/2018" />
+    <MESSAGE value="fixed fifo and lifo, maybe" />
+    <MESSAGE value="fixed the rest" />
+    <MESSAGE value="03/08/2017" />
+    <MESSAGE value="i stream ostream" />
+    <MESSAGE value="Merge branch 'master' of https://bitbucket.org/cmpe126s18/cmpe126s18_labs&#10;&#10;# Conflicts:&#10;#&#9;lib/lab05/inc/linked_list.h" />
+    <MESSAGE value="Merge branch 'master' of https://bitbucket.org/cmpe126s18/cmpe126s18_labs&#10;&#10;# Conflicts:&#10;#&#9;lib/lab05/src/stack.cpp&#10;#&#9;test/lab02_tests.cpp&#10;#&#9;test/lab03_tests.cpp" />
+    <MESSAGE value="Merge branch 'master' of https://bitbucket.org/cmpe126s18/cmpe126s18_labs&#10;&#10;# Conflicts:&#10;#&#9;CMakeLists.txt&#10;#&#9;lib/lab07/README.md&#10;#&#9;lib/lab07/inc/tree.h&#10;#&#9;lib/lab07/src/tree.cpp" />
+    <MESSAGE value="nothing is passing because of an error that I don't know how to deal with" />
+    <option name="LAST_COMMIT_MESSAGE" value="nothing is passing because of an error that I don't know how to deal with" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/test/lab02_tests.cpp</url>
+          <line>41</line>
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/test/lab04_tests.cpp</url>
+          <line>30</line>
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="CidrExceptionBreakpoint">
+          <properties />
+        </breakpoint>
+        <breakpoint enabled="true" type="javascript-exception">
+          <properties />
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="106" />
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>head-&gt;data = data</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/lib/lab06/src/doubly_linked_list.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="84" column="44" selection-start-line="84" selection-start-column="44" selection-end-line="84" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/lab6_lib/CMakeFiles/lab6_lib.dir/depend.internal">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lab06/inc/node.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lab05/src/linked_list.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1440">
+          <caret line="96" column="23" selection-start-line="96" selection-start-column="23" selection-end-line="96" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lab04/src/calculator.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1425">
+          <caret line="95" column="59" lean-forward="true" selection-start-line="95" selection-start-column="59" selection-end-line="95" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lab03/src/lifo.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="27" lean-forward="true" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lab03/src/fifo.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="53" column="19" lean-forward="true" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lab02/src/stringVector.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1800">
+          <caret line="120" lean-forward="true" selection-end-line="158" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lab04/src/calculator.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2295">
+          <caret line="153" column="5" selection-start-line="153" selection-start-column="5" selection-end-line="153" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lab05/src/linked_list.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1455">
+          <caret line="97" column="36" selection-start-line="97" selection-start-column="36" selection-end-line="97" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lab04/src/calculator.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2295">
+          <caret line="153" column="5" lean-forward="true" selection-start-line="153" selection-start-column="5" selection-end-line="153" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lab05/src/linked_list.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1455">
+          <caret line="97" column="36" selection-start-line="97" selection-start-column="36" selection-end-line="97" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lab05/inc/linked_list.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/lab6_lib/CMakeFiles/lab6_lib.dir/depend.internal">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/gtest-1.7.0/include/gtest/gtest_pred_impl.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="146" selection-start-line="146" selection-end-line="146" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lab05/inc/stack.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/lab01_tests.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/gtest-1.7.0/src/gtest_main.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/gtest-1.7.0/include/gtest/gtest.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="2287" selection-start-line="2287" selection-end-line="2287" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/gtest-1.7.0/src/gtest.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="3925" selection-start-line="3925" selection-end-line="3925" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lab05/inc/fancy_calculator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lab06/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lab06/inc/node.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lab06/inc/doubly_linked_list.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#90#107#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lab04/inc/calculator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/lab04_tests.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/iterator">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20355">
+          <caret line="1357" selection-start-line="1357" selection-end-line="1357" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lab01/src/expressionstream.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1125">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lab05/src/queue.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lab05/src/stack.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lab04/src/calculator.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="191" column="50" selection-start-line="191" selection-start-column="50" selection-end-line="191" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lab07/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lab05/src/linked_list.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="107" column="9" selection-start-line="107" selection-start-column="9" selection-end-line="107" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lab03/inc/fifo.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="16" lean-forward="true" selection-end-line="26" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/lab02_tests.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lab05/src/fancy_calculator.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-537">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/lab03_tests.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="74" column="52" lean-forward="true" selection-start-line="74" selection-start-column="52" selection-end-line="74" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lab02/src/stringVector.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="159" lean-forward="true" selection-start-line="159" selection-end-line="159" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lab03/inc/lifo.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="20" lean-forward="true" selection-end-line="24" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lab03/src/fifo.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="32" selection-end-line="91" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lab03/src/lifo.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lab06/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lab06/src/doubly_linked_list.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2223">
+          <caret line="341" column="31" selection-start-line="341" selection-start-column="31" selection-end-line="341" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/lab05_tests.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="3368" selection-start-line="3368" selection-end-line="3368" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/lab06_tests.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lab07/inc/node.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lab07/inc/tree.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lab07/src/tree.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="142" column="16" selection-start-line="142" selection-start-column="16" selection-end-line="142" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/lab07_tests.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
