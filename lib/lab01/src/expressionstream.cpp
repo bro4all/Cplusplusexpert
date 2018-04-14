@@ -60,17 +60,11 @@ namespace lab1 {
         //check for end of buffer
         if (current_pos == buffer.end()) return "\0";
 
-        //reset next position each time current token is called
-        //this should stop the 'next_position' from drifting on
-        //consecutive "get_current_token()" calls
         next_position = current_pos;
 
         if (next_token_is_int())
             return get_number();
 
-        //if token is not a number then it is one character long
-        //setting the 'next_position' iterator forward one will
-        //return one character
         ++next_position;
         return std::string(current_pos, next_position);
     }

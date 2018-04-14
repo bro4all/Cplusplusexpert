@@ -228,6 +228,7 @@ test/runBasicTests: lab3_lib/liblab3_lib.a
 test/runBasicTests: lab4_lib/liblab4_lib.a
 test/runBasicTests: lab5_lib/liblab5_lib.a
 test/runBasicTests: lab6_lib/liblab6_lib.a
+test/runBasicTests: lab7_lib/liblab7_lib.a
 test/runBasicTests: test/gtest-1.7.0/libgtest.a
 test/runBasicTests: lab3_lib/liblab3_lib.a
 test/runBasicTests: lab2_lib/liblab2_lib.a

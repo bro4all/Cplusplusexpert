@@ -3,12 +3,14 @@
 namespace lab3{
     fifo::fifo() {
         fifo_storage.reserve(100);
+       // fifo_storage.changelenght(100);
         front_index = 0;    // the queue is empty so front and back should be the same
         back_index =0;
     }
 
     fifo::fifo(std::string input_string) {
         fifo_storage.reserve(100);
+        //fifo_storage.changelenght(100);
         front_index = 0;
         back_index = 1;
         fifo_storage.append(input_string);

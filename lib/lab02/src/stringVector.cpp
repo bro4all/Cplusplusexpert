@@ -2,7 +2,6 @@
 #include <iostream>
 namespace lab2 {
     int stringCompare(std::string str1, std::string str2);
-
     stringVector::stringVector() {
         length = 0;
         allocated_length = 0;
@@ -29,12 +28,16 @@ namespace lab2 {
         for (int i = 0; i < new_size && i < length; i++) {
             temp[i] = data[i];
         }
-        allocated_length = new_size;
-        delete[] data;
-        data = temp;
         if (length > allocated_length) {
             length = new_size;
         }
+        if (allocated_length<new_size){
+            allocated_length=new_size;
+
+        }
+        allocated_length=new_size;
+        delete[] data;
+        data=temp;
     }
 
 
@@ -54,7 +57,8 @@ namespace lab2 {
         if (allocated_length == 0) {
             data = new std::string[1];
             allocated_length = 1;
-        } else if (allocated_length == length) {
+        }
+        else if (allocated_length == length) {
             std::string *newArr = NULL;
             newArr = new std::string[allocated_length * 2];
 
@@ -103,29 +107,27 @@ namespace lab2 {
         return *this;
     }
 
-    std::string &stringVector::operator[](unsigned position) {
+    std::string stringVector::operator[](unsigned position){
 
-        if (position > length) {
-            throw "Position is out of bounds. ";
+       if (position >= allocated_length) {
+           throw "Position is out of bounds. ";
+       }
+        std::string const return_string = data[position];
+        return return_string;
 
-
-
-        }
-
-        return data[position];
     }
 
-    std::string stringVector::operator[](unsigned position) const{
+    std::string stringVector::operator[](unsigned position) const {
 
-        if (position > length) {
+        if (position >= allocated_length) {
             throw "Position is out of bounds. ";
-
         }
         std::string const return_string = data[position];
         return return_string;
+
     }
 
-    //return ;
+
 
 
     void stringVector::sort() {
@@ -155,9 +157,6 @@ namespace lab2 {
     void stringVector::set_size(unsigned new_size) {
         if (allocated_length != new_size) reserve(new_size);
         length = new_size;
-    }
-    void changelenght(){
-
     }
 
 }

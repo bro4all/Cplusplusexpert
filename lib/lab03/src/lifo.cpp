@@ -3,11 +3,13 @@
 namespace lab3{
     lifo::lifo() {
         lifo_storage.reserve(100);
+
         index = 0;
     }
 
     lifo::lifo(std::string input_string) {
         lifo_storage.reserve(100);
+
         index = 0;
         push(input_string);
     }
@@ -55,9 +57,10 @@ namespace lab3{
         index++;
     }
 
+
     void lifo::pop() {
         if(is_empty()) {
-            throw "Stack is empty";
+            throw "nothing to see here";
         }
         else {
             index--;

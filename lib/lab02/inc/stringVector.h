@@ -29,9 +29,8 @@ namespace lab2 {
         void set_size(unsigned new_size);
 
         stringVector& operator=(stringVector const &rhs);
-
-        std::string& operator[](unsigned position);
-        std::string operator[](unsigned position)const;
+        std::string operator[](unsigned position) const;
+        std::string operator[](unsigned position);
 
         void sort();
     };

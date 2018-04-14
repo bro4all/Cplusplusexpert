@@ -776,6 +776,15 @@
 		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab06/src/doubly_linked_list.cpp">
 			<Option target="lab6_lib"/>
 		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab07/inc/node.h">
+			<Option target="lab7_lib"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab07/inc/tree.h">
+			<Option target="lab7_lib"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab07/src/tree.cpp">
+			<Option target="lab7_lib"/>
+		</Unit>
 		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/main.cpp">
 			<Option target="labs_main"/>
 		</Unit>

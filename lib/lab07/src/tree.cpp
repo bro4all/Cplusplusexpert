@@ -23,10 +23,9 @@ namespace lab7 {
         if (root == nullptr) {
             root = current;
             delete current;
-        }
-        else{
+        } else {
             InsertElementInBinaryTree(temproot, current);
-    }
+        }
         tree_size++;
 
 
@@ -139,8 +138,7 @@ namespace lab7 {
             InsertElementInBinaryTree(root->left, element);
             InsertElementInBinaryTree(root->right, element);
             if (root->data > element->data) {
-                if (root->left == NULL)
-                {
+                if (root->left == NULL) {
                     root->left = element;
                 } else {
                     InsertElementInBinaryTree(root->left, element);
@@ -151,6 +149,7 @@ namespace lab7 {
                 } else {
                     InsertElementInBinaryTree(root->right, element);
                 }
+            }
         }
     }
 }

@@ -125,6 +125,33 @@ lab7_lib/fast:
 	cd /Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug && $(MAKE) -f lab7_lib/CMakeFiles/lab7_lib.dir/build.make lab7_lib/CMakeFiles/lab7_lib.dir/build
 .PHONY : lab7_lib/fast
 
+src/tree.o: src/tree.cpp.o
+
+.PHONY : src/tree.o
+
+# target to build an object file
+src/tree.cpp.o:
+	cd /Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug && $(MAKE) -f lab7_lib/CMakeFiles/lab7_lib.dir/build.make lab7_lib/CMakeFiles/lab7_lib.dir/src/tree.cpp.o
+.PHONY : src/tree.cpp.o
+
+src/tree.i: src/tree.cpp.i
+
+.PHONY : src/tree.i
+
+# target to preprocess a source file
+src/tree.cpp.i:
+	cd /Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug && $(MAKE) -f lab7_lib/CMakeFiles/lab7_lib.dir/build.make lab7_lib/CMakeFiles/lab7_lib.dir/src/tree.cpp.i
+.PHONY : src/tree.cpp.i
+
+src/tree.s: src/tree.cpp.s
+
+.PHONY : src/tree.s
+
+# target to generate assembly for a file
+src/tree.cpp.s:
+	cd /Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug && $(MAKE) -f lab7_lib/CMakeFiles/lab7_lib.dir/build.make lab7_lib/CMakeFiles/lab7_lib.dir/src/tree.cpp.s
+.PHONY : src/tree.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -134,6 +161,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... lab7_lib"
+	@echo "... src/tree.o"
+	@echo "... src/tree.i"
+	@echo "... src/tree.s"
 .PHONY : help
 
 
