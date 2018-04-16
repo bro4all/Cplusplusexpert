@@ -49,7 +49,9 @@ namespace lab7 {
 
     // Number of items in the tree
     unsigned tree::size() {
-
+if (!root)
+    return 0;
+else size(*root);
     }
 
     // Calculate the depth of the tree, longest string of connections
