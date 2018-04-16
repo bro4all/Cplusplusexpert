@@ -13,11 +13,11 @@ namespace lab5 {
     }
 
     linked_list::linked_list(const linked_list &original) {
-        node *iterator = original.head;
+        node *current = original.head;
         node *temp = head;
         for (int i = 0; i < original.listSize(); i++) {
-            temp->data = iterator->data;
-            temp->next = iterator->next;
+            temp->data = current->data;
+            temp->next = current->next;
 
         }
         tail = original.tail;

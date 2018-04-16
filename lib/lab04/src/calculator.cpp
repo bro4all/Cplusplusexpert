@@ -3,6 +3,7 @@
 #include "calculator.h"
 #include <sstream>
 
+
 namespace lab4 {
     bool isNumber(std::string inputstring);
 
@@ -129,7 +130,7 @@ namespace lab4 {
         }
         stream << RHS.postfix_expression.top();
         return stream;
-    } // Output
+    }
 
     std::istream &operator>>(std::istream &stream, calculator &RHS) {
         std::istreambuf_iterator<char> eos;
@@ -144,7 +145,7 @@ namespace lab4 {
         RHS.convert_to_postfix(RHS.infix_expression);
 
         return stream;
-    }// Input
+    }
     int operator_priority(std::string operator_in) {
         int importance = 0;
         if (operator_in == "+" || operator_in == "-") {

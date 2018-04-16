@@ -21,16 +21,14 @@ namespace lab2 {
 
         void reserve(unsigned new_size);
 
-        bool empty() ;
+        bool empty() const ;
 
         void append(std::string new_data);
-
         void swap(unsigned pos1, unsigned pos2);
-        void set_size(unsigned new_size);
+        void newLenght(unsigned new_size);
 
         stringVector& operator=(stringVector const &rhs);
-        std::string operator[](unsigned position) const;
-        std::string operator[](unsigned position);
+        std::string& operator[](unsigned position) const;
 
         void sort();
     };
