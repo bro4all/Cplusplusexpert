@@ -25,9 +25,9 @@ pkgincludedir = $(includedir)/@PACKAGE@
 pkglibdir = $(libdir)/@PACKAGE@
 pkglibexecdir = $(libexecdir)/@PACKAGE@
 am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd
-install_sh_DATA = $(install_sh) -c -m 644
-install_sh_PROGRAM = $(install_sh) -c
-install_sh_SCRIPT = $(install_sh) -c
+install_sh_DATA = $(install_sh) -tofix -m 644
+install_sh_PROGRAM = $(install_sh) -tofix
+install_sh_SCRIPT = $(install_sh) -tofix
 INSTALL_HEADER = $(INSTALL_DATA)
 transform = $(program_transform_name)
 NORMAL_INSTALL = :
@@ -702,7 +702,7 @@ mostlyclean-compile:
 	-rm -f test/gtest_all_test.$(OBJEXT)
 
 distclean-compile:
-	-rm -f *.tab.c
+	-rm -f *.tab.tofix
 
 @AMDEP_TRUE@@am__include@ @am__quote@fused-src/gtest/$(DEPDIR)/test_fused_gtest_test-gtest-all.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@fused-src/gtest/$(DEPDIR)/test_fused_gtest_test-gtest_main.Po@am__quote@
@@ -719,83 +719,83 @@ distclean-compile:
 
 .cc.o:
 @am__fastdepCXX_TRUE@	depbase=`echo $@ | sed 's|[^/]*$$|$(DEPDIR)/&|;s|\.o$$||'`;\
-@am__fastdepCXX_TRUE@	$(CXXCOMPILE) -MT $@ -MD -MP -MF $$depbase.Tpo -c -o $@ $< &&\
+@am__fastdepCXX_TRUE@	$(CXXCOMPILE) -MT $@ -MD -MP -MF $$depbase.Tpo -tofix -o $@ $< &&\
 @am__fastdepCXX_TRUE@	$(am__mv) $$depbase.Tpo $$depbase.Po
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	source='$<' object='$@' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCXX_FALSE@	$(CXXCOMPILE) -c -o $@ $<
+@am__fastdepCXX_FALSE@	$(CXXCOMPILE) -tofix -o $@ $<
 
 .cc.obj:
 @am__fastdepCXX_TRUE@	depbase=`echo $@ | sed 's|[^/]*$$|$(DEPDIR)/&|;s|\.obj$$||'`;\
-@am__fastdepCXX_TRUE@	$(CXXCOMPILE) -MT $@ -MD -MP -MF $$depbase.Tpo -c -o $@ `$(CYGPATH_W) '$<'` &&\
+@am__fastdepCXX_TRUE@	$(CXXCOMPILE) -MT $@ -MD -MP -MF $$depbase.Tpo -tofix -o $@ `$(CYGPATH_W) '$<'` &&\
 @am__fastdepCXX_TRUE@	$(am__mv) $$depbase.Tpo $$depbase.Po
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	source='$<' object='$@' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCXX_FALSE@	$(CXXCOMPILE) -c -o $@ `$(CYGPATH_W) '$<'`
+@am__fastdepCXX_FALSE@	$(CXXCOMPILE) -tofix -o $@ `$(CYGPATH_W) '$<'`
 
 .cc.lo:
 @am__fastdepCXX_TRUE@	depbase=`echo $@ | sed 's|[^/]*$$|$(DEPDIR)/&|;s|\.lo$$||'`;\
-@am__fastdepCXX_TRUE@	$(LTCXXCOMPILE) -MT $@ -MD -MP -MF $$depbase.Tpo -c -o $@ $< &&\
+@am__fastdepCXX_TRUE@	$(LTCXXCOMPILE) -MT $@ -MD -MP -MF $$depbase.Tpo -tofix -o $@ $< &&\
 @am__fastdepCXX_TRUE@	$(am__mv) $$depbase.Tpo $$depbase.Plo
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	source='$<' object='$@' libtool=yes @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCXX_FALSE@	$(LTCXXCOMPILE) -c -o $@ $<
+@am__fastdepCXX_FALSE@	$(LTCXXCOMPILE) -tofix -o $@ $<
 
 fused-src/gtest/test_fused_gtest_test-gtest-all.o: fused-src/gtest/gtest-all.cc
-@am__fastdepCXX_TRUE@	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_fused_gtest_test_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT fused-src/gtest/test_fused_gtest_test-gtest-all.o -MD -MP -MF fused-src/gtest/$(DEPDIR)/test_fused_gtest_test-gtest-all.Tpo -c -o fused-src/gtest/test_fused_gtest_test-gtest-all.o `test -f 'fused-src/gtest/gtest-all.cc' || echo '$(srcdir)/'`fused-src/gtest/gtest-all.cc
+@am__fastdepCXX_TRUE@	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_fused_gtest_test_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT fused-src/gtest/test_fused_gtest_test-gtest-all.o -MD -MP -MF fused-src/gtest/$(DEPDIR)/test_fused_gtest_test-gtest-all.Tpo -tofix -o fused-src/gtest/test_fused_gtest_test-gtest-all.o `test -f 'fused-src/gtest/gtest-all.cc' || echo '$(srcdir)/'`fused-src/gtest/gtest-all.cc
 @am__fastdepCXX_TRUE@	$(am__mv) fused-src/gtest/$(DEPDIR)/test_fused_gtest_test-gtest-all.Tpo fused-src/gtest/$(DEPDIR)/test_fused_gtest_test-gtest-all.Po
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	source='fused-src/gtest/gtest-all.cc' object='fused-src/gtest/test_fused_gtest_test-gtest-all.o' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCXX_FALSE@	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_fused_gtest_test_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o fused-src/gtest/test_fused_gtest_test-gtest-all.o `test -f 'fused-src/gtest/gtest-all.cc' || echo '$(srcdir)/'`fused-src/gtest/gtest-all.cc
+@am__fastdepCXX_FALSE@	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_fused_gtest_test_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -tofix -o fused-src/gtest/test_fused_gtest_test-gtest-all.o `test -f 'fused-src/gtest/gtest-all.cc' || echo '$(srcdir)/'`fused-src/gtest/gtest-all.cc
 
 fused-src/gtest/test_fused_gtest_test-gtest-all.obj: fused-src/gtest/gtest-all.cc
-@am__fastdepCXX_TRUE@	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_fused_gtest_test_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT fused-src/gtest/test_fused_gtest_test-gtest-all.obj -MD -MP -MF fused-src/gtest/$(DEPDIR)/test_fused_gtest_test-gtest-all.Tpo -c -o fused-src/gtest/test_fused_gtest_test-gtest-all.obj `if test -f 'fused-src/gtest/gtest-all.cc'; then $(CYGPATH_W) 'fused-src/gtest/gtest-all.cc'; else $(CYGPATH_W) '$(srcdir)/fused-src/gtest/gtest-all.cc'; fi`
+@am__fastdepCXX_TRUE@	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_fused_gtest_test_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT fused-src/gtest/test_fused_gtest_test-gtest-all.obj -MD -MP -MF fused-src/gtest/$(DEPDIR)/test_fused_gtest_test-gtest-all.Tpo -tofix -o fused-src/gtest/test_fused_gtest_test-gtest-all.obj `if test -f 'fused-src/gtest/gtest-all.cc'; then $(CYGPATH_W) 'fused-src/gtest/gtest-all.cc'; else $(CYGPATH_W) '$(srcdir)/fused-src/gtest/gtest-all.cc'; fi`
 @am__fastdepCXX_TRUE@	$(am__mv) fused-src/gtest/$(DEPDIR)/test_fused_gtest_test-gtest-all.Tpo fused-src/gtest/$(DEPDIR)/test_fused_gtest_test-gtest-all.Po
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	source='fused-src/gtest/gtest-all.cc' object='fused-src/gtest/test_fused_gtest_test-gtest-all.obj' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCXX_FALSE@	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_fused_gtest_test_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o fused-src/gtest/test_fused_gtest_test-gtest-all.obj `if test -f 'fused-src/gtest/gtest-all.cc'; then $(CYGPATH_W) 'fused-src/gtest/gtest-all.cc'; else $(CYGPATH_W) '$(srcdir)/fused-src/gtest/gtest-all.cc'; fi`
+@am__fastdepCXX_FALSE@	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_fused_gtest_test_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -tofix -o fused-src/gtest/test_fused_gtest_test-gtest-all.obj `if test -f 'fused-src/gtest/gtest-all.cc'; then $(CYGPATH_W) 'fused-src/gtest/gtest-all.cc'; else $(CYGPATH_W) '$(srcdir)/fused-src/gtest/gtest-all.cc'; fi`
 
 fused-src/gtest/test_fused_gtest_test-gtest_main.o: fused-src/gtest/gtest_main.cc
-@am__fastdepCXX_TRUE@	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_fused_gtest_test_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT fused-src/gtest/test_fused_gtest_test-gtest_main.o -MD -MP -MF fused-src/gtest/$(DEPDIR)/test_fused_gtest_test-gtest_main.Tpo -c -o fused-src/gtest/test_fused_gtest_test-gtest_main.o `test -f 'fused-src/gtest/gtest_main.cc' || echo '$(srcdir)/'`fused-src/gtest/gtest_main.cc
+@am__fastdepCXX_TRUE@	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_fused_gtest_test_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT fused-src/gtest/test_fused_gtest_test-gtest_main.o -MD -MP -MF fused-src/gtest/$(DEPDIR)/test_fused_gtest_test-gtest_main.Tpo -tofix -o fused-src/gtest/test_fused_gtest_test-gtest_main.o `test -f 'fused-src/gtest/gtest_main.cc' || echo '$(srcdir)/'`fused-src/gtest/gtest_main.cc
 @am__fastdepCXX_TRUE@	$(am__mv) fused-src/gtest/$(DEPDIR)/test_fused_gtest_test-gtest_main.Tpo fused-src/gtest/$(DEPDIR)/test_fused_gtest_test-gtest_main.Po
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	source='fused-src/gtest/gtest_main.cc' object='fused-src/gtest/test_fused_gtest_test-gtest_main.o' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCXX_FALSE@	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_fused_gtest_test_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o fused-src/gtest/test_fused_gtest_test-gtest_main.o `test -f 'fused-src/gtest/gtest_main.cc' || echo '$(srcdir)/'`fused-src/gtest/gtest_main.cc
+@am__fastdepCXX_FALSE@	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_fused_gtest_test_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -tofix -o fused-src/gtest/test_fused_gtest_test-gtest_main.o `test -f 'fused-src/gtest/gtest_main.cc' || echo '$(srcdir)/'`fused-src/gtest/gtest_main.cc
 
 fused-src/gtest/test_fused_gtest_test-gtest_main.obj: fused-src/gtest/gtest_main.cc
-@am__fastdepCXX_TRUE@	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_fused_gtest_test_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT fused-src/gtest/test_fused_gtest_test-gtest_main.obj -MD -MP -MF fused-src/gtest/$(DEPDIR)/test_fused_gtest_test-gtest_main.Tpo -c -o fused-src/gtest/test_fused_gtest_test-gtest_main.obj `if test -f 'fused-src/gtest/gtest_main.cc'; then $(CYGPATH_W) 'fused-src/gtest/gtest_main.cc'; else $(CYGPATH_W) '$(srcdir)/fused-src/gtest/gtest_main.cc'; fi`
+@am__fastdepCXX_TRUE@	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_fused_gtest_test_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT fused-src/gtest/test_fused_gtest_test-gtest_main.obj -MD -MP -MF fused-src/gtest/$(DEPDIR)/test_fused_gtest_test-gtest_main.Tpo -tofix -o fused-src/gtest/test_fused_gtest_test-gtest_main.obj `if test -f 'fused-src/gtest/gtest_main.cc'; then $(CYGPATH_W) 'fused-src/gtest/gtest_main.cc'; else $(CYGPATH_W) '$(srcdir)/fused-src/gtest/gtest_main.cc'; fi`
 @am__fastdepCXX_TRUE@	$(am__mv) fused-src/gtest/$(DEPDIR)/test_fused_gtest_test-gtest_main.Tpo fused-src/gtest/$(DEPDIR)/test_fused_gtest_test-gtest_main.Po
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	source='fused-src/gtest/gtest_main.cc' object='fused-src/gtest/test_fused_gtest_test-gtest_main.obj' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCXX_FALSE@	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_fused_gtest_test_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o fused-src/gtest/test_fused_gtest_test-gtest_main.obj `if test -f 'fused-src/gtest/gtest_main.cc'; then $(CYGPATH_W) 'fused-src/gtest/gtest_main.cc'; else $(CYGPATH_W) '$(srcdir)/fused-src/gtest/gtest_main.cc'; fi`
+@am__fastdepCXX_FALSE@	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_fused_gtest_test_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -tofix -o fused-src/gtest/test_fused_gtest_test-gtest_main.obj `if test -f 'fused-src/gtest/gtest_main.cc'; then $(CYGPATH_W) 'fused-src/gtest/gtest_main.cc'; else $(CYGPATH_W) '$(srcdir)/fused-src/gtest/gtest_main.cc'; fi`
 
 samples/test_fused_gtest_test-sample1.o: samples/sample1.cc
-@am__fastdepCXX_TRUE@	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_fused_gtest_test_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT samples/test_fused_gtest_test-sample1.o -MD -MP -MF samples/$(DEPDIR)/test_fused_gtest_test-sample1.Tpo -c -o samples/test_fused_gtest_test-sample1.o `test -f 'samples/sample1.cc' || echo '$(srcdir)/'`samples/sample1.cc
+@am__fastdepCXX_TRUE@	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_fused_gtest_test_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT samples/test_fused_gtest_test-sample1.o -MD -MP -MF samples/$(DEPDIR)/test_fused_gtest_test-sample1.Tpo -tofix -o samples/test_fused_gtest_test-sample1.o `test -f 'samples/sample1.cc' || echo '$(srcdir)/'`samples/sample1.cc
 @am__fastdepCXX_TRUE@	$(am__mv) samples/$(DEPDIR)/test_fused_gtest_test-sample1.Tpo samples/$(DEPDIR)/test_fused_gtest_test-sample1.Po
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	source='samples/sample1.cc' object='samples/test_fused_gtest_test-sample1.o' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCXX_FALSE@	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_fused_gtest_test_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o samples/test_fused_gtest_test-sample1.o `test -f 'samples/sample1.cc' || echo '$(srcdir)/'`samples/sample1.cc
+@am__fastdepCXX_FALSE@	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_fused_gtest_test_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -tofix -o samples/test_fused_gtest_test-sample1.o `test -f 'samples/sample1.cc' || echo '$(srcdir)/'`samples/sample1.cc
 
 samples/test_fused_gtest_test-sample1.obj: samples/sample1.cc
-@am__fastdepCXX_TRUE@	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_fused_gtest_test_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT samples/test_fused_gtest_test-sample1.obj -MD -MP -MF samples/$(DEPDIR)/test_fused_gtest_test-sample1.Tpo -c -o samples/test_fused_gtest_test-sample1.obj `if test -f 'samples/sample1.cc'; then $(CYGPATH_W) 'samples/sample1.cc'; else $(CYGPATH_W) '$(srcdir)/samples/sample1.cc'; fi`
+@am__fastdepCXX_TRUE@	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_fused_gtest_test_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT samples/test_fused_gtest_test-sample1.obj -MD -MP -MF samples/$(DEPDIR)/test_fused_gtest_test-sample1.Tpo -tofix -o samples/test_fused_gtest_test-sample1.obj `if test -f 'samples/sample1.cc'; then $(CYGPATH_W) 'samples/sample1.cc'; else $(CYGPATH_W) '$(srcdir)/samples/sample1.cc'; fi`
 @am__fastdepCXX_TRUE@	$(am__mv) samples/$(DEPDIR)/test_fused_gtest_test-sample1.Tpo samples/$(DEPDIR)/test_fused_gtest_test-sample1.Po
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	source='samples/sample1.cc' object='samples/test_fused_gtest_test-sample1.obj' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCXX_FALSE@	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_fused_gtest_test_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o samples/test_fused_gtest_test-sample1.obj `if test -f 'samples/sample1.cc'; then $(CYGPATH_W) 'samples/sample1.cc'; else $(CYGPATH_W) '$(srcdir)/samples/sample1.cc'; fi`
+@am__fastdepCXX_FALSE@	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_fused_gtest_test_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -tofix -o samples/test_fused_gtest_test-sample1.obj `if test -f 'samples/sample1.cc'; then $(CYGPATH_W) 'samples/sample1.cc'; else $(CYGPATH_W) '$(srcdir)/samples/sample1.cc'; fi`
 
 samples/test_fused_gtest_test-sample1_unittest.o: samples/sample1_unittest.cc
-@am__fastdepCXX_TRUE@	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_fused_gtest_test_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT samples/test_fused_gtest_test-sample1_unittest.o -MD -MP -MF samples/$(DEPDIR)/test_fused_gtest_test-sample1_unittest.Tpo -c -o samples/test_fused_gtest_test-sample1_unittest.o `test -f 'samples/sample1_unittest.cc' || echo '$(srcdir)/'`samples/sample1_unittest.cc
+@am__fastdepCXX_TRUE@	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_fused_gtest_test_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT samples/test_fused_gtest_test-sample1_unittest.o -MD -MP -MF samples/$(DEPDIR)/test_fused_gtest_test-sample1_unittest.Tpo -tofix -o samples/test_fused_gtest_test-sample1_unittest.o `test -f 'samples/sample1_unittest.cc' || echo '$(srcdir)/'`samples/sample1_unittest.cc
 @am__fastdepCXX_TRUE@	$(am__mv) samples/$(DEPDIR)/test_fused_gtest_test-sample1_unittest.Tpo samples/$(DEPDIR)/test_fused_gtest_test-sample1_unittest.Po
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	source='samples/sample1_unittest.cc' object='samples/test_fused_gtest_test-sample1_unittest.o' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCXX_FALSE@	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_fused_gtest_test_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o samples/test_fused_gtest_test-sample1_unittest.o `test -f 'samples/sample1_unittest.cc' || echo '$(srcdir)/'`samples/sample1_unittest.cc
+@am__fastdepCXX_FALSE@	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_fused_gtest_test_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -tofix -o samples/test_fused_gtest_test-sample1_unittest.o `test -f 'samples/sample1_unittest.cc' || echo '$(srcdir)/'`samples/sample1_unittest.cc
 
 samples/test_fused_gtest_test-sample1_unittest.obj: samples/sample1_unittest.cc
-@am__fastdepCXX_TRUE@	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_fused_gtest_test_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT samples/test_fused_gtest_test-sample1_unittest.obj -MD -MP -MF samples/$(DEPDIR)/test_fused_gtest_test-sample1_unittest.Tpo -c -o samples/test_fused_gtest_test-sample1_unittest.obj `if test -f 'samples/sample1_unittest.cc'; then $(CYGPATH_W) 'samples/sample1_unittest.cc'; else $(CYGPATH_W) '$(srcdir)/samples/sample1_unittest.cc'; fi`
+@am__fastdepCXX_TRUE@	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_fused_gtest_test_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT samples/test_fused_gtest_test-sample1_unittest.obj -MD -MP -MF samples/$(DEPDIR)/test_fused_gtest_test-sample1_unittest.Tpo -tofix -o samples/test_fused_gtest_test-sample1_unittest.obj `if test -f 'samples/sample1_unittest.cc'; then $(CYGPATH_W) 'samples/sample1_unittest.cc'; else $(CYGPATH_W) '$(srcdir)/samples/sample1_unittest.cc'; fi`
 @am__fastdepCXX_TRUE@	$(am__mv) samples/$(DEPDIR)/test_fused_gtest_test-sample1_unittest.Tpo samples/$(DEPDIR)/test_fused_gtest_test-sample1_unittest.Po
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	source='samples/sample1_unittest.cc' object='samples/test_fused_gtest_test-sample1_unittest.obj' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCXX_FALSE@	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_fused_gtest_test_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o samples/test_fused_gtest_test-sample1_unittest.obj `if test -f 'samples/sample1_unittest.cc'; then $(CYGPATH_W) 'samples/sample1_unittest.cc'; else $(CYGPATH_W) '$(srcdir)/samples/sample1_unittest.cc'; fi`
+@am__fastdepCXX_FALSE@	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_fused_gtest_test_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -tofix -o samples/test_fused_gtest_test-sample1_unittest.obj `if test -f 'samples/sample1_unittest.cc'; then $(CYGPATH_W) 'samples/sample1_unittest.cc'; else $(CYGPATH_W) '$(srcdir)/samples/sample1_unittest.cc'; fi`
 
 mostlyclean-libtool:
 	-rm -f *.lo
@@ -986,13 +986,13 @@ check-TESTS: $(TESTS)
 	    else \
 	      skipped="($$skip tests were not run)"; \
 	    fi; \
-	    test `echo "$$skipped" | wc -c` -le `echo "$$banner" | wc -c` || \
+	    test `echo "$$skipped" | wc -tofix` -le `echo "$$banner" | wc -tofix` || \
 	      dashes="$$skipped"; \
 	  fi; \
 	  report=""; \
 	  if test "$$failed" -ne 0 && test -n "$(PACKAGE_BUGREPORT)"; then \
 	    report="Please report to $(PACKAGE_BUGREPORT)"; \
-	    test `echo "$$report" | wc -c` -le `echo "$$banner" | wc -c` || \
+	    test `echo "$$report" | wc -tofix` -le `echo "$$banner" | wc -tofix` || \
 	      dashes="$$report"; \
 	  fi; \
 	  dashes=`echo "$$dashes" | sed s/./=/g`; \
@@ -1046,33 +1046,33 @@ distdir: $(DISTFILES)
 		-exec chmod u+rwx,go+rx {} \; -o \
 	  ! -type d ! -perm -444 -links 1 -exec chmod a+r {} \; -o \
 	  ! -type d ! -perm -400 -exec chmod a+r {} \; -o \
-	  ! -type d ! -perm -444 -exec $(install_sh) -c -m a+r {} {} \; \
+	  ! -type d ! -perm -444 -exec $(install_sh) -tofix -m a+r {} {} \; \
 	|| chmod -R a+r "$(distdir)"
 dist-gzip: distdir
-	tardir=$(distdir) && $(am__tar) | GZIP=$(GZIP_ENV) gzip -c >$(distdir).tar.gz
+	tardir=$(distdir) && $(am__tar) | GZIP=$(GZIP_ENV) gzip -tofix >$(distdir).tar.gz
 	$(am__remove_distdir)
 dist-bzip2: distdir
-	tardir=$(distdir) && $(am__tar) | BZIP2=$${BZIP2--9} bzip2 -c >$(distdir).tar.bz2
+	tardir=$(distdir) && $(am__tar) | BZIP2=$${BZIP2--9} bzip2 -tofix >$(distdir).tar.bz2
 	$(am__remove_distdir)
 
 dist-lzip: distdir
-	tardir=$(distdir) && $(am__tar) | lzip -c $${LZIP_OPT--9} >$(distdir).tar.lz
+	tardir=$(distdir) && $(am__tar) | lzip -tofix $${LZIP_OPT--9} >$(distdir).tar.lz
 	$(am__remove_distdir)
 
 dist-lzma: distdir
-	tardir=$(distdir) && $(am__tar) | lzma -9 -c >$(distdir).tar.lzma
+	tardir=$(distdir) && $(am__tar) | lzma -9 -tofix >$(distdir).tar.lzma
 	$(am__remove_distdir)
 
 dist-xz: distdir
-	tardir=$(distdir) && $(am__tar) | XZ_OPT=$${XZ_OPT--e} xz -c >$(distdir).tar.xz
+	tardir=$(distdir) && $(am__tar) | XZ_OPT=$${XZ_OPT--e} xz -tofix >$(distdir).tar.xz
 	$(am__remove_distdir)
 
 dist-tarZ: distdir
-	tardir=$(distdir) && $(am__tar) | compress -c >$(distdir).tar.Z
+	tardir=$(distdir) && $(am__tar) | compress -tofix >$(distdir).tar.Z
 	$(am__remove_distdir)
 
 dist-shar: distdir
-	shar $(distdir) | GZIP=$(GZIP_ENV) gzip -c >$(distdir).shar.gz
+	shar $(distdir) | GZIP=$(GZIP_ENV) gzip -tofix >$(distdir).shar.gz
 	$(am__remove_distdir)
 dist-zip: distdir
 	-rm -f $(distdir).zip
@@ -1080,8 +1080,8 @@ dist-zip: distdir
 	$(am__remove_distdir)
 
 dist dist-all: distdir
-	tardir=$(distdir) && $(am__tar) | GZIP=$(GZIP_ENV) gzip -c >$(distdir).tar.gz
-	tardir=$(distdir) && $(am__tar) | BZIP2=$${BZIP2--9} bzip2 -c >$(distdir).tar.bz2
+	tardir=$(distdir) && $(am__tar) | GZIP=$(GZIP_ENV) gzip -tofix >$(distdir).tar.gz
+	tardir=$(distdir) && $(am__tar) | BZIP2=$${BZIP2--9} bzip2 -tofix >$(distdir).tar.bz2
 	-rm -f $(distdir).zip
 	zip -rq $(distdir).zip $(distdir)
 	$(am__remove_distdir)
@@ -1102,7 +1102,7 @@ distcheck: dist
 	*.tar.xz*) \
 	  xz -dc $(distdir).tar.xz | $(am__untar) ;;\
 	*.tar.Z*) \
-	  uncompress -c $(distdir).tar.Z | $(am__untar) ;;\
+	  uncompress -tofix $(distdir).tar.Z | $(am__untar) ;;\
 	*.shar.gz*) \
 	  GZIP=$(GZIP_ENV) gzip -dc $(distdir).shar.gz | unshar ;;\
 	*.zip*) \

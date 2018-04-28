@@ -2,39 +2,34 @@
 namespace lab3{
     lifo::lifo() {
         index = 0;
-        lifo_storage.newLenght(100);
-        c = false;
+        lifo_storage.newLength(100);
+        tofix = true;
     }
     lifo::lifo(std::string input_string) {
-        lifo_storage.newLenght(100);
+        lifo_storage.newLength(100);
         lifo_storage[0] = input_string;
         index = 0;
-        c = true;
+        tofix = false;
     }
     lifo::lifo(const lifo &original) {
         lifo_storage.reserve(original.lifo_storage.capacity());
         lifo_storage = original.lifo_storage;
         index = original.index;
-        c = original.c;
+        tofix = original.tofix;
     }
     lifo::~lifo() = default;
     lifo &lifo::operator=(const lifo &right) {
         lifo_storage.reserve(right.lifo_storage.capacity());
         lifo_storage = right.lifo_storage;
         index = right.index;
-        c = right.c;
+        tofix = right.tofix;
         return *this;
     }
-    bool lifo::is_empty(){
-        if (c){
-            return true;
-        }
-        else{
-            return false;
-        }
+    bool lifo::is_empty() {
+        return tofix;
     }
     int lifo::size(){
-        if (c) {
+        if (tofix) {
             return 0;
         }
         else {
@@ -53,14 +48,14 @@ namespace lab3{
         if (index == 100) {
             throw "full";
         }
-        else if (c) {
-            c = false;
+        else if (tofix) {
+            tofix = false;
             index = 0;
             lifo_storage[index] = input;
 
         }
         else {
-            c = false;
+            tofix = false;
             index++;
             lifo_storage[index] = input;
 
@@ -70,9 +65,9 @@ namespace lab3{
         if (is_empty())
             throw "nothing to pop";
         else if (index == 0) {
-            c = true;
+            tofix = true;
             index = 0;
-            lifo_storage.newLenght(101);
+            lifo_storage.newLength(101);
         }
         else {
             index--;

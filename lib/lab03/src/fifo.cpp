@@ -3,32 +3,32 @@ namespace lab3{
     fifo::fifo() {
         front_index = 0;
         back_index = 0;
-        c = true;
-        fifo_storage.newLenght(101);
+        tofix = true;
+        fifo_storage.newLength(101);
 
     }
     fifo::fifo(std::string input_string) {
-        c = false;
-        fifo_storage.newLenght(101);
+        tofix = false;
+        fifo_storage.newLength(101);
         fifo_storage[0] = input_string;
         front_index = 0;
         back_index = 0;
 
     }
     fifo::fifo(const fifo &original) {
-        c = original.c;
+        tofix = original.tofix;
         front_index = original.front_index;
         back_index = original.back_index;
         fifo_storage = original.fifo_storage;
     }
     fifo::~fifo(){
-        c = true;
+        tofix = true;
         front_index = 0;
         back_index = 0;
 
     }
     fifo &fifo::operator=(const fifo &right) {
-        c = right.c;
+        tofix = right.tofix;
         front_index = right.front_index;
         back_index = right.back_index;
         fifo_storage = right.fifo_storage;
@@ -36,7 +36,7 @@ namespace lab3{
     }
     bool fifo::is_empty()
     {
-        if (c){
+        if (tofix){
             return true;
         }
         else{
@@ -45,7 +45,7 @@ namespace lab3{
     }
     int fifo::size()
     {
-        if (c) {
+        if (tofix) {
             return 0;
         }
         else if (front_index == back_index) {
@@ -59,7 +59,7 @@ namespace lab3{
         }
     }
     std::string fifo::top() {
-        if (c) {
+        if (tofix) {
             throw "no queue top";
         }
         else {
@@ -68,10 +68,10 @@ namespace lab3{
     }
     void fifo::enqueue(std::string input)
     {
-        if (c) {
+        if (tofix) {
             front_index = 0;
             back_index = 0;
-            c = false;
+            tofix = false;
         }
         else if (back_index == 100) {
             if (front_index == 0) {
@@ -92,10 +92,10 @@ namespace lab3{
             throw "queue is empty   ";
         }
         else if (front_index == back_index) {
-            c = true;
+            tofix = true;
             front_index = 0;
             back_index = 0;
-            fifo_storage.newLenght(101);
+            fifo_storage.newLength(101);
         }
         else {
             if (front_index == 100) {

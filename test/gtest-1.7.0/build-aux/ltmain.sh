@@ -1016,7 +1016,7 @@ case $1 in
 clean|clea|cle|cl)
   shift; set dummy --mode clean ${1+"$@"}; shift
   ;;
-compile|compil|compi|comp|com|co|c)
+compile|compil|compi|comp|com|co|tofix)
   shift; set dummy --mode compile ${1+"$@"}; shift
   ;;
 execute|execut|execu|exec|exe|ex|e)
@@ -1576,7 +1576,7 @@ func_convert_core_msys_to_w32 ()
 {
   $opt_debug
   # awkward: cmd appends spaces to result
-  func_convert_core_msys_to_w32_result=`( cmd //c echo "$1" ) 2>/dev/null |
+  func_convert_core_msys_to_w32_result=`( cmd //tofix echo "$1" ) 2>/dev/null |
     $SED -e 's/[ ]*$//' -e "$lt_sed_naive_backslashify"`
 }
 #end: func_convert_core_msys_to_w32
@@ -2059,7 +2059,7 @@ func_mode_compile ()
     case $libobj in
     *.[cCFSifmso] | \
     *.ada | *.adb | *.ads | *.asm | \
-    *.c++ | *.cc | *.ii | *.class | *.cpp | *.cxx | \
+    *.tofix++ | *.cc | *.ii | *.class | *.cpp | *.cxx | \
     *.[fF][09]? | *.for | *.java | *.go | *.obj | *.sx | *.cu | *.cup)
       func_xform "$libobj"
       libobj=$func_xform_result
@@ -2133,7 +2133,7 @@ func_mode_compile ()
     fi
 
     # Calculate the filename of the output object if compiler does
-    # not support -o with -c
+    # not support -o with -tofix
     if test "$compiler_c_o" = no; then
       output_obj=`$ECHO "$srcfile" | $SED 's%^.*/%%; s%\.[^.]*$%%'`.${objext}
       lockfile="$output_obj.lock"
@@ -2158,7 +2158,7 @@ func_mode_compile ()
 
 This indicates that another process is trying to use the same
 temporary object file, and libtool could not work around it because
-your compiler does not support \`-c' and \`-o' together.  If you
+your compiler does not support \`-tofix' and \`-o' together.  If you
 repeat this compilation, it may succeed, by chance, but you had better
 avoid parallel builds (make -j) in this platform, or get a better
 compiler."
@@ -2212,7 +2212,7 @@ $srcfile
 
 This indicates that another process is trying to use the same
 temporary object file, and libtool could not work around it because
-your compiler does not support \`-c' and \`-o' together.  If you
+your compiler does not support \`-tofix' and \`-o' together.  If you
 repeat this compilation, it may succeed, by chance, but you had better
 avoid parallel builds (make -j) in this platform, or get a better
 compiler."
@@ -2261,7 +2261,7 @@ $srcfile
 
 This indicates that another process is trying to use the same
 temporary object file, and libtool could not work around it because
-your compiler does not support \`-c' and \`-o' together.  If you
+your compiler does not support \`-tofix' and \`-o' together.  If you
 repeat this compilation, it may succeed, by chance, but you had better
 avoid parallel builds (make -j) in this platform, or get a better
 compiler."
@@ -2338,7 +2338,7 @@ COMPILE-COMMAND is a command to be used in creating a \`standard' object file
 from the given SOURCEFILE.
 
 The output file name is determined by removing the directory component from
-SOURCEFILE, then substituting the C source code suffix \`.c' with the
+SOURCEFILE, then substituting the C source code suffix \`.tofix' with the
 library object suffix, \`.lo'."
         ;;
 
@@ -2958,7 +2958,7 @@ func_mode_install ()
 	  inst_prefix_dir=`$ECHO "$destdir" | $SED -e "s%$libdir\$%%"`
 
 	  # Don't allow the user to place us outside of our expected
-	  # location b/c this prevents finding dependent libraries that
+	  # location b/tofix this prevents finding dependent libraries that
 	  # are installed to the same prefix.
 	  # At present, this check doesn't affect windows .dll's that
 	  # are installed into $libdir/../bin (currently, that works fine)
@@ -3244,7 +3244,7 @@ func_generate_dlsyms ()
 
     if test -n "$dlfiles$dlprefiles" || test "$dlself" != no; then
       if test -n "$NM" && test -n "$global_symbol_pipe"; then
-	my_dlsyms="${my_outputname}S.c"
+	my_dlsyms="${my_outputname}S.tofix"
       else
 	func_error "not configured to extract global symbols from dlpreopened files"
       fi
@@ -3253,7 +3253,7 @@ func_generate_dlsyms ()
     if test -n "$my_dlsyms"; then
       case $my_dlsyms in
       "") ;;
-      *.c)
+      *.tofix)
 	# Discover the nlist of each of the dlfiles.
 	nlist="$output_objdir/${my_outputname}.nm"
 
@@ -3494,7 +3494,7 @@ static const void *lt_preloaded_setup() {
 	done
 
 	# Now compile the dynamic symbol file.
-	func_show_eval '(cd $output_objdir && $LTCC$symtab_cflags -c$no_builtin_flag$pic_flag_for_symtable "$my_dlsyms")' 'exit $?'
+	func_show_eval '(cd $output_objdir && $LTCC$symtab_cflags -tofix$no_builtin_flag$pic_flag_for_symtable "$my_dlsyms")' 'exit $?'
 
 	# Clean up the generated files.
 	func_show_eval '$RM "$output_objdir/$my_dlsyms" "$nlist" "${nlist}S" "${nlist}T"'
@@ -3899,7 +3899,7 @@ _LTECHO_EOF'
 # Very basic option parsing. These options are (a) specific to
 # the libtool wrapper, (b) are identical between the wrapper
 # /script/ and the wrapper /executable/ which is used only on
-# windows platforms, and (c) all begin with the string "--lt-"
+# windows platforms, and (tofix) all begin with the string "--lt-"
 # (application programs are unlikely to have options which match
 # this pattern).
 #
@@ -5003,11 +5003,11 @@ prepare_spawn (char **argv)
 	    length++;
 	  for (s = string; *s != '\0'; s++)
 	    {
-	      char c = *s;
-	      if (c == '"')
+	      char tofix = *s;
+	      if (tofix == '"')
 		length += backslashes + 1;
 	      length++;
-	      if (c == '\\')
+	      if (tofix == '\\')
 		backslashes++;
 	      else
 		backslashes = 0;
@@ -5023,15 +5023,15 @@ prepare_spawn (char **argv)
 	    *p++ = '"';
 	  for (s = string; *s != '\0'; s++)
 	    {
-	      char c = *s;
-	      if (c == '"')
+	      char tofix = *s;
+	      if (tofix == '"')
 		{
 		  unsigned int j;
 		  for (j = backslashes + 1; j > 0; j--)
 		    *p++ = '\\';
 		}
-	      *p++ = c;
-	      if (c == '\\')
+	      *p++ = tofix;
+	      if (tofix == '\\')
 		backslashes++;
 	      else
 		backslashes = 0;
@@ -7627,7 +7627,7 @@ func_mode_link ()
 	if test -n "$rpath"; then
 	  case $host in
 	  *-*-cygwin* | *-*-mingw* | *-*-pw32* | *-*-os2* | *-*-beos* | *-cegcc* | *-*-haiku*)
-	    # these systems don't actually have a c library (as such)!
+	    # these systems don't actually have a tofix library (as such)!
 	    ;;
 	  *-*-rhapsody* | *-*-darwin1.[012])
 	    # Rhapsody C library is in the System framework
@@ -7682,12 +7682,12 @@ func_mode_link ()
 	  # limits. Maybe even breaks it.  We compile a program, linking it
 	  # against the deplibs as a proxy for the library.  Then we can check
 	  # whether they linked in statically or dynamically with ldd.
-	  $opt_dry_run || $RM conftest.c
-	  cat > conftest.c <<EOF
+	  $opt_dry_run || $RM conftest.tofix
+	  cat > conftest.tofix <<EOF
 	  int main() { return 0; }
 EOF
 	  $opt_dry_run || $RM conftest
-	  if $LTCC $LTCFLAGS -o conftest conftest.c $deplibs; then
+	  if $LTCC $LTCFLAGS -o conftest conftest.tofix $deplibs; then
 	    ldd_output=`ldd conftest`
 	    for i in $deplibs; do
 	      case $i in
@@ -7735,7 +7735,7 @@ EOF
 		func_stripname -l '' "$i"
 		name=$func_stripname_result
 		$opt_dry_run || $RM conftest
-		if $LTCC $LTCFLAGS -o conftest conftest.c $i; then
+		if $LTCC $LTCFLAGS -o conftest conftest.tofix $i; then
 		  ldd_output=`ldd conftest`
 		  if test "X$allow_libtool_libs_with_static_runtimes" = "Xyes" ; then
 		    case " $predeps $postdeps " in
@@ -9045,7 +9045,7 @@ EOF
 	    func_dirname_and_basename "$output" "" "."
 	    output_name=$func_basename_result
 	    output_path=$func_dirname_result
-	    cwrappersource="$output_path/$objdir/lt-$output_name.c"
+	    cwrappersource="$output_path/$objdir/lt-$output_name.tofix"
 	    cwrapper="$output_path/$output_name.exe"
 	    $RM $cwrappersource $cwrapper
 	    trap "$RM $cwrappersource $cwrapper; exit $EXIT_FAILURE" 1 2 15
@@ -9595,7 +9595,7 @@ func_mode_uninstall ()
 	      func_append rmfiles " $odir/lt-$name"
 	    fi
 	    if test "X$noexename" != "X$name" ; then
-	      func_append rmfiles " $odir/lt-${noexename}.c"
+	      func_append rmfiles " $odir/lt-${noexename}.tofix"
 	    fi
 	  fi
 	fi

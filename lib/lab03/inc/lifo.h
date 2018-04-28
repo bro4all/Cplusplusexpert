@@ -17,7 +17,7 @@ namespace lab3 {
         std::string top();        // Return the top of the lifo.
         void push(std::string input);   // Add input string to the top of the string
         void pop();                     // Remove the top string from the lifo
-        bool c;
+        bool tofix;
     };
 }
 #endif

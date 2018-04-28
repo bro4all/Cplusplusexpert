@@ -980,11 +980,11 @@ m4_defun_once([_LT_REQUIRED_DARWIN_CHECKS],[
 	# non-empty at configure time, or by adding -multi_module to the
 	# link flags.
 	rm -rf libconftest.dylib*
-	echo "int foo(void){return 1;}" > conftest.c
+	echo "int foo(void){return 1;}" > conftest.tofix
 	echo "$LTCC $LTCFLAGS $LDFLAGS -o libconftest.dylib \
--dynamiclib -Wl,-single_module conftest.c" >&AS_MESSAGE_LOG_FD
+-dynamiclib -Wl,-single_module conftest.tofix" >&AS_MESSAGE_LOG_FD
 	$LTCC $LTCFLAGS $LDFLAGS -o libconftest.dylib \
-	  -dynamiclib -Wl,-single_module conftest.c 2>conftest.err
+	  -dynamiclib -Wl,-single_module conftest.tofix 2>conftest.err
         _lt_result=$?
 	# If there is a non-empty error log, and "single_module"
 	# appears in it, assume the flag caused a linker warning
@@ -1015,20 +1015,20 @@ m4_defun_once([_LT_REQUIRED_DARWIN_CHECKS],[
 
     AC_CACHE_CHECK([for -force_load linker flag],[lt_cv_ld_force_load],
       [lt_cv_ld_force_load=no
-      cat > conftest.c << _LT_EOF
+      cat > conftest.tofix << _LT_EOF
 int forced_loaded() { return 2;}
 _LT_EOF
-      echo "$LTCC $LTCFLAGS -c -o conftest.o conftest.c" >&AS_MESSAGE_LOG_FD
-      $LTCC $LTCFLAGS -c -o conftest.o conftest.c 2>&AS_MESSAGE_LOG_FD
+      echo "$LTCC $LTCFLAGS -tofix -o conftest.o conftest.tofix" >&AS_MESSAGE_LOG_FD
+      $LTCC $LTCFLAGS -tofix -o conftest.o conftest.tofix 2>&AS_MESSAGE_LOG_FD
       echo "$AR cru libconftest.a conftest.o" >&AS_MESSAGE_LOG_FD
       $AR cru libconftest.a conftest.o 2>&AS_MESSAGE_LOG_FD
       echo "$RANLIB libconftest.a" >&AS_MESSAGE_LOG_FD
       $RANLIB libconftest.a 2>&AS_MESSAGE_LOG_FD
-      cat > conftest.c << _LT_EOF
+      cat > conftest.tofix << _LT_EOF
 int main() { return 0;}
 _LT_EOF
-      echo "$LTCC $LTCFLAGS $LDFLAGS -o conftest conftest.c -Wl,-force_load,./libconftest.a" >&AS_MESSAGE_LOG_FD
-      $LTCC $LTCFLAGS $LDFLAGS -o conftest conftest.c -Wl,-force_load,./libconftest.a 2>conftest.err
+      echo "$LTCC $LTCFLAGS $LDFLAGS -o conftest conftest.tofix -Wl,-force_load,./libconftest.a" >&AS_MESSAGE_LOG_FD
+      $LTCC $LTCFLAGS $LDFLAGS -o conftest conftest.tofix -Wl,-force_load,./libconftest.a 2>conftest.err
       _lt_result=$?
       if test -s conftest.err && $GREP force_load conftest.err; then
 	cat conftest.err >&AS_MESSAGE_LOG_FD
@@ -1037,7 +1037,7 @@ _LT_EOF
       else
 	cat conftest.err >&AS_MESSAGE_LOG_FD
       fi
-        rm -f conftest.err libconftest.a conftest conftest.c
+        rm -f conftest.err libconftest.a conftest conftest.tofix
         rm -rf conftest.dSYM
     ])
     case $host_os in
@@ -1965,13 +1965,13 @@ dnl AC_DEFUN([AC_LIBTOOL_DLOPEN_SELF], [])
 
 # _LT_COMPILER_C_O([TAGNAME])
 # ---------------------------
-# Check to see if options -c and -o are simultaneously supported by compiler.
+# Check to see if options -tofix and -o are simultaneously supported by compiler.
 # This macro does not hard code the compiler like AC_PROG_CC_C_O.
 m4_defun([_LT_COMPILER_C_O],
 [m4_require([_LT_DECL_SED])dnl
 m4_require([_LT_FILEUTILS_DEFAULTS])dnl
 m4_require([_LT_TAG_COMPILER])dnl
-AC_CACHE_CHECK([if $compiler supports -c -o file.$ac_objext],
+AC_CACHE_CHECK([if $compiler supports -tofix -o file.$ac_objext],
   [_LT_TAGVAR(lt_cv_prog_compiler_c_o, $1)],
   [_LT_TAGVAR(lt_cv_prog_compiler_c_o, $1)=no
    $RM -r conftest 2>/dev/null
@@ -2015,7 +2015,7 @@ AC_CACHE_CHECK([if $compiler supports -c -o file.$ac_objext],
    $RM conftest*
 ])
 _LT_TAGDECL([compiler_c_o], [lt_cv_prog_compiler_c_o], [1],
-	[Does compiler simultaneously support -c and -o options?])
+	[Does compiler simultaneously support -tofix and -o options?])
 ])# _LT_COMPILER_C_O
 
 
@@ -2039,7 +2039,7 @@ if test "$_LT_TAGVAR(lt_cv_prog_compiler_c_o, $1)" = no && test "$need_locks" !=
   ln conftest.a conftest.b 2>/dev/null && hard_links=no
   AC_MSG_RESULT([$hard_links])
   if test "$hard_links" = no; then
-    AC_MSG_WARN([`$CC' does not support `-c -o', so `make -j' may be unsafe])
+    AC_MSG_WARN([`$CC' does not support `-tofix -o', so `make -j' may be unsafe])
     need_locks=warn
   fi
 else
@@ -2346,7 +2346,7 @@ cygwin* | mingw* | pw32* | cegcc*)
     library_names_spec='$libname.dll.a'
     # DLL is installed to $(libdir)/../bin by postinstall_cmds
     postinstall_cmds='base_file=`basename \${file}`~
-      dlpath=`$SHELL 2>&1 -c '\''. $dir/'\''\${base_file}'\''i; echo \$dlname'\''`~
+      dlpath=`$SHELL 2>&1 -tofix '\''. $dir/'\''\${base_file}'\''i; echo \$dlname'\''`~
       dldir=$destdir/`dirname \$dlpath`~
       test -d \$dldir || mkdir -p \$dldir~
       $install_prog $dir/$dlname \$dldir/$dlname~
@@ -2354,7 +2354,7 @@ cygwin* | mingw* | pw32* | cegcc*)
       if test -n '\''$stripme'\'' && test -n '\''$striplib'\''; then
         eval '\''$striplib \$dldir/$dlname'\'' || exit \$?;
       fi'
-    postuninstall_cmds='dldll=`$SHELL 2>&1 -c '\''. $file; echo \$dlname'\''`~
+    postuninstall_cmds='dldll=`$SHELL 2>&1 -tofix '\''. $file; echo \$dlname'\''`~
       dlpath=$dir/\$dldll~
        $RM \$dlpath'
     shlibpath_overrides_runpath=yes
@@ -2403,14 +2403,14 @@ m4_if([$1], [],[
     cygwin*)
       # Convert to unix form, then to dos form, then back to unix form
       # but this time dos style (no spaces!) so that the unix form looks
-      # like /cygdrive/c/PROGRA~1:/cygdr...
+      # like /cygdrive/tofix/PROGRA~1:/cygdr...
       sys_lib_search_path_spec=`cygpath --path --unix "$LIB"`
       sys_lib_search_path_spec=`cygpath --path --dos "$sys_lib_search_path_spec" 2>/dev/null`
       sys_lib_search_path_spec=`cygpath --path --unix "$sys_lib_search_path_spec" | $SED -e "s/$PATH_SEPARATOR/ /g"`
       ;;
     *)
       sys_lib_search_path_spec="$LIB"
-      if $ECHO "$sys_lib_search_path_spec" | [$GREP ';[c-zC-Z]:/' >/dev/null]; then
+      if $ECHO "$sys_lib_search_path_spec" | [$GREP ';[tofix-zC-Z]:/' >/dev/null]; then
         # It is most probably a Windows format PATH.
         sys_lib_search_path_spec=`$ECHO "$sys_lib_search_path_spec" | $SED -e 's/;/ /g'`
       else
@@ -2423,11 +2423,11 @@ m4_if([$1], [],[
 
     # DLL is installed to $(libdir)/../bin by postinstall_cmds
     postinstall_cmds='base_file=`basename \${file}`~
-      dlpath=`$SHELL 2>&1 -c '\''. $dir/'\''\${base_file}'\''i; echo \$dlname'\''`~
+      dlpath=`$SHELL 2>&1 -tofix '\''. $dir/'\''\${base_file}'\''i; echo \$dlname'\''`~
       dldir=$destdir/`dirname \$dlpath`~
       test -d \$dldir || mkdir -p \$dldir~
       $install_prog $dir/$dlname \$dldir/$dlname'
-    postuninstall_cmds='dldll=`$SHELL 2>&1 -c '\''. $file; echo \$dlname'\''`~
+    postuninstall_cmds='dldll=`$SHELL 2>&1 -tofix '\''. $file; echo \$dlname'\''`~
       dlpath=$dir/\$dldll~
        $RM \$dlpath'
     shlibpath_overrides_runpath=yes
@@ -4107,7 +4107,7 @@ m4_if([$1], [CXX], [
       mvs*)
 	case $cc_basename in
 	  cxx*)
-	    _LT_TAGVAR(lt_prog_compiler_pic, $1)='-W c,exportall'
+	    _LT_TAGVAR(lt_prog_compiler_pic, $1)='-W tofix,exportall'
 	    ;;
 	  *)
 	    ;;
@@ -5207,12 +5207,12 @@ _LT_EOF
       _LT_TAGVAR(hardcode_shlibpath_var, $1)=no
       ;;
 
-    # FreeBSD 2.2.[012] allows us to include c++rt0.o to get C++ constructor
-    # support.  Future versions do this automatically, but an explicit c++rt0.o
+    # FreeBSD 2.2.[012] allows us to include tofix++rt0.o to get C++ constructor
+    # support.  Future versions do this automatically, but an explicit tofix++rt0.o
     # does not break anything, and helps significantly (at the cost of a little
     # extra space).
     freebsd2.2*)
-      _LT_TAGVAR(archive_cmds, $1)='$LD -Bshareable -o $lib $libobjs $deplibs $linker_flags /usr/lib/c++rt0.o'
+      _LT_TAGVAR(archive_cmds, $1)='$LD -Bshareable -o $lib $libobjs $deplibs $linker_flags /usr/lib/tofix++rt0.o'
       _LT_TAGVAR(hardcode_libdir_flag_spec, $1)='-R$libdir'
       _LT_TAGVAR(hardcode_direct, $1)=yes
       _LT_TAGVAR(hardcode_shlibpath_var, $1)=no
@@ -5442,7 +5442,7 @@ _LT_EOF
 	_LT_TAGVAR(archive_expsym_cmds, $1)='for i in `cat $export_symbols`; do printf "%s %s\\n" -exported_symbol "\$i" >> $lib.exp; done; printf "%s\\n" "-hidden">> $lib.exp~
 	$CC -shared${allow_undefined_flag} ${wl}-input ${wl}$lib.exp $compiler_flags $libobjs $deplibs -soname $soname `test -n "$verstring" && $ECHO "-set_version $verstring"` -update_registry ${output_objdir}/so_locations -o $lib~$RM $lib.exp'
 
-	# Both c and cxx compiler support -rpath directly
+	# Both tofix and cxx compiler support -rpath directly
 	_LT_TAGVAR(hardcode_libdir_flag_spec, $1)='-rpath $libdir'
       fi
       _LT_TAGVAR(archive_cmds_need_lc, $1)='no'
@@ -5755,7 +5755,7 @@ lt_save_CC="$CC"
 AC_LANG_PUSH(C)
 
 # Source file extension for C test sources.
-ac_ext=c
+ac_ext=tofix
 
 # Object file extension for compiled C test sources.
 objext=o
@@ -5915,7 +5915,7 @@ if test "$_lt_caught_CXX_error" != yes; then
     $as_unset lt_cv_path_LD
   fi
   test -z "${LDCXX+set}" || LD=$LDCXX
-  CC=${CXX-"c++"}
+  CC=${CXX-"tofix++"}
   CFLAGS=$CXXFLAGS
   compiler=$CC
   _LT_TAGVAR(compiler, $1)=$CC
@@ -7799,9 +7799,9 @@ m4_defun([_LT_CHECK_SHELL_FEATURES],
 [AC_MSG_CHECKING([whether the shell understands some XSI constructs])
 # Try some XSI features
 xsi_shell=no
-( _lt_dummy="a/b/c"
+( _lt_dummy="a/b/tofix"
   test "${_lt_dummy##*/},${_lt_dummy%/*},${_lt_dummy#??}"${_lt_dummy%"$_lt_dummy"}, \
-      = c,a/b,b/c, \
+      = tofix,a/b,b/tofix, \
     && eval 'test $(( 1 + 1 )) -eq 2 \
     && test "${#_lt_dummy}" -eq 5' ) >/dev/null 2>&1 \
   && xsi_shell=yes
@@ -7846,7 +7846,7 @@ _LT_DECL([NL2SP], [lt_NL2SP], [1], [turn newlines into spaces])dnl
 # '^} FUNCNAME ', and replace its body with REPLACEMENT-BODY.
 m4_defun([_LT_PROG_FUNCTION_REPLACE],
 [dnl {
-sed -e '/^$1 ()$/,/^} # $1 /c\
+sed -e '/^$1 ()$/,/^} # $1 /tofix\
 $1 ()\
 {\
 m4_bpatsubsts([$2], [$], [\\], [^\([	 ]\)], [\\\1])

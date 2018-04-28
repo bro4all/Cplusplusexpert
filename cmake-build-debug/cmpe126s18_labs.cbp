@@ -812,6 +812,9 @@
 		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/test/lab06_tests.cpp">
 			<Option target="runBasicTests"/>
 		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/test/lab07_tests.cpp">
+			<Option target="runBasicTests"/>
+		</Unit>
 		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

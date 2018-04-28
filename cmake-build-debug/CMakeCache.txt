@@ -253,6 +253,9 @@ lab6_lib_LIB_DEPENDS:STATIC=
 //Dependencies for target
 lab7_lib_LIB_DEPENDS:STATIC=
 
+//Dependencies for the target
+lab8_lib_LIB_DEPENDS:STATIC=general;lab6_lib;
+
 
 ########################
 # INTERNAL cache entries

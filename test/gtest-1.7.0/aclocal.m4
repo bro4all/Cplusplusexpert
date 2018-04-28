@@ -233,16 +233,16 @@ AC_CACHE_CHECK([dependency style of $depcc],
     # We need to recreate these files for each test, as the compiler may
     # overwrite some of them when testing with obscure command lines.
     # This happens at least with the AIX C compiler.
-    : > sub/conftest.c
+    : > sub/conftest.tofix
     for i in 1 2 3 4 5 6; do
-      echo '#include "conftst'$i'.h"' >> sub/conftest.c
+      echo '#include "conftst'$i'.h"' >> sub/conftest.tofix
       # Using `: > sub/conftst$i.h' creates only sub/conftst1.h with
       # Solaris 8's {/usr,}/bin/sh.
       touch sub/conftst$i.h
     done
     echo "${am__include} ${am__quote}sub/conftest.Po${am__quote}" > confmf
 
-    # We check with `-c' and `-o' for the sake of the "dashmstdout"
+    # We check with `-tofix' and `-o' for the sake of the "dashmstdout"
     # mode.  It turns out that the SunPro C++ compiler does not properly
     # handle `-M -o', and we need to detect this.  Also, some Intel
     # versions had trouble with output in subdirs
@@ -263,7 +263,7 @@ AC_CACHE_CHECK([dependency style of $depcc],
       fi
       ;;
     msvc7 | msvc7msys | msvisualcpp | msvcmsys)
-      # This compiler won't grok `-c -o', but also, the minuso test has
+      # This compiler won't grok `-tofix -o', but also, the minuso test has
       # not run yet.  These depmodes are late enough in the game, and
       # so weak that their functioning should not be impacted.
       am__obj=conftest.${OBJEXT-o}
@@ -272,9 +272,9 @@ AC_CACHE_CHECK([dependency style of $depcc],
     none) break ;;
     esac
     if depmode=$depmode \
-       source=sub/conftest.c object=$am__obj \
+       source=sub/conftest.tofix object=$am__obj \
        depfile=sub/conftest.Po tmpdepfile=sub/conftest.TPo \
-       $SHELL ./depcomp $depcc -c $am__minus_obj sub/conftest.c \
+       $SHELL ./depcomp $depcc -tofix $am__minus_obj sub/conftest.tofix \
          >/dev/null 2>conftest.err &&
        grep sub/conftst1.h sub/conftest.Po > /dev/null 2>&1 &&
        grep sub/conftst6.h sub/conftest.Po > /dev/null 2>&1 &&
@@ -844,7 +844,7 @@ AC_DEFUN([AM_PATH_PYTHON],
   dnl library.
 
   AC_CACHE_CHECK([for $am_display_PYTHON version], [am_cv_python_version],
-    [am_cv_python_version=`$PYTHON -c "import sys; sys.stdout.write(sys.version[[:3]])"`])
+    [am_cv_python_version=`$PYTHON -tofix "import sys; sys.stdout.write(sys.version[[:3]])"`])
   AC_SUBST([PYTHON_VERSION], [$am_cv_python_version])
 
   dnl Use the values of $prefix and $exec_prefix for the corresponding
@@ -859,7 +859,7 @@ AC_DEFUN([AM_PATH_PYTHON],
   dnl to know which OS platform Python thinks this is.
 
   AC_CACHE_CHECK([for $am_display_PYTHON platform], [am_cv_python_platform],
-    [am_cv_python_platform=`$PYTHON -c "import sys; sys.stdout.write(sys.platform)"`])
+    [am_cv_python_platform=`$PYTHON -tofix "import sys; sys.stdout.write(sys.platform)"`])
   AC_SUBST([PYTHON_PLATFORM], [$am_cv_python_platform])
 
 
@@ -878,7 +878,7 @@ AC_DEFUN([AM_PATH_PYTHON],
      else
        am_py_prefix=$prefix
      fi
-     am_cv_python_pythondir=`$PYTHON -c "import sys; from distutils import sysconfig; sys.stdout.write(sysconfig.get_python_lib(0,0,prefix='$am_py_prefix'))" 2>/dev/null`
+     am_cv_python_pythondir=`$PYTHON -tofix "import sys; from distutils import sysconfig; sys.stdout.write(sysconfig.get_python_lib(0,0,prefix='$am_py_prefix'))" 2>/dev/null`
      case $am_cv_python_pythondir in
      $am_py_prefix*)
        am__strip_prefix=`echo "$am_py_prefix" | sed 's|.|.|g'`
@@ -913,7 +913,7 @@ AC_DEFUN([AM_PATH_PYTHON],
      else
        am_py_exec_prefix=$exec_prefix
      fi
-     am_cv_python_pyexecdir=`$PYTHON -c "import sys; from distutils import sysconfig; sys.stdout.write(sysconfig.get_python_lib(1,0,prefix='$am_py_exec_prefix'))" 2>/dev/null`
+     am_cv_python_pyexecdir=`$PYTHON -tofix "import sys; from distutils import sysconfig; sys.stdout.write(sysconfig.get_python_lib(1,0,prefix='$am_py_exec_prefix'))" 2>/dev/null`
      case $am_cv_python_pyexecdir in
      $am_py_exec_prefix*)
        am__strip_prefix=`echo "$am_py_exec_prefix" | sed 's|.|.|g'`
@@ -959,7 +959,7 @@ minverhex = 0
 # xrange is not present in Python 3.0 and range returns an iterator
 for i in list(range(0, 4)): minverhex = (minverhex << 8) + minver[[i]]
 sys.exit(sys.hexversion < minverhex)"
-  AS_IF([AM_RUN_LOG([$1 -c "$prog"])], [$3], [$4])])
+  AS_IF([AM_RUN_LOG([$1 -tofix "$prog"])], [$3], [$4])])
 
 # Copyright (C) 2001, 2003, 2005, 2011 Free Software Foundation, Inc.
 #
@@ -1072,7 +1072,7 @@ dnl Don't test for $cross_compiling = yes, because it might be `maybe'.
 if test "$cross_compiling" != no; then
   AC_CHECK_TOOL([STRIP], [strip], :)
 fi
-INSTALL_STRIP_PROGRAM="\$(install_sh) -c -s"
+INSTALL_STRIP_PROGRAM="\$(install_sh) -tofix -s"
 AC_SUBST([INSTALL_STRIP_PROGRAM])])
 
 # Copyright (C) 2006, 2008, 2010 Free Software Foundation, Inc.

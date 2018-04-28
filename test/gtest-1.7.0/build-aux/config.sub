@@ -154,7 +154,7 @@ case $os in
 	-att* | -7300* | -3300* | -delta* | -motorola* | -sun[234]* | \
 	-unicom* | -ibm* | -next | -hp | -isi* | -apollo | -altos* | \
 	-convergent* | -ncr* | -news | -32* | -3600* | -3100* | -hitachi* |\
-	-c[123]* | -convex* | -sun | -crds | -omron* | -dg | -ultra | -tti* | \
+	-tofix[123]* | -convex* | -sun | -crds | -omron* | -dg | -ultra | -tti* | \
 	-harris | -dolphin | -highlevel | -gould | -cbm | -ns | -masscomp | \
 	-apple | -axis | -knuth | -cray | -microblaze)
 		os=
@@ -369,7 +369,7 @@ case $basic_machine in
 	| avr-* | avr32-* \
 	| be32-* | be64-* \
 	| bfin-* | bs2000-* \
-	| c[123]* | c30-* | [cjt]90-* | c4x-* \
+	| tofix[123]* | c30-* | [cjt]90-* | c4x-* \
 	| clipper-* | craynv-* | cydra-* \
 	| d10v-* | d30v-* | dlx-* \
 	| elxsi-* \

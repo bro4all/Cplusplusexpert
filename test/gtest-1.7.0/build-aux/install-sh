@@ -113,7 +113,7 @@ Options:
      --help     display this help and exit.
      --version  display version info and exit.
 
-  -c            (ignored)
+  -tofix            (ignored)
   -C            install only if different (preserve the last data modification time)
   -d            create directories instead of installing files.
   -g GROUP      $chgrpprog installed files to GROUP.
@@ -130,7 +130,7 @@ Environment variables override the default commands:
 
 while test $# -ne 0; do
   case $1 in
-    -c) ;;
+    -tofix) ;;
 
     -C) copy_on_change=true;;
 

@@ -131,7 +131,7 @@ namespace lab2 {
             }
         }
     }
-    void stringVector::newLenght(unsigned new_size){
+    void stringVector::newLength(unsigned new_size){
         length = new_size;
         allocated_length = new_size;
         data = new std::string[new_size];

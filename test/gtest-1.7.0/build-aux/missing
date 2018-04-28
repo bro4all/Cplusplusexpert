@@ -80,9 +80,9 @@ Supported PROGRAM values:
   autom4te     touch the output file, or create a stub one
   automake     touch all \`Makefile.in' files
   bison        create \`y.tab.[ch]', if possible, from existing .[ch]
-  flex         create \`lex.yy.c', if possible, from existing .c
+  flex         create \`lex.yy.tofix', if possible, from existing .tofix
   help2man     touch the output file
-  lex          create \`lex.yy.c', if possible, from existing .c
+  lex          create \`lex.yy.tofix', if possible, from existing .tofix
   makeinfo     touch the output file
   yacc         create \`y.tab.[ch]', if possible, from existing .[ch]
 
@@ -214,14 +214,14 @@ WARNING: \`$1' $msg.  You should only need it if
          you modified a \`.y' file.  You may need the \`Bison' package
          in order for those modifications to take effect.  You can get
          \`Bison' from any GNU archive site."
-    rm -f y.tab.c y.tab.h
+    rm -f y.tab.tofix y.tab.h
     if test $# -ne 1; then
         eval LASTARG=\${$#}
 	case $LASTARG in
 	*.y)
-	    SRCFILE=`echo "$LASTARG" | sed 's/y$/c/'`
+	    SRCFILE=`echo "$LASTARG" | sed 's/y$/tofix/'`
 	    if test -f "$SRCFILE"; then
-	         cp "$SRCFILE" y.tab.c
+	         cp "$SRCFILE" y.tab.tofix
 	    fi
 	    SRCFILE=`echo "$LASTARG" | sed 's/y$/h/'`
 	    if test -f "$SRCFILE"; then
@@ -233,8 +233,8 @@ WARNING: \`$1' $msg.  You should only need it if
     if test ! -f y.tab.h; then
 	echo >y.tab.h
     fi
-    if test ! -f y.tab.c; then
-	echo 'main() { return 0; }' >y.tab.c
+    if test ! -f y.tab.tofix; then
+	echo 'main() { return 0; }' >y.tab.tofix
     fi
     ;;
 
@@ -244,20 +244,20 @@ WARNING: \`$1' is $msg.  You should only need it if
          you modified a \`.l' file.  You may need the \`Flex' package
          in order for those modifications to take effect.  You can get
          \`Flex' from any GNU archive site."
-    rm -f lex.yy.c
+    rm -f lex.yy.tofix
     if test $# -ne 1; then
         eval LASTARG=\${$#}
 	case $LASTARG in
 	*.l)
-	    SRCFILE=`echo "$LASTARG" | sed 's/l$/c/'`
+	    SRCFILE=`echo "$LASTARG" | sed 's/l$/tofix/'`
 	    if test -f "$SRCFILE"; then
-	         cp "$SRCFILE" lex.yy.c
+	         cp "$SRCFILE" lex.yy.tofix
 	    fi
 	  ;;
 	esac
     fi
-    if test ! -f lex.yy.c; then
-	echo 'main() { return 0; }' >lex.yy.c
+    if test ! -f lex.yy.tofix; then
+	echo 'main() { return 0; }' >lex.yy.tofix
     fi
     ;;
 

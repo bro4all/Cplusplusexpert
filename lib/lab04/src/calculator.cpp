@@ -61,8 +61,8 @@ namespace lab4 {
         lab3::lifo cal;
         lab3::fifo copy;
         int result = 0;
-        int num1 = 0;
-        int num2 = 0;
+        int num1 =0;
+        int num2 =0;
         std::string aa;
         while(!postfix_expression.is_empty()){
             lab1::expressionstream temp(postfix_expression.top());

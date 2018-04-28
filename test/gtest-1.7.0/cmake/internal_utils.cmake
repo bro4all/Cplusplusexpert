@@ -218,7 +218,7 @@ function(py_test name)
     if (PYTHONINTERP_FOUND)
         # ${CMAKE_BINARY_DIR} is known at configuration time, so we can
         # directly bind it from cmake. ${CTEST_CONFIGURATION_TYPE} is known
-        # only at ctest runtime (by calling ctest -c <Configuration>), so
+        # only at ctest runtime (by calling ctest -tofix <Configuration>), so
         # we have to escape $ to delay variable substitution here.
         add_test(${name}
                 ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/test/${name}.py

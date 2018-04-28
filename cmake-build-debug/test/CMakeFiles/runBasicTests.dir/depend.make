@@ -146,3 +146,5 @@ test/CMakeFiles/runBasicTests.dir/lab06_tests.cpp.o: ../test/gtest-1.7.0/include
 test/CMakeFiles/runBasicTests.dir/lab06_tests.cpp.o: ../test/gtest-1.7.0/include/gtest/internal/gtest-type-util.h
 test/CMakeFiles/runBasicTests.dir/lab06_tests.cpp.o: ../test/lab06_tests.cpp
 
+test/CMakeFiles/runBasicTests.dir/lab07_tests.cpp.o: ../test/lab07_tests.cpp
+

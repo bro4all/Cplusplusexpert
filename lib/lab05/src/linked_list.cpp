@@ -9,7 +9,9 @@ namespace lab5 {
     }
 
     linked_list::linked_list(std::string &data) {
-        head->data = data;
+        node *temp = new node(data);
+        head = temp;
+        tail = temp;
     }
 
     linked_list::linked_list(const linked_list &original) {
@@ -25,10 +27,16 @@ namespace lab5 {
 
 
     linked_list::~linked_list() {
-        while (head) {
-            node *temp = head->next;
-            delete head;
-            head = temp;
+        node *temp = head;
+        if (temp) {
+            while (head) {
+                temp = temp->next;
+                delete head;
+                head = temp;
+            }
+        } else {
+            head = nullptr;
+            tail = nullptr;
         }
     }
 
@@ -61,9 +69,9 @@ namespace lab5 {
 
 
     unsigned linked_list::listSize() const {
-        unsigned size;
+        unsigned size=0;
         node *temp = head;
-        if (head == 0 && tail == 0) {
+        if (head == nullptr && tail == nullptr) {
             return 0;
         } else {
             while (temp != nullptr) {
@@ -80,111 +88,108 @@ namespace lab5 {
         node *temporary = new node(input);
         current = head;
         if (isEmpty()) append(input);
-        else if (location == 0){
-                node *temp = new node(input);
-                temp->next = head;
-                head = temp;
-        }
-
-        else {
+        else if (location == 0) {
+            node *temp = new node(input);
+            temp->next = head;
+            head = temp;
+        } else {
             for (int i = 0; i < location; ++i) {
                 previous = current;
                 current = current->next;
             }
-                temporary->next=current;
-            previous->next=temporary;
+            temporary->next = current;
+            previous->next = temporary;
         }
     }
-
 
 
     void linked_list::append(const std::string input) {
         node *temp = new node(input);
         temp->data = input;
-        if(head == NULL){
+        if (head == NULL) {
             head = temp;
             tail = temp;
             tail->next = NULL;
-        }
-        else{
-            tail->next=temp;
-            tail=tail->next;
+        } else {
+            tail->next = temp;
+            tail = tail->next;
         }
     }
 
 
-
-        void linked_list::sort() {
-            node *h = head, *i, *j;
-            for(i = h; i!=NULL && i->next!=NULL; i=i->next)
-            {
-                node *min;
-                min = i;
-                for(j = i->next; j!=NULL ; j=j->next)
-                {
-                    if(j->data < min->data)
-                        min=j;
-                }
-                if(min!=i)
-                {
-                    std::string temp;
-                    temp = min->data;
-                    min->data = i->data;
-                    i->data = temp;
-                }
+    void linked_list::sort() {
+        node *h = head, *i, *j;
+        for (i = h; i != NULL && i->next != NULL; i = i->next) {
+            node *min;
+            min = i;
+            for (j = i->next; j != NULL; j = j->next) {
+                if (j->data < min->data)
+                    min = j;
             }
-            head = h;
+            if (min != i) {
+                std::string temp;
+                temp = min->data;
+                min->data = i->data;
+                i->data = temp;
+            }
         }
+        head = h;
+    }
 
     void linked_list::remove(unsigned int location) {
-        node *prev = NULL;
+        node *prev = nullptr;
         node *current = head;
-            for (int i = 0; i < location && current->next != nullptr; i++) {
-                prev = current;
-                current = current->next;
-            }
-            if (prev) {
-                prev->next = current->next;
-                current = NULL;
-                tail = prev;
-            }
-            if (location > listSize()) {
-                throw 0;
-            } else if (!prev) {
-                head = current->next;
-            }
+
+        if(listSize() == 1){
+            delete head;
+            head = tail = nullptr;
+            return;
+        }
+        for (int i = 0; i < location && current->next != nullptr; i++) {
+            prev = current;
+            current = current->next;
+        }
+        if (prev) {
+            prev->next = current->next;
+            current = nullptr;
+            tail = prev;
+        }
+        if (location > listSize()) {
+            throw "location is out of bounds";
+        } else if (!prev) {
+            head = current->next;
+        }
 
     }
 
     std::ostream &operator<<(std::ostream &stream, linked_list &RHS) {
         node *current = RHS.head;
-        stream<<std::endl;
-        while(current != NULL){
-            stream<<current->data<<" ";
+        stream << std::endl;
+        while (current != NULL) {
+            stream << current->data << " ";
             current = current->next;
         }
-        stream<<std::endl;
+        stream << std::endl;
         return stream;
     }
 
     std::istream &operator>>(std::istream &stream, linked_list &RHS) {
         std::string temp;
-        stream>>temp;
+        stream >> temp;
         RHS.append(temp);
         return stream;
 
     }
 
     std::string linked_list::get_value_at(unsigned location) const {
-        std::string value;
-        node* current=head;
-        for(int i=0;i<location;i++){
-            current=current->next;
-            value=current->data;
 
-        }
+            node *current = head;
+            for (int i = 0; i < location; i++) {
+                current = current->next;
 
-        return std::string(value);
+            }
+
+            return current->data;//(*current).data;
+
     }
-
 }

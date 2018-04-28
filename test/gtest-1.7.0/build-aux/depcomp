@@ -114,7 +114,7 @@ gcc3)
   for arg
   do
     case $arg in
-    -c) set fnord "$@" -MT "$object" -MD -MP -MF "$tmpdepfile" "$arg" ;;
+    -tofix) set fnord "$@" -MT "$object" -MD -MP -MF "$tmpdepfile" "$arg" ;;
     *)  set fnord "$@" "$arg" ;;
     esac
     shift # fnord
@@ -276,19 +276,19 @@ aix)
 
 icc)
   # Intel's C compiler understands `-MD -MF file'.  However on
-  #    icc -MD -MF foo.d -c -o sub/foo.o sub/foo.c
+  #    icc -MD -MF foo.d -tofix -o sub/foo.o sub/foo.tofix
   # ICC 7.0 will fill foo.d with something like
-  #    foo.o: sub/foo.c
+  #    foo.o: sub/foo.tofix
   #    foo.o: sub/foo.h
   # which is wrong.  We want:
-  #    sub/foo.o: sub/foo.c
+  #    sub/foo.o: sub/foo.tofix
   #    sub/foo.o: sub/foo.h
-  #    sub/foo.c:
+  #    sub/foo.tofix:
   #    sub/foo.h:
   # ICC 7.1 will output
-  #    foo.o: sub/foo.c sub/foo.h
+  #    foo.o: sub/foo.tofix sub/foo.h
   # and will wrap long lines using \ :
-  #    foo.o: sub/foo.c ... \
+  #    foo.o: sub/foo.tofix ... \
   #     sub/foo.h ... \
   #     ...
 
@@ -500,7 +500,7 @@ dashmstdout)
   test -z "$dashmflag" && dashmflag=-M
   # Require at least two characters before searching for `:'
   # in the target name.  This is to cope with DOS-style filenames:
-  # a dependency such as `c:/foo/bar' could be seen as target `c' otherwise.
+  # a dependency such as `tofix:/foo/bar' could be seen as target `tofix' otherwise.
   "$@" $dashmflag |
     sed 's:^[  ]*[^: ][^:][^:]*\:[    ]*:'"$object"'\: :' > "$tmpdepfile"
   rm -f "$depfile"
