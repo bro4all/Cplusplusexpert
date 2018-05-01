@@ -45,6 +45,8 @@ namespace lab8{
 
     bool hash_table::insert(std::string key, int value) {
         // Insert a key according to the defined probing technique
+        // If you run into an issue where you get an infinite collision loop,
+        //   figure out a way to get out of the loop.
         return true;
     }
 
@@ -70,6 +72,7 @@ namespace lab8{
     void hash_table::remove(std::string key){
         // Remove an item from the hash table. Keep collisions in mind
         // Use the specified probing technique
+        // If the item isn't in the table, do nothing.
     }
 
     std::string hash_table::to_string(){
