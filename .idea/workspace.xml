@@ -23,93 +23,12 @@
   <component name="ChangeListManager">
     <list default="true" id="2fbadca7-5491-4f36-918a-868f6c66cb69" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmpe126s18_labs.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmpe126s18_labs.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lab1_lib/CMakeFiles/lab1_lib.dir/src/expressionstream.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lab1_lib/CMakeFiles/lab1_lib.dir/src/expressionstream.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lab1_lib/liblab1_lib.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lab1_lib/liblab1_lib.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lab2_lib/CMakeFiles/lab2_lib.dir/src/stringVector.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lab2_lib/CMakeFiles/lab2_lib.dir/src/stringVector.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lab2_lib/liblab2_lib.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lab2_lib/liblab2_lib.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lab3_lib/CMakeFiles/lab3_lib.dir/src/fifo.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lab3_lib/CMakeFiles/lab3_lib.dir/src/fifo.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lab3_lib/CMakeFiles/lab3_lib.dir/src/lifo.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lab3_lib/CMakeFiles/lab3_lib.dir/src/lifo.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lab3_lib/liblab3_lib.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lab3_lib/liblab3_lib.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lab4_lib/CMakeFiles/lab4_lib.dir/src/calculator.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lab4_lib/liblab4_lib.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lab4_lib/liblab4_lib.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lab5_lib/CMakeFiles/lab5_lib.dir/src/fancy_calculator.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lab5_lib/CMakeFiles/lab5_lib.dir/src/fancy_calculator.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lab5_lib/CMakeFiles/lab5_lib.dir/src/linked_list.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lab5_lib/CMakeFiles/lab5_lib.dir/src/linked_list.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lab5_lib/CMakeFiles/lab5_lib.dir/src/queue.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lab5_lib/CMakeFiles/lab5_lib.dir/src/queue.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lab5_lib/CMakeFiles/lab5_lib.dir/src/stack.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lab5_lib/CMakeFiles/lab5_lib.dir/src/stack.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lab5_lib/liblab5_lib.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lab5_lib/liblab5_lib.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lab6_lib/CMakeFiles/lab6_lib.dir/src/doubly_linked_list.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lab6_lib/CMakeFiles/lab6_lib.dir/src/doubly_linked_list.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lab6_lib/liblab6_lib.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lab6_lib/liblab6_lib.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lab7_lib/CMakeFiles/lab7_lib.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lab7_lib/CMakeFiles/lab7_lib.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lab7_lib/CMakeFiles/lab7_lib.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lab7_lib/CMakeFiles/lab7_lib.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/runBasicTests.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/runBasicTests.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/runBasicTests.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/runBasicTests.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/runBasicTests.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/runBasicTests.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/runBasicTests.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/runBasicTests.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/runBasicTests.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/runBasicTests.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/runBasicTests.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/runBasicTests.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/runBasicTests.dir/lab01_tests.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/runBasicTests.dir/lab01_tests.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/runBasicTests.dir/lab02_tests.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/runBasicTests.dir/lab02_tests.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/runBasicTests.dir/lab03_tests.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/runBasicTests.dir/lab03_tests.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/runBasicTests.dir/lab04_tests.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/runBasicTests.dir/lab04_tests.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/runBasicTests.dir/lab05_tests.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/runBasicTests.dir/lab05_tests.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/runBasicTests.dir/lab06_tests.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/runBasicTests.dir/lab06_tests.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/runBasicTests.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/runBasicTests.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/runBasicTests.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/runBasicTests.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/test/Lab_Tests.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/test/Lab_Tests.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/test/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/test/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/test/gtest-1.7.0/CMakeFiles/gtest.dir/src/gtest-all.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/test/gtest-1.7.0/CMakeFiles/gtest.dir/src/gtest-all.cc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/test/gtest-1.7.0/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/test/gtest-1.7.0/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/test/gtest-1.7.0/libgtest.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/test/gtest-1.7.0/libgtest.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/test/gtest-1.7.0/libgtest_main.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/test/gtest-1.7.0/libgtest_main.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/test/runBasicTests" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/test/runBasicTests" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/lab02/inc/stringVector.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/lab02/inc/stringVector.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/lab02/src/stringVector.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/lab02/src/stringVector.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/lab03/inc/lifo.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/lab03/inc/lifo.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/lab03/src/fifo.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/lab03/src/fifo.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/lab03/src/lifo.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/lab03/src/lifo.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/lab04/src/calculator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/lab04/src/calculator.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/lab05/src/fancy_calculator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/lab05/src/fancy_calculator.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/lab05/src/linked_list.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/lab05/src/linked_list.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/lab07/inc/node.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/lab07/inc/node.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/lab07/inc/tree.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/lab07/inc/tree.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/lab07/src/tree.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/lab07/src/tree.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/gtest-1.7.0/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/test/gtest-1.7.0/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/gtest-1.7.0/README" beforeDir="false" afterPath="$PROJECT_DIR$/test/gtest-1.7.0/README" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/gtest-1.7.0/aclocal.m4" beforeDir="false" afterPath="$PROJECT_DIR$/test/gtest-1.7.0/aclocal.m4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/gtest-1.7.0/build-aux/config.guess" beforeDir="false" afterPath="$PROJECT_DIR$/test/gtest-1.7.0/build-aux/config.guess" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/gtest-1.7.0/build-aux/config.sub" beforeDir="false" afterPath="$PROJECT_DIR$/test/gtest-1.7.0/build-aux/config.sub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/gtest-1.7.0/build-aux/depcomp" beforeDir="false" afterPath="$PROJECT_DIR$/test/gtest-1.7.0/build-aux/depcomp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/gtest-1.7.0/build-aux/install-sh" beforeDir="false" afterPath="$PROJECT_DIR$/test/gtest-1.7.0/build-aux/install-sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/gtest-1.7.0/build-aux/ltmain.sh" beforeDir="false" afterPath="$PROJECT_DIR$/test/gtest-1.7.0/build-aux/ltmain.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/gtest-1.7.0/build-aux/missing" beforeDir="false" afterPath="$PROJECT_DIR$/test/gtest-1.7.0/build-aux/missing" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/gtest-1.7.0/cmake/internal_utils.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/test/gtest-1.7.0/cmake/internal_utils.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/gtest-1.7.0/include/gtest/gtest-param-test.h.pump" beforeDir="false" afterPath="$PROJECT_DIR$/test/gtest-1.7.0/include/gtest/gtest-param-test.h.pump" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/gtest-1.7.0/include/gtest/internal/gtest-param-util-generated.h.pump" beforeDir="false" afterPath="$PROJECT_DIR$/test/gtest-1.7.0/include/gtest/internal/gtest-param-util-generated.h.pump" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/gtest-1.7.0/include/gtest/internal/gtest-tuple.h.pump" beforeDir="false" afterPath="$PROJECT_DIR$/test/gtest-1.7.0/include/gtest/internal/gtest-tuple.h.pump" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/gtest-1.7.0/include/gtest/internal/gtest-type-util.h.pump" beforeDir="false" afterPath="$PROJECT_DIR$/test/gtest-1.7.0/include/gtest/internal/gtest-type-util.h.pump" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/gtest-1.7.0/m4/libtool.m4" beforeDir="false" afterPath="$PROJECT_DIR$/test/gtest-1.7.0/m4/libtool.m4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/gtest-1.7.0/make/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/test/gtest-1.7.0/make/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/gtest-1.7.0/msvc/gtest-md.vcproj" beforeDir="false" afterPath="$PROJECT_DIR$/test/gtest-1.7.0/msvc/gtest-md.vcproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/gtest-1.7.0/msvc/gtest.vcproj" beforeDir="false" afterPath="$PROJECT_DIR$/test/gtest-1.7.0/msvc/gtest.vcproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/gtest-1.7.0/msvc/gtest_main-md.vcproj" beforeDir="false" afterPath="$PROJECT_DIR$/test/gtest-1.7.0/msvc/gtest_main-md.vcproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/gtest-1.7.0/msvc/gtest_main.vcproj" beforeDir="false" afterPath="$PROJECT_DIR$/test/gtest-1.7.0/msvc/gtest_main.vcproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/gtest-1.7.0/msvc/gtest_prod_test-md.vcproj" beforeDir="false" afterPath="$PROJECT_DIR$/test/gtest-1.7.0/msvc/gtest_prod_test-md.vcproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/gtest-1.7.0/msvc/gtest_prod_test.vcproj" beforeDir="false" afterPath="$PROJECT_DIR$/test/gtest-1.7.0/msvc/gtest_prod_test.vcproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/gtest-1.7.0/msvc/gtest_unittest-md.vcproj" beforeDir="false" afterPath="$PROJECT_DIR$/test/gtest-1.7.0/msvc/gtest_unittest-md.vcproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/gtest-1.7.0/msvc/gtest_unittest.vcproj" beforeDir="false" afterPath="$PROJECT_DIR$/test/gtest-1.7.0/msvc/gtest_unittest.vcproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/gtest-1.7.0/scripts/gtest-config.in" beforeDir="false" afterPath="$PROJECT_DIR$/test/gtest-1.7.0/scripts/gtest-config.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/gtest-1.7.0/scripts/test/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/test/gtest-1.7.0/scripts/test/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/gtest-1.7.0/test/gtest_output_test_golden_lin.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test/gtest-1.7.0/test/gtest_output_test_golden_lin.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/gtest-1.7.0/xcode/Samples/FrameworkSample/WidgetFramework.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/test/gtest-1.7.0/xcode/Samples/FrameworkSample/WidgetFramework.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/gtest-1.7.0/xcode/gtest.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/test/gtest-1.7.0/xcode/gtest.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/lab07_tests.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/lab07_tests.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/test/gtest-1.7.0/gtest.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/test/gtest-1.7.0/gtest.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test/CMakeLists.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <ignored path="$PROJECT_DIR$/test/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -120,23 +39,83 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="linked_list.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/lab05/src/linked_list.cpp">
+      <file leaf-file-name="lab05_tests.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/lab05_tests.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2295">
-              <caret line="154" column="8" selection-end-line="194" selection-end-column="1" />
+            <state relative-caret-position="2130">
+              <caret line="142" column="62" selection-start-line="142" selection-start-column="62" selection-end-line="142" selection-end-column="62" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fancy_calculator.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/lab05/src/fancy_calculator.cpp">
+      <file leaf-file-name="lab06_tests.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/lab06_tests.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="39" column="49" lean-forward="true" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="49" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="180">
+              <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lab07_tests.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/lab07_tests.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2715">
+              <caret line="181" column="17" selection-start-line="181" selection-start-column="17" selection-end-line="181" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="doubly_linked_list.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/lab06/src/doubly_linked_list.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1412">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lab01_tests.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/lab01_tests.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tree.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/lab07/inc/tree.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="14" selection-end-line="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stringVector.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/lab02/inc/stringVector.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -144,73 +123,8 @@
       <file leaf-file-name="calculator.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/lab04/src/calculator.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1148">
-              <caret line="78" column="21" selection-end-line="175" selection-end-column="1" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="queue.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/lab05/inc/queue.h">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="queue.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/lab05/src/queue.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="62" column="33" selection-end-line="74" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lab04_tests.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/lab04_tests.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-              <folding>
-                <element signature="e#0#24#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lab05_tests.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/lab05_tests.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5600">
-              <caret line="142" column="62" selection-start-line="142" selection-start-column="62" selection-end-line="142" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lifo.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/lab03/inc/lifo.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lifo.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/lab03/src/lifo.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-578">
-              <caret line="16" column="31" lean-forward="true" selection-end-line="75" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fifo.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/lab03/src/fifo.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" lean-forward="true" selection-end-line="108" selection-end-column="1" />
+            <state relative-caret-position="1365">
+              <caret line="91" column="19" selection-start-line="91" selection-start-column="19" selection-end-line="91" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -234,7 +148,6 @@
         <option value="$PROJECT_DIR$/lib/lab04/inc/calculator.h" />
         <option value="$PROJECT_DIR$/test/lab02_tests.cpp" />
         <option value="$PROJECT_DIR$/lib/lab06/src/doubly_linked_list.cpp" />
-        <option value="$PROJECT_DIR$/test/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/lib/lab07/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/lib/lab06/inc/doubly_linked_list.h" />
         <option value="$PROJECT_DIR$/lib/lab01/src/expressionstream.cpp" />
@@ -253,6 +166,7 @@
         <option value="$PROJECT_DIR$/lib/lab05/src/linked_list.cpp" />
         <option value="$PROJECT_DIR$/lib/lab03/inc/lifo.h" />
         <option value="$PROJECT_DIR$/lib/lab04/src/calculator.cpp" />
+        <option value="$PROJECT_DIR$/test/CMakeLists.txt" />
       </list>
     </option>
   </component>
@@ -263,7 +177,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="810" />
@@ -273,6 +187,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -295,13 +210,6 @@
               <item name="cmpe126s18_labs" type="b2602c69:ProjectViewProjectNode" />
               <item name="cmpe126s18_labs" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="lab01" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cmpe126s18_labs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cmpe126s18_labs" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="lab02" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -343,33 +251,6 @@
               <item name="cmpe126s18_labs" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="lab04" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cmpe126s18_labs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cmpe126s18_labs" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="lab04" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cmpe126s18_labs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cmpe126s18_labs" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="lab05" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cmpe126s18_labs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cmpe126s18_labs" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="lab05" type="462c0819:PsiDirectoryNode" />
-              <item name="inc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cmpe126s18_labs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cmpe126s18_labs" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="lab05" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cmpe126s18_labs" type="b2602c69:ProjectViewProjectNode" />
@@ -381,40 +262,14 @@
               <item name="cmpe126s18_labs" type="b2602c69:ProjectViewProjectNode" />
               <item name="cmpe126s18_labs" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="lab07" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cmpe126s18_labs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cmpe126s18_labs" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="lab07" type="462c0819:PsiDirectoryNode" />
+              <item name="lab06" type="462c0819:PsiDirectoryNode" />
               <item name="inc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cmpe126s18_labs" type="b2602c69:ProjectViewProjectNode" />
               <item name="cmpe126s18_labs" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="lab07" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cmpe126s18_labs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cmpe126s18_labs" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="lab09" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cmpe126s18_labs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cmpe126s18_labs" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="lab09" type="462c0819:PsiDirectoryNode" />
-              <item name="inc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cmpe126s18_labs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cmpe126s18_labs" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="lab09" type="462c0819:PsiDirectoryNode" />
+              <item name="lab06" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -426,12 +281,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -445,50 +300,34 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Google Test.Lab04Fixture.calculator_istream_ostream_test">
-    <configuration name="All in lab03_tests.cpp" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cmpe126s18_labs" TARGET_NAME="runBasicTests" RUN_TARGET_PROJECT_NAME="cmpe126s18_labs" RUN_TARGET_NAME="runBasicTests" TEST_PATTERN="Lab03Fixture.*:Lab03Fixture/*.*:*/Lab03Fixture.*/*:*/Lab03Fixture/*.*:crash_test.*:crash_test/*.*:*/crash_test.*/*:*/crash_test/*.*" TEST_MODE="PATTERN" />
-    <configuration name="Lab04Fixture.calculator_istream_ostream_test" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cmpe126s18_labs" TARGET_NAME="runBasicTests" RUN_TARGET_PROJECT_NAME="cmpe126s18_labs" RUN_TARGET_NAME="runBasicTests" TEST_CLASS="Lab04Fixture" TEST_METHOD="calculator_istream_ostream_test" TEST_MODE="SUITE_TEST" />
-    <configuration name="Lab05Fixture.fancy_calc_calculator_simple_test" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cmpe126s18_labs" TARGET_NAME="runBasicTests" RUN_TARGET_PROJECT_NAME="cmpe126s18_labs" RUN_TARGET_NAME="runBasicTests" TEST_CLASS="Lab05Fixture" TEST_METHOD="fancy_calc_calculator_simple_test" TEST_MODE="SUITE_TEST" />
-    <configuration name="Lab05Fixture.fancy_calc_calculator_test" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cmpe126s18_labs" TARGET_NAME="runBasicTests" RUN_TARGET_PROJECT_NAME="cmpe126s18_labs" RUN_TARGET_NAME="runBasicTests" TEST_CLASS="Lab05Fixture" TEST_METHOD="fancy_calc_calculator_test" TEST_MODE="SUITE_TEST" />
-    <configuration name="Lab05Fixture.fancy_calculator_istream_ostream_test" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cmpe126s18_labs" TARGET_NAME="runBasicTests" RUN_TARGET_PROJECT_NAME="cmpe126s18_labs" RUN_TARGET_NAME="runBasicTests" TEST_CLASS="Lab05Fixture" TEST_METHOD="fancy_calculator_istream_ostream_test" TEST_MODE="SUITE_TEST" />
+  <component name="RunManager" selected="Google Test.Lab06crsh.crash_test_dll">
+    <configuration name="All in lab06_tests.cpp" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cmpe126s18_labs" TARGET_NAME="runBasicTests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cmpe126s18_labs" RUN_TARGET_NAME="runBasicTests" TEST_PATTERN="Lab06Fixture.*:Lab06Fixture/*.*:*/Lab06Fixture.*/*:*/Lab06Fixture/*.*:Lab06crsh.*:Lab06crsh/*.*:*/Lab06crsh.*/*:*/Lab06crsh/*.*" TEST_MODE="PATTERN" />
+    <configuration name="Lab04Fixture.calculator_istream_ostream_test" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cmpe126s18_labs" TARGET_NAME="runBasicTests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cmpe126s18_labs" RUN_TARGET_NAME="runBasicTests" TEST_CLASS="Lab04Fixture" TEST_METHOD="calculator_istream_ostream_test" TEST_MODE="SUITE_TEST" />
+    <configuration name="Lab05Fixture.fancy_calc_calculator_test" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cmpe126s18_labs" TARGET_NAME="runBasicTests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cmpe126s18_labs" RUN_TARGET_NAME="runBasicTests" TEST_CLASS="Lab05Fixture" TEST_METHOD="fancy_calc_calculator_test" TEST_MODE="SUITE_TEST" />
+    <configuration name="Lab05Fixture.fancy_calculator_istream_ostream_test" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cmpe126s18_labs" TARGET_NAME="runBasicTests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cmpe126s18_labs" RUN_TARGET_NAME="runBasicTests" TEST_CLASS="Lab05Fixture" TEST_METHOD="fancy_calculator_istream_ostream_test" TEST_MODE="SUITE_TEST" />
+    <configuration name="Lab06crsh.crash_test_dll" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cmpe126s18_labs" TARGET_NAME="runBasicTests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cmpe126s18_labs" RUN_TARGET_NAME="runBasicTests" TEST_CLASS="Lab06crsh" TEST_METHOD="crash_test_dll" TEST_MODE="SUITE_TEST" />
     <configuration name="runBasicTests" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cmpe126s18_labs" TARGET_NAME="runBasicTests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cmpe126s18_labs" RUN_TARGET_NAME="runBasicTests" TEST_MODE="SUITE_TEST" />
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cmpe126s18_labs" RUN_TARGET_NAME="labs_main" EXPLICIT_BUILD_TARGET_NAME="all" />
     <configuration name="gtest" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cmpe126s18_labs" TARGET_NAME="gtest" CONFIG_NAME="Debug" />
     <configuration name="gtest_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cmpe126s18_labs" TARGET_NAME="gtest_main" CONFIG_NAME="Debug" />
-    <configuration name="lab1_lib" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cmpe126s18_labs" TARGET_NAME="lab1_lib" CONFIG_NAME="Debug" />
-    <configuration name="lab2_lib" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cmpe126s18_labs" TARGET_NAME="lab2_lib" CONFIG_NAME="Debug" />
-    <configuration name="lab3_lib" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cmpe126s18_labs" TARGET_NAME="lab3_lib" CONFIG_NAME="Debug" />
-    <configuration name="lab4_lib" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cmpe126s18_labs" TARGET_NAME="lab4_lib" CONFIG_NAME="Debug" />
-    <configuration name="lab5_lib" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cmpe126s18_labs" TARGET_NAME="lab5_lib" CONFIG_NAME="Debug" />
-    <configuration name="lab6_lib" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cmpe126s18_labs" TARGET_NAME="lab6_lib" CONFIG_NAME="Debug" />
-    <configuration name="lab7_lib" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cmpe126s18_labs" TARGET_NAME="lab7_lib" CONFIG_NAME="Debug" />
-    <configuration name="labs_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cmpe126s18_labs" TARGET_NAME="labs_main" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cmpe126s18_labs" RUN_TARGET_NAME="labs_main" />
     <list>
       <item itemvalue="Application.Build All" />
-      <item itemvalue="Application.labs_main" />
-      <item itemvalue="Application.lab1_lib" />
-      <item itemvalue="Application.lab2_lib" />
-      <item itemvalue="Application.lab3_lib" />
-      <item itemvalue="Application.lab4_lib" />
-      <item itemvalue="Application.lab5_lib" />
-      <item itemvalue="Application.lab6_lib" />
-      <item itemvalue="Application.lab7_lib" />
       <item itemvalue="Google Test.runBasicTests" />
       <item itemvalue="Application.gtest" />
       <item itemvalue="Application.gtest_main" />
-      <item itemvalue="Google Test.Lab05Fixture.fancy_calc_calculator_simple_test" />
       <item itemvalue="Google Test.Lab05Fixture.fancy_calculator_istream_ostream_test" />
-      <item itemvalue="Google Test.All in lab03_tests.cpp" />
       <item itemvalue="Google Test.Lab05Fixture.fancy_calc_calculator_test" />
       <item itemvalue="Google Test.Lab04Fixture.calculator_istream_ostream_test" />
+      <item itemvalue="Google Test.All in lab06_tests.cpp" />
+      <item itemvalue="Google Test.Lab06crsh.crash_test_dll" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Google Test.Lab06crsh.crash_test_dll" />
+        <item itemvalue="Google Test.All in lab06_tests.cpp" />
         <item itemvalue="Google Test.Lab04Fixture.calculator_istream_ostream_test" />
         <item itemvalue="Google Test.Lab05Fixture.fancy_calculator_istream_ostream_test" />
         <item itemvalue="Google Test.Lab05Fixture.fancy_calc_calculator_test" />
-        <item itemvalue="Google Test.All in lab03_tests.cpp" />
-        <item itemvalue="Google Test.Lab05Fixture.fancy_calc_calculator_simple_test" />
       </list>
     </recent_temporary>
   </component>
@@ -540,6 +379,8 @@
       <workItem from="1524702951733" duration="100000" />
       <workItem from="1524703102827" duration="110000" />
       <workItem from="1524710514021" duration="10720000" />
+      <workItem from="1525533441699" duration="652000" />
+      <workItem from="1525718095078" duration="694000" />
     </task>
     <task id="LOCAL-00001" summary="I added 5 tests that passes correct.&#10;1. Test if the first value of stream1&gt; the first value of stream 3&#10;2.the expression is not down yet so I should expect false due to the nature of the function written.&#10;3.I expect that the second value of stream 1 is 2&#10;4.I expect that the thirds value of stream 1 is not equal to 2&#10;5 I expect that the first value of stream 2 is equal to 1">
       <created>1517886022877</created>
@@ -863,7 +704,14 @@
       <option name="project" value="LOCAL" />
       <updated>1524803350995</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="lab 6">
+      <created>1525724407256</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1525724407256</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -899,7 +747,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="221405000" />
+    <option name="totallyTimeSpent" value="222758000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -911,16 +759,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="809" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="810" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17054264" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17054264" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49964765" weight="0.32398316" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.4947146" weight="0.38061798" />
-      <window_info anchor="bottom" id="CMake" order="11" sideWeight="0.49499285" weight="0.3253857" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50317127" side_tool="true" weight="0.38041958" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3286517" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49682876" visible="true" weight="0.375" />
+      <window_info anchor="bottom" id="CMake" order="11" sideWeight="0.49541932" visible="true" weight="0.3253857" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="9" sideWeight="0.5045807" side_tool="true" visible="true" weight="0.3253857" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49682876" weight="0.375" />
       <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49753347" weight="0.32959327" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24947146" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.47709656" weight="0.32258064" />
@@ -932,6 +778,8 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286517" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.4947146" visible="true" weight="0.38008416" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -977,7 +825,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="First commit" />
     <MESSAGE value="Finished last 2 functions" />
     <MESSAGE value="made 6 tests" />
     <MESSAGE value="2 tests only failing" />
@@ -1002,7 +849,8 @@
     <MESSAGE value="wtf" />
     <MESSAGE value="No more wtf. I passed." />
     <MESSAGE value="lab 5 is still failing" />
-    <option name="LAST_COMMIT_MESSAGE" value="lab 5 is still failing" />
+    <MESSAGE value="lab 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="lab 6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1048,6 +896,34 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/lib/lab07/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="60" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lab07/inc/node.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="23" selection-start-column="2" selection-end-line="13" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/lab06_tests.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="294" selection-start-line="294" selection-end-line="294" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-279">
+          <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/lab06/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
@@ -1076,31 +952,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/lab06/src/doubly_linked_list.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-279">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="91" selection-start-line="15" selection-start-column="91" selection-end-line="15" selection-end-column="98" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/lab07/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="60" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/lab01_tests.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -1121,13 +976,6 @@
     <entry file="file://$PROJECT_DIR$/lib/lab03/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-461" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/lab02/inc/stringVector.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="42" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/lab02/CMakeLists.txt">
@@ -1162,13 +1010,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="53" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -1216,15 +1057,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/lab07/src/tree.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="242" selection-end-line="270" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/lab07/inc/tree.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="14" selection-end-line="40" />
+        <state relative-caret-position="1605">
+          <caret line="107" column="11" selection-end-line="270" />
         </state>
       </provider>
     </entry>
@@ -1246,9 +1080,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
           <caret line="14" column="43" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="43" />
-          <folding>
-            <element signature="e#85#103#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1268,40 +1099,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/lab09/src/huffman.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-37">
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-37" />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/lab09/src/huffman_tree.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/lab09/inc/huffman.h">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/lab09/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/lab09/inc/node.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/lab06_tests.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/lab07_tests.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="181" column="17" selection-start-line="181" selection-start-column="17" selection-end-line="181" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1335,7 +1139,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/lab05_tests.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5600">
+        <state relative-caret-position="2130">
           <caret line="142" column="62" selection-start-line="142" selection-start-column="62" selection-end-line="142" selection-end-column="62" />
         </state>
       </provider>
@@ -1344,9 +1148,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1375,29 +1176,76 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="39" column="49" lean-forward="true" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/lab04/src/calculator.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1148">
-          <caret line="78" column="21" selection-end-line="175" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/lab05/inc/queue.h">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/lab05/src/queue.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="248">
           <caret line="62" column="33" selection-end-line="74" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/lab07_tests.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2715">
+          <caret line="181" column="17" selection-start-line="181" selection-start-column="17" selection-end-line="181" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lab07/inc/tree.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="14" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lab02/inc/stringVector.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lab04/src/calculator.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1365">
+          <caret line="91" column="19" selection-start-line="91" selection-start-column="19" selection-end-line="91" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/lab01_tests.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lab06/src/doubly_linked_list.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1412">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/lab06_tests.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
         </state>
       </provider>
     </entry>

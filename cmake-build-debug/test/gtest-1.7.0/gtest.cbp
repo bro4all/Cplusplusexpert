@@ -5,7 +5,7 @@
 		<Option title="gtest"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\test\;CMake Files\test\gtest-1.7.0\;CMake Files\test\gtest-1.7.0\cmake\;CMake Files\lib\;CMake Files\lib\lab01\;CMake Files\lib\lab02\;CMake Files\lib\lab03\;CMake Files\lib\lab04\;CMake Files\lib\lab05\;CMake Files\lib\lab06\;CMake Files\lib\lab07\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\lib\;CMake Files\lib\lab01\;CMake Files\lib\lab02\;CMake Files\lib\lab03\;CMake Files\lib\lab04\;CMake Files\lib\lab05\;CMake Files\lib\lab06\;CMake Files\lib\lab07\;CMake Files\test\;CMake Files\test\gtest-1.7.0\;CMake Files\test\gtest-1.7.0\cmake\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/Bro4all/CLionProjects/cmpe126s18_labs/cmake-build-debug/test/gtest-1.7.0"/>
@@ -155,15 +155,6 @@
 		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/test/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\test\"/>
-		</Unit>
-		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/test/gtest-1.7.0/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\test\gtest-1.7.0\"/>
-		</Unit>
-		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/test/gtest-1.7.0/cmake/internal_utils.cmake">
-			<Option virtualFolder="CMake Files\test\gtest-1.7.0\cmake\"/>
-		</Unit>
 		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab01/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lib\lab01\"/>
 		</Unit>
@@ -184,6 +175,15 @@
 		</Unit>
 		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/lib/lab07/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lib\lab07\"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/test/gtest-1.7.0/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\gtest-1.7.0\"/>
+		</Unit>
+		<Unit filename="/Users/Bro4all/CLionProjects/cmpe126s18_labs/test/gtest-1.7.0/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\test\gtest-1.7.0\cmake\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>
