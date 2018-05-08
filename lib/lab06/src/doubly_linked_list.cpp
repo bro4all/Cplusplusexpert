@@ -44,9 +44,52 @@ namespace lab6 {
 
 
     std::vector<int> doubly_linked_list::get_set(unsigned position_from, unsigned position_to) {
-
+std::vector<int> one;
+if(position_from<0||position_to<0){
+    throw ("index has to be greater than 0");
+}
+if(position_to<position_from){
+    int temp= position_to;
+    position_to=position_from;
+    position_from=temp;
+}
+node *start=head;
+node *end=head;
+node *spre= nullptr;
+node *enext= nullptr;
+if(!head){
+    throw("out of scope");
+}
+for (int i=0;i<position_from;i++){
+    start=start->next;
+}
+spre=start->prev;
+for(int i=0;i<position_to;i++){
+    end=end->next;
+}
+enext=end->next;
+if(start==head&&enext){
+    while(start !=end->next){
+        one.push_back((start->get_data());
+        start=start->next;
     }
-
+    return one;
+}
+else if(start==head&&end==tail){
+    while(start){
+        one.push_back(start->get_data());
+        start=start->next;
+    }
+    return one;
+}
+else {
+    while (start != end->next) {
+        one.push_back(start->get_data());
+        start=start->next;
+    }
+    return one;
+}
+    }
     unsigned doubly_linked_list::size() {
 node* temp=head;
 unsigned size;
