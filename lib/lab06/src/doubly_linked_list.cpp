@@ -70,7 +70,7 @@ for(int i=0;i<position_to;i++){
 enext=end->next;
 if(start==head&&enext){
     while(start !=end->next){
-        one.push_back((start->get_data());
+        one.push_back(start->get_data());
         start=start->next;
     }
     return one;
@@ -92,23 +92,20 @@ else {
     }
     unsigned doubly_linked_list::size() {
 node* temp=head;
-unsigned size;
-if (temp->next= nullptr){
-            throw" list is empty";
-        }
-        else {
-    while (temp->next != nullptr) {
+unsigned size=0;
+
+    while (temp != nullptr) {
         size++;
         temp = temp->next;
 
     }
     return size;
 }
-    }
+
 
     bool doubly_linked_list::is_empty() {
-        if(head->next= nullptr){
-            if(tail= nullptr){
+        if(head== nullptr){
+            if(tail== nullptr){
                 return  true;
             }
         }
@@ -118,19 +115,87 @@ if (temp->next= nullptr){
         }
 
     void doubly_linked_list::append(int input) {
-        node *tail = head;
-        while (tail->next != nullptr) {
-            tail = tail->next;
+        node *temp = head;
+        if(head) {
+            while (temp->next != nullptr) {
+                temp = temp->next;
+            }
+            temp->next = new node(input);
         }
-        tail->next = new node(input);
+        else{
+            head=new node(input);
+            tail=head;
+        }
     }
 
     void doubly_linked_list::insert(int input, unsigned int location) {
+        node * current = nullptr, *pre = nullptr;
+        current = head;
+        node *temp = new node(input);
+        if(location >size())throw;
+        if(!current){
+            head = temp;
+            tail = temp;
+            tail->next = nullptr;
+            head->prev = nullptr;
+        }
+        else if(location == size()){
+            tail->next = temp;
+            temp->prev = tail;
+            tail = temp;
+            tail->next = nullptr;
+        }
+        else {
+            for (int i = 0; i < location; i++) {
+                pre = current;
+                current = current->next;
+            }
+            if (pre) {
+                pre->next = temp;
+                temp->prev = pre;
+                temp->next = current;
+                current->prev = temp;
+            }
+            if (!pre) {
+                head = temp;
+                current->prev = temp;
+                temp->next = current;
+                tail = current;
+            }
+        }
 
     }
 
     void doubly_linked_list::remove(unsigned location) {
-
+        node* current = nullptr, *pre = nullptr, *next = nullptr;
+        current = head;
+        if(location > size()) throw -1;
+        for(int i = 0; i < location;i++){
+            pre = current;
+            current = current->next;
+        }
+        if(pre && current->next){
+            next = current->next;
+            pre->next = next;
+            next->prev = pre;
+            delete current;
+        }
+        if(pre && !current->next){
+            pre->next = nullptr;
+            tail = pre;
+            delete current;
+        }
+        if(!pre){
+            if(head->next) {
+                head = head->next;
+                head->prev = nullptr;
+                delete current;
+            }
+            else{
+                head = nullptr;
+                tail = nullptr;
+            }
+        }
     }
 
     doubly_linked_list doubly_linked_list::split(unsigned position) {
