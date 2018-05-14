@@ -14,11 +14,40 @@ namespace lab6 {
     }
 
     doubly_linked_list::doubly_linked_list(std::vector<int> vector_input) {
-
+        if(vector_input.size() == 0){
+            this->head = nullptr;
+            this->tail = nullptr;
+        }
+        else {
+            this->head = nullptr;
+            this->tail = nullptr;
+            for (int i = 0; i < vector_input.size(); i++) {
+                append(vector_input.at(i));
+            }
+        }
     }
 
     doubly_linked_list::doubly_linked_list(const doubly_linked_list &original) {
-
+        node * p2 = original.head;
+        if(p2 == nullptr) {
+            this->head = nullptr;
+            this->tail = nullptr;
+        }
+        else{
+            node * ahead = new node(p2->get_data());
+            this->head = ahead;
+            p2 = p2->next;
+            while(p2){
+                auto * temp = new node(p2->get_data());
+                p2 = p2->next;
+                temp ->prev = ahead;
+                ahead->next = temp;
+                ahead = temp;
+                temp = temp->next;
+            }
+            ahead->next= nullptr;
+            this->tail = ahead;
+        }
     }
 
     doubly_linked_list::~doubly_linked_list() {
@@ -31,88 +60,93 @@ namespace lab6 {
     }
 
     int doubly_linked_list::get_data(unsigned position) {
-        int j = 0;
-        node *current = head;
-        for (int i = 0; i < position; i++) {
-            current = current->next;
-            j = current->get_data();
 
+        if (position+1 > size())
+        {
+            throw 6;
+        }
+        else
+        {
+            node *current = head;
+
+            for (int i = 0; i<position; i++)
+            {
+                current = current->next;
+            }
+
+            return current->get_data();
         }
 
-        return j;
     }
-
 
     std::vector<int> doubly_linked_list::get_set(unsigned position_from, unsigned position_to) {
-std::vector<int> one;
-if(position_from<0||position_to<0){
-    throw ("index has to be greater than 0");
-}
-if(position_to<position_from){
-    int temp= position_to;
-    position_to=position_from;
-    position_from=temp;
-}
-node *start=head;
-node *end=head;
-node *spre= nullptr;
-node *enext= nullptr;
-if(!head){
-    throw("out of scope");
-}
-for (int i=0;i<position_from;i++){
-    start=start->next;
-}
-spre=start->prev;
-for(int i=0;i<position_to;i++){
-    end=end->next;
-}
-enext=end->next;
-if(start==head&&enext){
-    while(start !=end->next){
-        one.push_back(start->get_data());
-        start=start->next;
-    }
-    return one;
-}
-else if(start==head&&end==tail){
-    while(start){
-        one.push_back(start->get_data());
-        start=start->next;
-    }
-    return one;
-}
-else {
-    while (start != end->next) {
-        one.push_back(start->get_data());
-        start=start->next;
-    }
-    return one;
-}
+        std::vector<int> one;
+        if(position_from < 0 || position_to < 0){
+            throw("please start the index at 1");
+        }
+        if(position_to < position_from){
+            int temp = position_to;
+            position_to = position_from;
+            position_from = temp;
+        }
+        node *start = head,*end = head, *spre = nullptr, *enext = nullptr;
+        if(!head){
+            throw("out of scope");
+        }
+        for(int i = 0; i < position_from; i++){
+            start = start->next;
+        }
+        spre = start->prev;
+        for(int i = 0; i < position_to; i++){
+            end = end->next;
+        }
+        enext = end->next;
+        if(start == head && enext){
+            while(start != end->next){
+                one.push_back(start->get_data());
+                start = start->next;
+            }
+            return one;
+        }
+        else if(spre && end == tail){
+            while(start){
+                one.push_back(start->get_data());
+                start = start->next;
+            }
+            return one;
+        }
+        else if(start == head && end == tail){
+            while(start){
+                one.push_back(start->get_data());
+                start = start->next;
+            }
+            return one;
+        }
+        else {
+            while(start!=end->next){
+                one.push_back(start->get_data());
+                start = start->next;
+            }
+            return one;
+        }
+
     }
     unsigned doubly_linked_list::size() {
-node* temp=head;
-unsigned size=0;
-
-    while (temp != nullptr) {
-        size++;
-        temp = temp->next;
-
+        unsigned count = 0;
+        node *current;
+        current = head;
+        if(!head)return 0;
+        while(current != nullptr){
+            count ++;
+            current = current->next;
+        }
+        return count;
     }
-    return size;
-}
 
 
     bool doubly_linked_list::is_empty() {
-        if(head== nullptr){
-            if(tail== nullptr){
-                return  true;
-            }
-        }
-        else{
-            return false;
-        }
-        }
+        return (size() == 0);
+    }
 
     void doubly_linked_list::append(int input) {
         node *temp = head;
@@ -200,90 +234,96 @@ unsigned size=0;
 
     doubly_linked_list doubly_linked_list::split(unsigned position) {
         lab6::doubly_linked_list one;
-        node *current, *pre, *next;
+        node * current,*pre,*next;
         current = head;
-        for (int i = 1; i < position; i++) {
+        for(int i = 0; i<position; i++){
             current = current->next;
         }
-        if (current == head) {
+        if(current == head) {
             pre = nullptr;
-        } else {
+        }
+        else{
             pre = current->prev;
         }
-        if (current == tail) {
+        if(current == tail) {
             next = nullptr;
-        } else {
+        }
+        else{
             next = current->prev;
         }
-        if (current == head) {
-            while (current) {
+        if(current == head){
+            while(current){
                 one.append(current->get_data());
-                current = current->next;
+                current= current->next;
             }
             this->head = nullptr;
             this->tail = nullptr;
             return one;
-        } else if (next == tail) {
+        }
+        else if(next == tail){
             return one;
-        } else {
-            this->tail = current;
-            current = current->next;
-            while (current) {
+        }
+        else{
+            this->tail = current->prev;
+            this->tail->next = nullptr;
+            while(current){
                 one.append(current->get_data());
                 current = current->next;
             }
-            tail->next = nullptr;
             return one;
         }
     }
 
     doubly_linked_list doubly_linked_list::split_set(unsigned position_1, unsigned position_2) {
         lab6::doubly_linked_list one;
-        if (position_1 < 1 || position_2 < 1) {
-            throw ("please start the index at 1");
+        if(position_1 < 0|| position_2 < 0){
+            throw("please start the index at 1");
         }
-        if (position_2 < position_1) {
+        if(position_2 < position_1){
             int temp = position_2;
             position_2 = position_1;
             position_1 = temp;
         }
-        if (!head) {
-            throw ("out of scope");
+        if(!head){
+            throw("out of scope");
         }
-        node *start = head, *end = head, *spre = nullptr, *enext = nullptr;
-        for (int i = 1; i < position_1; i++) {
+        node *start = head,*end = head, *spre = nullptr, *enext = nullptr;
+        for(int i = 0; i < position_1; i++){
             start = start->next;
         }
         spre = start->prev;
-        for (int i = 1; i < position_2; i++) {
+        for(int i = 0; i < position_2; i++){
             end = end->next;
         }
         enext = end->next;
-        if (start == head && enext) {
-            while (start != end->next) {
+        if(start == head && enext){
+            while(start != end){
                 one.append(start->get_data());
                 start = start->next;
             }
-            this->head = enext;
+            this->head =  enext;
             return one;
-        } else if (spre && end == tail) {
-            while (start) {
+        }
+        else if(spre && end == tail){
+            while(start){
                 one.append(start->get_data());
                 start = start->next;
             }
-            this->tail = spre;
+            this->tail =  spre;
             tail->next = nullptr;
             return one;
-        } else if (start == head && end == tail) {
-            while (start) {
+        }
+        else if(start == head && end == tail){
+            while(start){
                 one.append(start->get_data());
                 start = start->next;
             }
             this->head = nullptr;
             this->tail = nullptr;
             return one;
-        } else {
-            while (start != end->next) {
+        }
+        else {
+            while(start!=end->next){
                 one.append(start->get_data());
                 start = start->next;
             }
